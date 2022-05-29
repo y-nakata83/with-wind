@@ -196,7 +196,7 @@ body.appear .splashbg {
   top: 0;
   left: 0;
   transform: translateX(-300%) skewX(-45deg);
-  background-color: rgba(44, 196, 203, 0.1882352941);
+  background-color: #2CC4CB30;
   /*伸びる背景色の設定*/
 }
 
@@ -646,10 +646,10 @@ a {
   content: "03";
 }
 .about_itemInner {
-  background-color: rgba(0, 0, 0, 0.2509803922);
+  background-color: #000;
   width: 100%;
   padding: 10%;
-  color: #FFF;
+  color: #fff;
   text-align: justify;
 }
 .about_itemInner p {
@@ -666,7 +666,7 @@ a {
   background-repeat: no-repeat;
 }
 .para1 p {
-  color: #FFF;
+  color: #fff;
   font-size: 3vw;
   display: flex;
   align-items: center;
@@ -684,7 +684,7 @@ a {
   background-repeat: no-repeat;
 }
 .para2 p {
-  color: #FFF;
+  color: #fff;
   font-size: 3vw;
   display: flex;
   align-items: center;
@@ -705,3 +705,5 @@ a {
   background: #E4EAF2;
   height: 20vh;
 }
+
+/*# sourceMappingURL=style.css.map */
