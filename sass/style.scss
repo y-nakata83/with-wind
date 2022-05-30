@@ -484,6 +484,11 @@ a{
 }
 
 .about{
+  &_ttl {
+    width: 100%;
+    text-align: center;
+  }
+
   &_inner{
     width: 90%;
     margin: 0 auto;
