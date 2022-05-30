@@ -176,7 +176,7 @@ select {
 }
 
 .button {
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
 }
 
 .header {
@@ -242,7 +242,7 @@ body.appear .splashbg {
   top: 0;
   left: 0;
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -586,6 +586,10 @@ a {
   font-size: 0.2em;
 }
 
+.about_ttl {
+  width: 100%;
+  text-align: center;
+}
 .about_inner {
   width: 90%;
   margin: 0 auto;
@@ -708,5 +712,3 @@ a {
   background: #E4EAF2;
   height: 20vh;
 }
-
-/*# sourceMappingURL=style.css.map */
