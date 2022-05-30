@@ -175,6 +175,10 @@ select {
   vertical-align: middle;
 }
 
+.button {
+  background-color: #2CC4CB30;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -216,9 +220,6 @@ select {
 .header_navItem {
   padding-right: 5%;
 }
-.header_navItem button {
-  background-color: rgba(44, 196, 203, 0.1882352941);
-}
 
 /*========= 画面遷移のためのCSS ===============*/
 /*画面遷移アニメーション*/
@@ -241,7 +242,7 @@ body.appear .splashbg {
   top: 0;
   left: 0;
   transform: translateX(-300%) skewX(-45deg);
-  background-color: rgba(44, 196, 203, 0.1882352941);
+  background-color: #2CC4CB30;
   /*伸びる背景色の設定*/
 }
 
@@ -707,3 +708,5 @@ a {
   background: #E4EAF2;
   height: 20vh;
 }
+
+/*# sourceMappingURL=style.css.map */
