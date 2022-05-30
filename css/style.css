@@ -175,6 +175,51 @@ select {
   vertical-align: middle;
 }
 
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 99;
+}
+.header_inner {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.header_left {
+  width: 20%;
+}
+.header_logo {
+  width: 40%;
+}
+.header_logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header_logo a img {
+  width: 100%;
+}
+.header_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.header_nav {
+  width: 100%;
+}
+.header_navBox {
+  display: flex;
+  justify-content: space-around;
+}
+.header_navItem {
+  padding-right: 5%;
+}
+.header_navItem button {
+  background-color: rgba(44, 196, 203, 0.1882352941);
+}
+
 /*========= 画面遷移のためのCSS ===============*/
 /*画面遷移アニメーション*/
 .splashbg {
@@ -517,48 +562,6 @@ a {
     opacity: 1;
   }
 }
-.header {
-  width: 100%;
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.3);
-  z-index: 99;
-}
-.header_inner {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-.header_left {
-  width: 20%;
-}
-.header_logo {
-  width: 40%;
-}
-.header_logo a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.header_logo a img {
-  width: 100%;
-}
-.header_right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-.header_nav {
-  width: 100%;
-}
-.header_navBox {
-  display: flex;
-  justify-content: space-around;
-}
-.header_navItem {
-  padding-right: 5%;
-}
-
 .top_inner {
   position: relative;
   height: 100vh;
