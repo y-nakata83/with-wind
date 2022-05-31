@@ -446,6 +446,16 @@ a{
   &_ttl {
     width: 100%;
     text-align: center;
+    margin: 15vh auto;
+    h3 {
+      font-size: 5rem;
+      color: $cHiGreen;
+      font-family: 'Lobster Two',
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 2%;
+    }
   }
 
   &_inner{
@@ -561,10 +571,54 @@ a{
 
 .service{
   height: 100vh;
+  &_ttl {
+    width: 100%;
+    text-align: center;
+    margin: 15vh auto;
+    h3 {
+      font-size: 5rem;
+      color: $cHiGreen;
+      font-family: 'Lobster Two',
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 2%;
+    }
+  }
+}
+
+.qa {
+  &_ttl {
+    width: 100%;
+    text-align: center;
+    margin: 15vh auto;
+    
+    h3 {
+      font-size: 5rem;
+      color: $cHiGreen;
+      font-family: 'Lobster Two',
+    }
+  }
 }
 
 .contact{
   height: 100vh;
+  &_ttl {
+    width: 100%;
+    text-align: center;
+    margin: 15vh auto;
+    
+    h3 {
+      font-size: 5rem;
+      color: $cHiGreen;
+      font-family: 'Lobster Two',
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin-top: 2%;
+    }
+  }
 }
 
 
