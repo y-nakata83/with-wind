@@ -622,7 +622,69 @@ a{
 }
 
 
-.footer{
-  background: $cHiGray;
-  height: 20vh;
+.footer {
+  &_inner {
+    width: 100%;
+    position: relative;
+    background-color: $cGray;
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &_left {
+    width: 20%;
+  }
+
+  &_logo {
+    width: 40%;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  &_nav {
+    width: 100%;
+
+    &Box {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &Item {
+      padding: 1%;
+      width: 15%;
+    }
+  }
+
+  &_copy {
+    position: relative;
+    font-size: 15px;
+    top: 25%;
+    color: $cBlack;
+
+    &Inner {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      height: 10vh;
+      background: $cWhite;
+      border-top: solid 1px $cWhite;
+    }
+  }
 }
