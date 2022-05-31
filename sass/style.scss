@@ -571,6 +571,10 @@ a{
 
 .service{
   height: 100vh;
+  &_inner {
+    width: 100%;
+    position: relative;
+  }
   &_ttl {
     width: 100%;
     text-align: center;
@@ -583,6 +587,33 @@ a{
     h2 {
       font-size: 2rem;
       margin-top: 2%;
+    }
+  }
+  &_item {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  &_img {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  &_txt {
+    &Box {
+      &R {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+      }
+      &L {
+        position: absolute;
+        width: 50%;
+
+      }
     }
   }
 }
