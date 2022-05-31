@@ -176,7 +176,14 @@ select {
 }
 
 .button {
-  background-color: #2CC4CB;
+  background: linear-gradient(#2CC4CB, #8FF9E4);
+  text-align: center;
+}
+.button a {
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -218,7 +225,8 @@ select {
   justify-content: space-around;
 }
 .header_navItem {
-  padding-right: 5%;
+  padding: 1%;
+  width: 15%;
 }
 
 /*========= 画面遷移のためのCSS ===============*/
@@ -589,6 +597,16 @@ a {
 .about_ttl {
   width: 100%;
   text-align: center;
+  margin: 15vh auto;
+}
+.about_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
+.about_ttl h2 {
+  font-size: 2rem;
+  margin-top: 2%;
 }
 .about_inner {
   width: 90%;
@@ -703,9 +721,48 @@ a {
 .service {
   height: 100vh;
 }
+.service_ttl {
+  width: 100%;
+  text-align: center;
+  margin: 15vh auto;
+}
+.service_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
+.service_ttl h2 {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+
+.qa_ttl {
+  width: 100%;
+  text-align: center;
+  margin: 15vh auto;
+}
+.qa_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
 
 .contact {
   height: 100vh;
+}
+.contact_ttl {
+  width: 100%;
+  text-align: center;
+  margin: 15vh auto;
+}
+.contact_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
+.contact_ttl h2 {
+  font-size: 2rem;
+  margin-top: 2%;
 }
 
 .footer {
