@@ -338,8 +338,8 @@ a {
   opacity: 0;
   left: 5%;
   top: 50%;
-  -webkit-animation: L 2s infinite;
   animation: L 2s infinite;
+  -webkit-animation: L 2s infinite;
 }
 
 .O {
@@ -347,10 +347,10 @@ a {
   opacity: 0;
   left: 18%;
   top: 50%;
-  -webkit-animation: O 2s infinite;
   animation: O 2s infinite;
-  -webkit-animation-delay: 100ms;
+  -webkit-animation: O 2s infinite;
   animation-delay: 100ms;
+  -webkit-animation-delay: 100ms;
 }
 
 .A {
@@ -358,10 +358,10 @@ a {
   opacity: 0;
   left: 35%;
   top: 50%;
-  -webkit-animation: A 2s infinite;
   animation: A 2s infinite;
-  -webkit-animation-delay: 200ms;
+  -webkit-animation: A 2s infinite;
   animation-delay: 200ms;
+  -webkit-animation-delay: 200ms;
 }
 
 .D {
@@ -369,10 +369,10 @@ a {
   opacity: 0;
   left: 50%;
   top: 50%;
-  -webkit-animation: D 2s infinite;
   animation: D 2s infinite;
-  -webkit-animation-delay: 300ms;
+  -webkit-animation: D 2s infinite;
   animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
 }
 
 .I {
@@ -380,10 +380,10 @@ a {
   opacity: 0;
   left: 65%;
   top: 50%;
-  -webkit-animation: I 2s infinite;
   animation: I 2s infinite;
-  -webkit-animation-delay: 400ms;
+  -webkit-animation: I 2s infinite;
   animation-delay: 400ms;
+  -webkit-animation-delay: 400ms;
 }
 
 .N {
@@ -391,10 +391,10 @@ a {
   opacity: 0;
   left: 75%;
   top: 50%;
-  -webkit-animation: N 2s infinite;
   animation: N 2s infinite;
-  -webkit-animation-delay: 500ms;
+  -webkit-animation: N 2s infinite;
   animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
 }
 
 .G {
@@ -402,10 +402,10 @@ a {
   opacity: 0;
   left: 90%;
   top: 50%;
-  -webkit-animation: G 2s infinite;
   animation: G 2s infinite;
-  -webkit-animation-delay: 600ms;
+  -webkit-animation: G 2s infinite;
   animation-delay: 600ms;
+  -webkit-animation-delay: 600ms;
 }
 
 @keyframes L {
@@ -589,6 +589,16 @@ a {
 .about_ttl {
   width: 100%;
   text-align: center;
+  margin: 15vh auto;
+}
+.about_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
+.about_ttl h2 {
+  font-size: 2rem;
+  margin-top: 2%;
 }
 .about_inner {
   width: 90%;
@@ -703,9 +713,48 @@ a {
 .service {
   height: 100vh;
 }
+.service_ttl {
+  width: 100%;
+  text-align: center;
+  margin: 15vh auto;
+}
+.service_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
+.service_ttl h2 {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+
+.qa_ttl {
+  width: 100%;
+  text-align: center;
+  margin: 15vh auto;
+}
+.qa_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
 
 .contact {
   height: 100vh;
+}
+.contact_ttl {
+  width: 100%;
+  text-align: center;
+  margin: 15vh auto;
+}
+.contact_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
+.contact_ttl h2 {
+  font-size: 2rem;
+  margin-top: 2%;
 }
 
 .footer {
