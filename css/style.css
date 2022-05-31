@@ -778,6 +778,10 @@ a {
 .service {
   height: 100vh;
 }
+.service_inner {
+  width: 100%;
+  position: relative;
+}
 .service_ttl {
   width: 100%;
   text-align: center;
@@ -791,6 +795,28 @@ a {
 .service_ttl h2 {
   font-size: 2rem;
   margin-top: 2%;
+}
+.service_item {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.service_img {
+  width: 50%;
+}
+.service_img img {
+  width: 100%;
+}
+.service_txtBoxR {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+.service_txtBoxL {
+  position: absolute;
+  width: 50%;
 }
 
 .qa_ttl {
