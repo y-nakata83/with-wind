@@ -541,6 +541,9 @@ a{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  &_inner {
+    position: relative;
+  }
   p{
     color: $cWhite;
     font-size: 3vw;
@@ -558,6 +561,9 @@ a{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  &_inner {
+    position: relative;
+  }
   p{
     color: $cWhite;
     font-size: 3vw;
