@@ -307,7 +307,7 @@ body.appear .splashbg {
   top: 0;
   left: 0;
   transform: translateX(-300%) skewX(-45deg);
-  background-color: rgba(44, 196, 203, 0.1882352941);
+  background-color: #2CC4CB30;
   /*伸びる背景色の設定*/
 }
 
@@ -781,9 +781,6 @@ a {
   padding: 5%;
 }
 
-.service {
-  height: 100vh;
-}
 .service_inner {
   width: 100%;
   position: relative;
@@ -836,9 +833,6 @@ a {
   font-family: "Lobster Two";
 }
 
-.contact {
-  height: 100vh;
-}
 .contact_ttl {
   width: 100%;
   text-align: center;
@@ -908,3 +902,5 @@ a {
   background: #fff;
   border-top: solid 1px #fff;
 }
+
+/*# sourceMappingURL=style.css.map */
