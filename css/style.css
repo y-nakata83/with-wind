@@ -666,6 +666,7 @@ a {
   margin-top: 2%;
 }
 .about_inner {
+  position: relative;
   width: 90%;
   margin: 0 auto;
 }
@@ -760,30 +761,6 @@ a {
   padding: 5%;
 }
 
-.para2 {
-  height: 30vh;
-  background-image: url(../img/para2.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.para2_inner {
-  position: relative;
-}
-.para2 p {
-  color: #fff;
-  font-size: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 5%;
-}
-
-.service {
-  height: 100vh;
-}
 .service_inner {
   width: 100%;
   position: relative;
@@ -823,6 +800,27 @@ a {
 .service_txtBoxL {
   position: absolute;
   width: 50%;
+}
+
+.para2 {
+  background-image: url(../img/para2.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.para2_inner {
+  position: relative;
+  height: 30vh;
+}
+.para2 p {
+  color: #fff;
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5%;
 }
 
 .qa_ttl {

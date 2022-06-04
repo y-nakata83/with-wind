@@ -459,6 +459,7 @@ a{
   }
 
   &_inner{
+    position: relative;
     width: 90%;
     margin: 0 auto;
   }
@@ -554,29 +555,8 @@ a{
     padding: 5%;
   }
 }
-.para2{
-  height: 30vh;
-  background-image: url(../img/para2.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  &_inner {
-    position: relative;
-  }
-  p{
-    color: $cWhite;
-    font-size: 3vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 5%;
-  }
-}
 
 .service{
-  height: 100vh;
   &_inner {
     width: 100%;
     position: relative;
@@ -624,6 +604,28 @@ a{
   }
 }
 
+.para2{
+  background-image: url(../img/para2.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &_inner {
+    position: relative;
+    height: 30vh;
+  }
+  p{
+    color: $cWhite;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5%;
+  }
+}
+
+
 .qa {
   &_ttl {
     width: 100%;
@@ -657,7 +659,6 @@ a{
     }
   }
 }
-
 
 .footer {
   &_inner {
