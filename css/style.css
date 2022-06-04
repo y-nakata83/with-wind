@@ -348,7 +348,7 @@ body.appear .splashbg {
   top: 0;
   left: 0;
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -802,27 +802,6 @@ a {
   padding: 5%;
 }
 
-.para2 {
-  height: 30vh;
-  background-image: url(../img/para2.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.para2_inner {
-  position: relative;
-}
-.para2 p {
-  color: #fff;
-  font-size: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 5%;
-}
-
 .service_inner {
   width: 100%;
   position: relative;
@@ -965,5 +944,3 @@ a {
   background: #fff;
   border-top: solid 1px #fff;
 }
-
-/*# sourceMappingURL=style.css.map */
