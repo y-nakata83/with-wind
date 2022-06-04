@@ -53,15 +53,11 @@
       width: 15%;
 
       &_hd {
-          width: 10%;
           text-align: center;
           margin-top: 2%;
           display: inline-block;
           position: relative;
           cursor: pointer;
-          &:hover {
-              opacity: 0.5;
-            }
           &:after {
             content: '';
               position: absolute;
@@ -79,6 +75,10 @@
             transform: scaleX(1);
             transform-origin: bottom left
           }
+
+          a:hover {
+              opacity: 0.5;
+            }
 
       }
     }
