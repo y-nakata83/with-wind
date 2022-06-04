@@ -802,27 +802,6 @@ a {
   padding: 5%;
 }
 
-.para2 {
-  height: 30vh;
-  background-image: url(../img/para2.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.para2_inner {
-  position: relative;
-}
-.para2 p {
-  color: #fff;
-  font-size: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 5%;
-}
-
 .service_inner {
   width: 100%;
   position: relative;
