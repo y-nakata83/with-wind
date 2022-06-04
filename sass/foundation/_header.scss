@@ -3,7 +3,6 @@
 .header {
   width: 100%;
   position: fixed;
-  background-color: $cGray;
   z-index: 99;
 
   &_inner {
@@ -18,6 +17,10 @@
 
   &_logo {
     width: 40%;
+
+    &:hover {
+      opacity: 0.5;
+    }
 
     a {
       display: block;
@@ -56,6 +59,9 @@
           display: inline-block;
           position: relative;
           cursor: pointer;
+          &:hover {
+              opacity: 0.5;
+            }
           &:after {
             content: '';
               position: absolute;
