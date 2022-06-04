@@ -194,7 +194,7 @@ select {
   height: 38px;
   margin-top: -8%;
   border-radius: 5px;
-  transition: 1s ease-out;
+  transition: 0.5s ease-out;
 }
 .button:hover:before {
   width: 100px;
@@ -258,15 +258,11 @@ select {
   width: 15%;
 }
 .header_navItem_hd {
-  width: 10%;
   text-align: center;
   margin-top: 2%;
   display: inline-block;
   position: relative;
   cursor: pointer;
-}
-.header_navItem_hd:hover {
-  opacity: 0.5;
 }
 .header_navItem_hd:after {
   content: "";
@@ -283,6 +279,9 @@ select {
 .header_navItem_hd:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.header_navItem_hd a:hover {
+  opacity: 0.5;
 }
 
 .footer {
