@@ -203,6 +203,9 @@ select {
 .button:hover span {
   color: #fff;
 }
+.button span {
+  color: #000;
+}
 .button a {
   line-height: 1.5;
   display: block;
