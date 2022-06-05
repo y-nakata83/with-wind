@@ -376,7 +376,7 @@ select {
 .a_service_top_img {
   position: absolute;
   top: 50%;
-  left: 44%;
+  left: 50%;
 }
 .a_service_hp {
   position: relative;
@@ -431,13 +431,15 @@ select {
 .hp_price_list_wrap {
   display: flex;
   width: 90%;
-  justify-content: space-around;
+  justify-content: center;
+  margin: 0 auto;
 }
 .hp_price_list_contents {
   display: inline-block;
   width: 20%;
   height: 50vh;
   border-radius: 10px;
+  margin-left: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .hp_price_list_contents_name {
@@ -499,7 +501,6 @@ select {
 .contents_wrap_box {
   display: flex;
   flex-direction: column;
-  height: 110px;
 }
 .contents_wrap_box_list {
   display: inline-block;
@@ -527,6 +528,67 @@ select {
   margin-left: 5%;
 }
 .contents_wrap li {
+  margin-top: 5%;
+}
+
+.a_contact_top {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.a_contact_top_iner {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: 8%;
+}
+.a_contact_top_box {
+  width: 90%;
+  height: 60%;
+  background-color: #8FF9E4;
+  clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
+}
+.a_contact_top_box_title {
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 30%;
+  left: 10%;
+}
+.a_contact_top_box_title h1 {
+  font-family: "Lobster Two", cursive;
+  color: #fff;
+  font-size: 8rem;
+}
+.a_contact_top_box_title span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.a_contact_top_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.twitter {
+  width: 100%;
+  margin-top: 10%;
+}
+.twitter_iner {
+  margin: 0, auto;
+}
+.twitter_txt {
+  text-align: inherit;
+  margin-left: 30%;
+}
+.twitter_txt p {
+  font-size: large;
+  line-height: 135%;
+}
+.twitter_btn button {
+  width: 30%;
+  height: 10vw;
   margin-top: 5%;
 }
 
