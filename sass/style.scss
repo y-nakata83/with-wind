@@ -544,7 +544,7 @@ a{
   &_inner {
     position: relative;
     margin-top: 15vh;
-    height: 30vh;
+    height: 35vh;
   }
   p{
     color: $cWhite;
@@ -668,7 +668,7 @@ a{
   &_inner {
     position: relative;
     margin-top: 15vh;
-    height: 30vh;
+    height: 35vh;
   }
   p{
     color: $cWhite;
@@ -792,8 +792,8 @@ a{
     &Box {
       position: absolute;
       width: 100%;
-      height: 30vh;
-      top: 17%;
+      height: 33vh;
+      top: 14%;
       text-align: center;
       background-color: rgba(0,0,0,0.5);
       h2 {
@@ -811,7 +811,7 @@ a{
     &Inner {
       position: absolute;
       width: 100%;
-      top: 30%;
+      top: 25%;
     }
   }
   &_btn {
@@ -820,6 +820,7 @@ a{
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 0%;
       width: 95%;
       top: 75%;
     }
