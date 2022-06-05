@@ -1,12 +1,12 @@
 @use "../global"as *;
 
 .footer {
-  width: 100%;
-  position: relative;
-  background-color: $cGray;
-  z-index: 99;
-
   &_inner {
+    width: 100%;
+    position: relative;
+    background-color: $cGray;
+    z-index: 99;
+    margin-top: 15vh;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -50,20 +50,19 @@
       width: 15%;
     }
   }
-  
+
   &_copy {
     position: relative;
     font-size: 15px;
     top: 25%;
-    color: $cWhite;
+    color: $cBlack;
 
     &Inner {
       position: relative;
       width: 100%;
       text-align: center;
-      height: 10vh;
-      background: $cBlack;
-      border-top: solid 1px $cWhite;
+      height: 5vh;
+      background: $cGray;
     }
   }
 }
