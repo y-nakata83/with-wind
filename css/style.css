@@ -853,6 +853,7 @@ a {
   width: 100%;
   position: relative;
   display: flex;
+  margin-top: 15vh;
   flex-direction: row-reverse;
   overflow: hidden;
 }
@@ -895,6 +896,14 @@ a {
   font-size: 1.3rem;
   margin-top: 3%;
   line-height: 1.5;
+}
+
+.ec_inner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
 }
 
 .para2 {
