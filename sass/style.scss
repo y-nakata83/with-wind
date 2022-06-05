@@ -577,7 +577,8 @@ a{
   }
   &_triangle {
     position: absolute;
-    width: 100%;
+    width: 88%;
+    top: 10%;
     border-bottom: 50vh solid $cHiBlue;
     border-left: 300px solid transparent;
     border-right: 300px solid transparent;
@@ -623,7 +624,9 @@ a{
           font-size: 3vw;
         }
         p {
+          font-size: 1.3rem;
           margin-top: 3%;
+          line-height: 1.5;
         }
       }
       &L {
@@ -635,7 +638,9 @@ a{
           font-size: 3vw;
         }
         p {
+          font-size: 1.3rem;
           margin-top: 3%;
+          line-height: 1.5;
         }
       }
     }
