@@ -577,7 +577,8 @@ a{
   }
   &_triangle {
     position: absolute;
-    width: 100%;
+    width: 88%;
+    top: 10%;
     border-bottom: 50vh solid $cHiBlue;
     border-left: 300px solid transparent;
     border-right: 300px solid transparent;
@@ -594,6 +595,7 @@ a{
       width: 100%;
       position: relative;
       display: flex;
+      margin-top: 15vh;
       flex-direction: row-reverse;
       overflow: hidden;
     }
@@ -623,7 +625,9 @@ a{
           font-size: 3vw;
         }
         p {
+          font-size: 1.3rem;
           margin-top: 3%;
+          line-height: 1.5;
         }
       }
       &L {
@@ -635,10 +639,22 @@ a{
           font-size: 3vw;
         }
         p {
+          font-size: 1.3rem;
           margin-top: 3%;
+          line-height: 1.5;
         }
       }
     }
+  }
+}
+
+.ec {
+  &_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
   }
 }
 

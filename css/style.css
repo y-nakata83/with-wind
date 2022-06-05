@@ -836,10 +836,11 @@ a {
 }
 .service_triangle {
   position: absolute;
-  width: 100%;
-  border-bottom: 200px solid #2CC4CB;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  width: 88%;
+  top: 10%;
+  border-bottom: 50vh solid #2CC4CB;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
   z-index: -1;
 }
 .service_itemF {
@@ -852,6 +853,7 @@ a {
   width: 100%;
   position: relative;
   display: flex;
+  margin-top: 15vh;
   flex-direction: row-reverse;
   overflow: hidden;
 }
@@ -877,7 +879,9 @@ a {
   font-size: 3vw;
 }
 .service_txtBoxR p {
+  font-size: 1.3rem;
   margin-top: 3%;
+  line-height: 1.5;
 }
 .service_txtBoxL {
   position: absolute;
@@ -889,7 +893,17 @@ a {
   font-size: 3vw;
 }
 .service_txtBoxL p {
+  font-size: 1.3rem;
   margin-top: 3%;
+  line-height: 1.5;
+}
+
+.ec_inner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
 }
 
 .para2 {
