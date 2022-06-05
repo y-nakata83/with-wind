@@ -578,7 +578,7 @@ a{
   &_triangle {
     position: absolute;
     width: 88%;
-    top: 10%;
+    top: 12%;
     border-bottom: 50vh solid $cHiBlue;
     border-left: 300px solid transparent;
     border-right: 300px solid transparent;
@@ -685,12 +685,77 @@ a{
     width: 100%;
     text-align: center;
     margin: 15vh auto;
-    
     h3 {
       font-size: 5rem;
       color: $cHiGreen;
       font-family: 'Lobster Two',
     }
+  }
+  &_outline {
+    position: relative;
+    width: 90%;
+    margin: 5% auto 0;
+    border: 1px solid $cHiGreen;
+  }
+  &_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: 1% 1%;
+    border: 1px solid $cBlack;
+  }
+  &_question {
+    position: relative;
+    width: 75%;
+    display: flex;
+    margin: 2% auto;
+    align-items: center;
+  }
+  &_icon {
+    &Q {
+      width: 7%;
+      height: 10%;
+      background-color: $cGray;
+      padding: 2%;
+      margin-right: 10%;
+      border-radius: 30px;
+      p {
+        font-weight: bold;
+        font-size: 1.6rem;
+      }
+    }
+    &A {
+      width: 7%;
+      height: 10%;
+      background-color: $cHiGreen;
+      padding: 2%;
+      margin-right: 10%;
+      border-radius: 30px;
+      p {
+        font-weight: bold;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &_title {
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: Bold;
+    font-size: 1.3rem;
+  }
+  &_txt {
+    width: 100%;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 45px;
+  }
+  &_answer {
+    position: relative;
+    align-items: center;
+    width: 75%;
+    display: flex;
+    margin: 3% auto;
   }
 }
 
