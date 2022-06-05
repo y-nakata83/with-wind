@@ -578,9 +578,9 @@ a{
   &_triangle {
     position: absolute;
     width: 100%;
-    border-bottom: 200px solid $cHiBlue;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
+    border-bottom: 50vh solid $cHiBlue;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
     z-index: -1;
   }
   &_item {
