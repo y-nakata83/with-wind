@@ -1065,7 +1065,49 @@ a {
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 5%;
+  padding: 3% 0 5%;
+}
+.para1_btnInner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  width: 95%;
+  top: 70%;
+}
+.para1_btn a {
+  color: #fff;
+  font-size: 1.7rem;
+  transition: 0.5s;
+}
+.para1_btn a:hover {
+  color: #2CC4CB;
+}
+.para1_btn a:hover::before {
+  color: #2CC4CB;
+}
+.para1_btn a::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: 39.5%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.para1_btn a::after {
+  content: "";
+  display: flex;
+  width: 55px;
+  height: 0%;
+  bottom: 0;
+  top: 12px;
+  border: 1px solid #fff;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(8vw);
 }
 
 .service_inner {
@@ -1090,7 +1132,7 @@ a {
   position: absolute;
   width: 88%;
   top: 12%;
-  border-bottom: 50vh solid #2CC4CB;
+  border-bottom: 64vh solid #2CC4CB;
   border-left: 300px solid transparent;
   border-right: 300px solid transparent;
   z-index: -1;
@@ -1158,6 +1200,47 @@ a {
   margin-top: 15vh;
 }
 
+.view_btn {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+}
+.view_btnInner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  width: 95%;
+  top: 11vh;
+}
+.view_btn a {
+  color: #000;
+  font-size: 1.7rem;
+}
+.view_btn a::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: 37.5%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+.view_btn a::after {
+  content: "";
+  display: flex;
+  width: 55px;
+  height: 0%;
+  bottom: 0;
+  top: 13px;
+  border: 1px solid #000;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(11.4vw);
+}
+
 .para2 {
   background-image: url(../img/para2.png);
   background-attachment: fixed;
@@ -1177,7 +1260,42 @@ a {
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 5%;
+  padding: 2% 0 5%;
+}
+.para2_btnInner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  width: 95%;
+  top: 70%;
+}
+.para2_btn a {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.para2_btn a::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: 39.5%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.para2_btn a::after {
+  content: "";
+  display: flex;
+  width: 55px;
+  height: 0%;
+  bottom: 0;
+  top: 12px;
+  border: 1px solid #fff;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(8vw);
 }
 
 .qa_ttl {
@@ -1194,7 +1312,7 @@ a {
   position: relative;
   width: 90%;
   margin: 5% auto 0;
-  border: 1px solid #8FF9E4;
+  border: 2px solid #8FF9E4;
 }
 .qa_item {
   position: relative;
@@ -1301,7 +1419,7 @@ a {
 .contact_boxInner {
   position: absolute;
   width: 100%;
-  top: 25%;
+  top: 23%;
 }
 .contact_btnInner {
   position: absolute;
