@@ -47,37 +47,30 @@
 }
 
 //TOPページのボタンです
-.btn {
-  a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 30px 39px 30px 0;
-    width: 280px;
-    color: #333;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 80px;
-    height: 80px;
-    border: 2px solid #90be70;
-    border-radius: 50%;
-  }
-  
-  &::after {
-    content: '';
-    width: 70px;
-    height: 2px;
-    background-color: #2b550e;
-    z-index: 1;
-  }
-}
+
+// .contact {
+//   &_btn {
+//     a {
+//       color: $cWhite;
+//       font-size: 1rem;
+//       &::before {
+//         content: '';
+//         position: absolute;
+//         top: 70%;
+//         right: 35%;
+//         width: 40px;
+//         height: 40px;
+//         border: 2px solid $cWhite;
+//         border-radius: 50%;
+//       }
+      
+//       &::after {
+//         content: '';
+//         width: 70px;
+//         height: 2px;
+//         background-color: $cWhite;
+//         z-index: 1;
+//       }
+//     }
+//   }
+// }
