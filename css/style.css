@@ -1017,6 +1017,13 @@ a {
 .para1_btn a {
   color: #fff;
   font-size: 1.7rem;
+  transition: 0.5s;
+}
+.para1_btn a:hover {
+  color: #2CC4CB;
+}
+.para1_btn a:hover::before {
+  color: #2CC4CB;
 }
 .para1_btn a::before {
   content: "";
