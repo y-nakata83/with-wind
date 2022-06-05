@@ -536,7 +536,6 @@ a{
 }
 
 .para1{
-  height: 30vh;
   background-image: url(../img/para1-2.png);
   background-attachment: fixed;
   background-position: center;
@@ -544,6 +543,7 @@ a{
   background-repeat: no-repeat;
   &_inner {
     position: relative;
+    height: 30vh;
   }
   p{
     color: $cWhite;
@@ -575,32 +575,86 @@ a{
       margin-top: 2%;
     }
   }
+  &_triangle {
+    position: absolute;
+    width: 88%;
+    top: 10%;
+    border-bottom: 50vh solid $cHiBlue;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    z-index: -1;
+  }
   &_item {
-    width: 100%;
-    position: relative;
-    display: flex;
+    &F {
+      width: 100%;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+    }
+    &S {
+      width: 100%;
+      position: relative;
+      display: flex;
+      margin-top: 15vh;
+      flex-direction: row-reverse;
+      overflow: hidden;
+    }
   }
   &_img {
-    width: 50%;
-    img {
-      width: 100%;
+    &R {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    &L {
+      width: 50%;
+      img {
+        width: 100%;
+      }
     }
   }
   &_txt {
     &Box {
       &R {
         position: absolute;
-        width: 50%;
-        top: 50%;
-        left: 50%;
-        text-align: center;
+        width: 33%;
+        top: 45%;
+        left: 60%;
+        h2 {
+          font-size: 3vw;
+        }
+        p {
+          font-size: 1.3rem;
+          margin-top: 3%;
+          line-height: 1.5;
+        }
       }
       &L {
         position: absolute;
-        width: 50%;
-
+        width: 33%;
+        top: 45%;
+        right: 58%;
+        h2 {
+          font-size: 3vw;
+        }
+        p {
+          font-size: 1.3rem;
+          margin-top: 3%;
+          line-height: 1.5;
+        }
       }
     }
+  }
+}
+
+.ec {
+  &_inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
   }
 }
 
