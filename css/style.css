@@ -176,6 +176,7 @@ select {
 }
 
 .button {
+  background: rgba(192, 192, 192, 0.287);
   background: #d1d1d1;
   text-align: center;
   border-radius: 5px;
@@ -194,10 +195,11 @@ select {
   height: 38px;
   margin-top: -8%;
   border-radius: 5px;
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
 }
 .button:hover:before {
   width: 100px;
+  background: #2CC4CB;
   background: linear-gradient(#2CC4CB30, #2CC4CB);
 }
 .button:hover span {
@@ -287,6 +289,7 @@ select {
 .footer_inner {
   width: 100%;
   position: relative;
+  background-color: rgba(192, 192, 192, 0.287);
   background-color: #d1d1d1;
   z-index: 99;
   margin-top: 15vh;
@@ -337,6 +340,109 @@ select {
   text-align: center;
   height: 5vh;
   background: #d1d1d1;
+}
+
+.a_service_top {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.a_service_top_iner {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: 8%;
+}
+.a_service_top_box {
+  width: 90%;
+  height: 60%;
+  background-color: #8FF9E4;
+  clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
+}
+.a_service_top_box_title {
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 30%;
+  left: 10%;
+}
+.a_service_top_box_title h1 {
+  font-family: "Lobster Two", cursive;
+  color: #fff;
+  font-size: 8rem;
+}
+.a_service_top_box_title span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.a_service_top_img {
+  position: absolute;
+  top: 50%;
+  left: 44%;
+}
+.a_service_hp {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.a_service_hp_iner {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.a_service_hp_txt {
+  display: inline-block;
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.a_service_hp_txt p {
+  font-size: large;
+  line-height: 135%;
+}
+
+.hp_price_list_box {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+.hp_price_list_title {
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  margin-left: 35%;
+  text-align: center;
+}
+.hp_price_list_title h3 {
+  font-size: 2rem;
+}
+.hp_price_list_title_ander_bar {
+  display: inline-block;
+  width: 26%;
+  border-bottom: 2px solid #2CC4CB;
+}
+.hp_price_list {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+.hp_price_list_wrap {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+.hp_price_list_contents {
+  display: inline-block;
+  width: 20%;
+  height: 40vh;
+  border-radius: 10px;
+  border: 2px solid rgba(192, 192, 192, 0.287);
+  box-shadow: 0px 4px rgba(192, 192, 192, 0.29);
 }
 
 /*========= 画面遷移のためのCSS ===============*/
@@ -961,6 +1067,7 @@ a {
 .qa_iconQ {
   width: 7%;
   height: 10%;
+  background-color: rgba(192, 192, 192, 0.287);
   background-color: #d1d1d1;
   padding: 2%;
   margin-right: 10%;
@@ -1022,6 +1129,8 @@ a {
 }
 .contact_form {
   position: relative;
+  background-color: rgba(192, 192, 192, 0.287);
+  z-index: 99;
   display: flex;
   width: 100%;
   height: 45vh;
