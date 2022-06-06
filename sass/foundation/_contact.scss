@@ -72,3 +72,132 @@
   
   }
 }
+
+.a_contact {
+  &_form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10% auto;
+    padding-left: 20%;
+
+  
+    &_ttl {
+        width: 25%;
+        height: 100%;
+        font-size: large;
+        position: relative;
+        margin-bottom: 2%;
+
+        p {
+          margin-bottom: 2%;
+        }
+
+        :after {
+          content: "※";
+          color: brown;
+        }
+      }
+
+      &_txt {
+        display: inline-block;
+        width: 22%;
+        position: absolute;
+        left: 77%;
+        top: 40.5%;
+        
+        :before {
+          content: "※";
+          color: brown;
+        }
+      }
+      &_box2 {
+        height: 7.5vh;
+        width: 100%;
+        padding-left: 5px;
+        font-size: 1rem;
+      }
+
+      &_example {
+        display: inline-block;
+        margin-top: 2%;
+      }
+  }
+
+  &_box {
+    margin-bottom: 7.5%;
+    // display: inline-grid;
+
+    &_selection {
+      display: flex;
+    }
+  }
+
+  &_txtarea {
+    width: 100%;
+    height: 30vh;
+    font-size: 1rem;
+    padding: 5px;
+    margin-right: 13%;
+  }
+
+  &_area_ttl {
+
+    p {
+      margin-bottom: 2%;
+    }
+  }
+}
+
+
+.privacy {
+  margin-top: 10%;
+
+  &_ttl {
+    display: inline-block;
+    margin-bottom: 3%;
+
+    p {
+      font-size: large;
+    }
+  }
+
+  &_txt {
+    border: 1px solid $cBlack;
+    height: auto;
+    padding: 5%;
+
+    p {
+      letter-spacing: 1px;
+      line-height: 30px;
+    }
+  }
+  &_chk {
+    display: flex;
+    margin-top: 5%;
+
+    &_list {
+      :after {
+          content: "※";
+          color: brown;
+        }
+    }
+
+      p {
+      font-size: large;
+    }
+
+    &_txt {
+      margin-top: 3%;
+    }
+  }
+}
+.b_contact {
+display: inline-block;
+margin-top: 5%;
+width: 10%;
+
+.button {
+  position: relative;
+}
+}
