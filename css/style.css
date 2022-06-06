@@ -698,7 +698,7 @@ select {
   display: flex;
   flex-direction: column;
   width: 65%;
-  margin: 10% auto;
+  margin: 5% auto 10%;
 }
 .a_contact_form_ttl {
   width: 25%;
@@ -712,9 +712,12 @@ select {
   color: brown;
 }
 .a_contact_form_txt {
-  display: inline-block;
-  width: 22%;
-  margin-bottom: 2%;
+  width: 65%;
+  margin: 5% auto 0;
+}
+.a_contact_form_txt p {
+  font-size: larger;
+  font-weight: 600;
 }
 .a_contact_form_txt ::before {
   content: "※";
