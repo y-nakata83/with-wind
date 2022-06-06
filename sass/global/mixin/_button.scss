@@ -31,12 +31,13 @@
         transform: translateX(0);
       }
 
-      &:hover span {
+      &:hover a {
         color: $cWhite;
       }
 
       span {
         color: $cBlack;
+        line-height: 3;
       }
 
   a {

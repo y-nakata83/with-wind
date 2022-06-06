@@ -72,12 +72,9 @@
     left: 50%;
     transform: translateX(-50%);
 
-    span {
+    a {
       font-size: large;
-      display: inline-block;
-      height: 50px;
-      padding-top: 5%;
-      
+      line-height: 4;
     }
   }
 }
@@ -86,11 +83,9 @@
   &_form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 65%;
     margin: 10% auto;
-    padding-left: 20%;
 
-  
     &_ttl {
         width: 25%;
         height: 100%;
@@ -98,11 +93,7 @@
         position: relative;
         margin-bottom: 2%;
 
-        p {
-          margin-bottom: 2%;
-        }
-
-        :after {
+        ::before {
           content: "※";
           color: brown;
         }
@@ -111,11 +102,9 @@
       &_txt {
         display: inline-block;
         width: 22%;
-        position: absolute;
-        left: 77%;
-        top: 41.8%;
+        margin-bottom: 2%;
         
-        :before {
+        ::before {
           content: "※";
           color: brown;
         }
@@ -214,4 +203,16 @@ border: none;
       color: $cWhite;
     }
 }
+.hisu {
+  width: 60%;
+  text-align: end;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
 
+  ::before {
+      content: "※";
+      color: brown;
+    }
+}

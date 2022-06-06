@@ -203,11 +203,12 @@ select {
   background: #2CC4CB;
   transform: translateX(0);
 }
-.button:hover span {
+.button:hover a {
   color: #fff;
 }
 .button span {
   color: #000;
+  line-height: 3;
 }
 .button a {
   line-height: 1.5;
@@ -258,7 +259,6 @@ select {
   justify-content: space-around;
 }
 .header_navItem {
-  padding: 1%;
   width: 15%;
 }
 .header_navItem_hd {
@@ -689,19 +689,16 @@ select {
   left: 50%;
   transform: translateX(-50%);
 }
-.twitter_btn span {
+.twitter_btn a {
   font-size: large;
-  display: inline-block;
-  height: 50px;
-  padding-top: 5%;
+  line-height: 4;
 }
 
 .a_contact_form {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 65%;
   margin: 10% auto;
-  padding-left: 20%;
 }
 .a_contact_form_ttl {
   width: 25%;
@@ -710,21 +707,16 @@ select {
   position: relative;
   margin-bottom: 2%;
 }
-.a_contact_form_ttl p {
-  margin-bottom: 2%;
-}
-.a_contact_form_ttl :after {
+.a_contact_form_ttl ::before {
   content: "※";
   color: brown;
 }
 .a_contact_form_txt {
   display: inline-block;
   width: 22%;
-  position: absolute;
-  left: 77%;
-  top: 41.8%;
+  margin-bottom: 2%;
 }
-.a_contact_form_txt :before {
+.a_contact_form_txt ::before {
   content: "※";
   color: brown;
 }
@@ -800,6 +792,19 @@ select {
 }
 .b_contact:hover {
   color: #fff;
+}
+
+.hisu {
+  width: 60%;
+  text-align: end;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.hisu ::before {
+  content: "※";
+  color: brown;
 }
 
 /*========= 画面遷移のためのCSS ===============*/
