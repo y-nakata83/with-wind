@@ -466,7 +466,27 @@ a{
   }
 }
 
-//上に出てくる
+//スッ
+
+.js-fadein {
+  opacity: 0;
+}
+
+.fadein {
+  animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+//js-slideUp 上に出てくる
 
 .js-slideUp {
   opacity: 0;
@@ -489,14 +509,15 @@ a{
   }
 }
 
-/* 左から出てくる */
+/*js-slideLeft 左から出てくる */
 .js-slideLeft {
   opacity: 0;
 }
 
 .fadeLeft {
   animation-name: fadeLeftAnime;
-  animation-duration: .5s;
+  animation-duration: .7s;
+  animation-delay: .3s;
   animation-fill-mode: forwards;
 }
 
@@ -512,14 +533,15 @@ a{
   }
 }
 
-/* 右から出てくる */
+/*js-slideRight 右から出てくる */
 .js-slideRight {
   opacity: 0;
 }
 
 .fadeRight {
   animation-name: fadeRightAnime;
-  animation-duration: .5s;
+  animation-duration: .7s;
+  animation-delay: .3s;
   animation-fill-mode: forwards;
 }
 
@@ -627,6 +649,7 @@ a{
       background: url(../img/about1.png);
       background-size: cover;
       background-position: center;
+      animation-delay: .3s;
       &::before {
         content: "02";
       }
@@ -635,6 +658,7 @@ a{
       background: url(../img/about2.png);
       background-size: cover;
       background-position: center;
+      animation-delay: .6s;
       &::before {
         content: "03";
       }
