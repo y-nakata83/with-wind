@@ -805,7 +805,7 @@ body.appear .splashbg {
   top: 0;
   left: 0;
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -1812,5 +1812,3 @@ a {
   transform: translateX(8vw);
   transition: 0.5s;
 }
-
-/*# sourceMappingURL=style.css.map */
