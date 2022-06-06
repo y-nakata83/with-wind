@@ -418,6 +418,74 @@ a{
   }
 }
 
+//上に出てくる
+
+.js-slideUp {
+  opacity: 0;
+}
+
+.scrollin {
+  animation: fadeUpAnime .5s forwards;
+  animation-name: scrollin;
+}
+
+@keyframes scrollin {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 左から出てくる */
+.js-slideLeft {
+  opacity: 0;
+}
+
+.fadeLeft {
+  animation-name: fadeLeftAnime;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 右から出てくる */
+.js-slideRight {
+  opacity: 0;
+}
+
+.fadeRight {
+  animation-name: fadeRightAnime;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .top{
   &_inner{
@@ -572,7 +640,10 @@ a{
       &:hover {
         color: $cHiBlue;
         &::before {
-          color: $cHiBlue;
+          border: 2px solid $cHiBlue;
+        }
+        &::after {
+          border: 1px solid $cHiBlue;
         }
       }
       &::before {
@@ -584,6 +655,7 @@ a{
         height: 40px;
         border: 2px solid $cWhite;
         border-radius: 50%;
+        transition: .5s;
       }
       &::after {
         content: '';
@@ -596,6 +668,7 @@ a{
         z-index: 1;
         position: absolute;
         transform: translateX(8vw);
+        transition: .5s;
       }
     }
   }
@@ -720,6 +793,16 @@ a{
     a {
       color: $cBlack;
       font-size: 1.7rem;
+      transition: .5s;
+      &:hover {
+        color: $cHiBlue;
+        &::before {
+          border: 2px solid $cHiBlue;
+        }
+        &::after {
+          border: 1px solid $cHiBlue;
+        }
+      }
       &::before {
         content: '';
         position: absolute;
@@ -729,6 +812,7 @@ a{
         height: 40px;
         border: 2px solid $cBlack;
         border-radius: 50%;
+        transition: .5s;
       }
       &::after {
         content: '';
@@ -741,6 +825,7 @@ a{
         z-index: 1;
         position: absolute;
         transform: translateX(11.4vw);
+        transition: .5s;
       }
     }
   }
@@ -776,11 +861,19 @@ a{
       width: 95%;
       top: 70%;
     }
-
     a {
       color: $cWhite;
       font-size: 1.7rem;
-
+      transition: .5s;
+      &:hover {
+        color: $cHiBlue;
+        &::before {
+          border: 2px solid $cHiBlue;
+        }
+        &::after {
+          border: 1px solid $cHiBlue;
+        }
+      }
       &::before {
         content: '';
         position: absolute;
@@ -790,8 +883,8 @@ a{
         height: 40px;
         border: 2px solid $cWhite;
         border-radius: 50%;
+        transition: .5s;
       }
-
       &::after {
         content: '';
         display: flex;
@@ -803,6 +896,7 @@ a{
         z-index: 1;
         position: absolute;
         transform: translateX(8vw);
+        transition: .5s;
       }
     }
   }
@@ -953,7 +1047,16 @@ a{
     a {
       color: $cWhite;
       font-size: 1.7rem;
-
+      transition: .5s;
+      &:hover {
+        color: $cHiBlue;
+        &::before {
+          border: 2px solid $cHiBlue;
+        }
+        &::after {
+          border: 1px solid $cHiBlue;
+        }
+      }
       &::before {
         content: '';
         position: absolute;
@@ -963,8 +1066,8 @@ a{
         height: 40px;
         border: 2px solid $cWhite;
         border-radius: 50%;
+        transition: .5s;
       }
-      
       &::after {
         content: '';
         display: flex;
@@ -976,6 +1079,7 @@ a{
         z-index: 1;
         position: absolute;
         transform: translateX(8vw);
+        transition: .5s;
       }
     }
   }
