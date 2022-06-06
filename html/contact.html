@@ -58,37 +58,40 @@
           </div>
           <form action="#" class="a_contact_form" id="form">
             <div class="a_contact_box">
-              <label for="name" class="a_contact_form_ttl">お名前 <span class="hit">※</span></label>
-                <div class="form_txt">
-                  <p><span class="hit">※</span>は必須項目になります</p>
+              <label for="name" class="a_contact_form_ttl"><p>お客様</p></label>
+                <div class="a_contact_form_txt">
+                  <p>は必須項目になります</p>
                 </div>
+              
               <input type="text" class="a_contact_form_box2" name="" required="required">
-                <div class="example">
+                <div class="a_contact_form_example">
                   <p>例) 山田 太郎</p>
                 </div>
             </div>
             <div class="a_contact_box">
-              <label for="email" class="a_contact_form_ttl">メールアドレス<span class="hit">※</span></label>
+              <label for="email" class="a_contact_form_ttl"><p>メールアドレス</p></label>
               <input type="email" class="a_contact_form_box2" name="" required="required">
-                <div class="example">
+                <div class="a_contact_form_example">
                   <p>例) yamada@****</p>
                 </div>
             </div>
-            <div class="a_contact_box _selection">
-              <label for="radio" class="a_contact_form_ttl _ttl">お問い合わせの種類<span class="hit">※</span></label>
+            <div class="a_contact_box">
+              <label for="radio" class="a_contact_form_ttl _ttl"><p>お問い合わせの種類</p></label>
+              <div class="a_contact_box_selection">
                 <input type="radio" name="sex" value="LP制作" checked> LP制作
                 <input type="radio" name="sex" value="HP制作"> HP制作
                 <input type="radio" name="sex" value="その他お問い合わせ"> その他お問い合わせ
+              </div>
             </div>
-            <div class="a_contact_box _area">
-              <label for="message" class="a_contact_form_ttl">お問い合わせ内容</label>
+            <div class="a_contact_box_area">
+              <label for="message" class="a_contact_area_ttl"><p>お問い合わせ内容</p></label>
               <textarea name="message" class="a_contact_txtarea" id="message" required="required"></textarea>
             </div>
-            <div class="privacy policy">
-              <div class="Privacy Policy_ttl">
-                <p><strong>>プライバシーポリシー</strong></p>
+            <div class="privacy">
+              <div class="privacy_ttl">
+                <p><strong>プライバシーポリシー</strong></p>
               </div>
-                <div class="Privacy Policy_txt">
+                <div class="privacy_txt">
                   <p>
                     個人情報の取扱いについて
                     <br>
@@ -123,16 +126,20 @@
                   </p>
                 </div>
                 <label>
-                  <input type="checkbox" name="level" value="ok">
-                  個人情報の取扱いについて、上記に同意します。<span class="hit">※</span>
+                  <div class="privacy_chk">
+                    <input type="checkbox" name="level" value="ok">
+                    <div class="privacy_chk_list">
+                      <p>個人情報の取扱いについて、上記に同意します。</p>
+                    </div>
+                  </div>
                 </label>
-                <div class="che_txt">
+                <div class="privacy_chk_txt">
                   <p>
                     This site is protected by reCAPTCHA and Google Privacy Policy and Terms of Service apply.
                   </p>
                 </div>
             </div>
-            <button type="submit" class="contact button">送信する</button>
+            <button type="submit" class="b_contact button">送信する</button>
           </form>
         </section>
         
