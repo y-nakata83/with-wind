@@ -715,7 +715,7 @@ body.appear .splashbg {
   top: 0;
   left: 0;
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -1036,6 +1036,48 @@ a {
     opacity: 1;
   }
 }
+/* 左から出てくる */
+.js-slideLeft {
+  opacity: 0;
+}
+
+.fadeLeft {
+  animation-name: fadeLeftAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* 右から出てくる */
+.js-slideRight {
+  opacity: 0;
+}
+
+.fadeRight {
+  animation-name: fadeRightAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .top_inner {
   position: relative;
   height: 100vh;
@@ -1319,6 +1361,10 @@ a {
 .view_btn a {
   color: #000;
   font-size: 1.7rem;
+  transition: 0.5s;
+}
+.view_btn a:hover {
+  color: #2CC4CB;
 }
 .view_btn a::before {
   content: "";
@@ -1376,6 +1422,10 @@ a {
 .para2_btn a {
   color: #fff;
   font-size: 1.7rem;
+  transition: 0.5s;
+}
+.para2_btn a:hover {
+  color: #2CC4CB;
 }
 .para2_btn a::before {
   content: "";
@@ -1535,6 +1585,10 @@ a {
 .contact_btn a {
   color: #fff;
   font-size: 1.7rem;
+  transition: 0.5s;
+}
+.contact_btn a:hover {
+  color: #2CC4CB;
 }
 .contact_btn a::before {
   content: "";
@@ -1558,5 +1612,3 @@ a {
   position: absolute;
   transform: translateX(8vw);
 }
-
-/*# sourceMappingURL=style.css.map */
