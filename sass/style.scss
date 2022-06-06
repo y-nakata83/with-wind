@@ -418,6 +418,51 @@ a{
   }
 }
 
+/* 左から出てくる */
+.js-slideLeft {
+  opacity: 0;
+}
+
+.fadeLeft {
+  animation-name: fadeLeftAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 右から出てくる */
+.js-slideRight {
+  opacity: 0;
+}
+
+.fadeRight {
+  animation-name: fadeRightAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .top{
   &_inner{
@@ -720,6 +765,10 @@ a{
     a {
       color: $cBlack;
       font-size: 1.7rem;
+      transition: .5s;
+      &:hover {
+        color: $cHiBlue;
+      }
       &::before {
         content: '';
         position: absolute;
@@ -776,11 +825,13 @@ a{
       width: 95%;
       top: 70%;
     }
-
     a {
       color: $cWhite;
       font-size: 1.7rem;
-
+      transition: .5s;
+      &:hover {
+        color: $cHiBlue;
+      }
       &::before {
         content: '';
         position: absolute;
@@ -791,7 +842,6 @@ a{
         border: 2px solid $cWhite;
         border-radius: 50%;
       }
-
       &::after {
         content: '';
         display: flex;
@@ -953,7 +1003,10 @@ a{
     a {
       color: $cWhite;
       font-size: 1.7rem;
-
+      transition: .5s;
+      &:hover {
+        color: $cHiBlue;
+      }
       &::before {
         content: '';
         position: absolute;
@@ -964,7 +1017,6 @@ a{
         border: 2px solid $cWhite;
         border-radius: 50%;
       }
-      
       &::after {
         content: '';
         display: flex;
