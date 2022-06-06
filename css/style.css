@@ -1168,6 +1168,22 @@ a {
     transform: scaleY(0);
   }
 }
+.js-fadein {
+  opacity: 0;
+}
+
+.fadein {
+  animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .js-slideUp {
   opacity: 0;
 }
@@ -1187,14 +1203,15 @@ a {
     transform: translateY(0);
   }
 }
-/* 左から出てくる */
+/*js-slideLeft 左から出てくる */
 .js-slideLeft {
   opacity: 0;
 }
 
 .fadeLeft {
   animation-name: fadeLeftAnime;
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
+  animation-delay: 0.3s;
   animation-fill-mode: forwards;
 }
 
@@ -1208,14 +1225,15 @@ a {
     transform: translateX(0);
   }
 }
-/* 右から出てくる */
+/*js-slideRight 右から出てくる */
 .js-slideRight {
   opacity: 0;
 }
 
 .fadeRight {
   animation-name: fadeRightAnime;
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
+  animation-delay: 0.3s;
   animation-fill-mode: forwards;
 }
 
@@ -1317,6 +1335,7 @@ a {
   background: url(../img/about1.png);
   background-size: cover;
   background-position: center;
+  animation-delay: 0.3s;
 }
 .about_item:nth-child(2)::before {
   content: "02";
@@ -1325,6 +1344,7 @@ a {
   background: url(../img/about2.png);
   background-size: cover;
   background-position: center;
+  animation-delay: 0.6s;
 }
 .about_item:nth-child(3)::before {
   content: "03";
