@@ -376,7 +376,7 @@ select {
 .a_service_top_img {
   position: absolute;
   top: 50%;
-  left: 44%;
+  left: 50%;
 }
 .a_service_hp {
   position: relative;
@@ -431,13 +431,15 @@ select {
 .hp_price_list_wrap {
   display: flex;
   width: 90%;
-  justify-content: space-around;
+  justify-content: center;
+  margin: 0 auto;
 }
 .hp_price_list_contents {
   display: inline-block;
   width: 20%;
   height: 50vh;
   border-radius: 10px;
+  margin-left: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .hp_price_list_contents_name {
@@ -499,7 +501,6 @@ select {
 .contents_wrap_box {
   display: flex;
   flex-direction: column;
-  height: 110px;
 }
 .contents_wrap_box_list {
   display: inline-block;
@@ -528,6 +529,169 @@ select {
 }
 .contents_wrap li {
   margin-top: 5%;
+}
+
+.a_contact_top {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.a_contact_top_iner {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: 8%;
+}
+.a_contact_top_box {
+  width: 90%;
+  height: 60%;
+  background-color: #8FF9E4;
+  clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
+}
+.a_contact_top_box_title {
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  top: 30%;
+  left: 10%;
+}
+.a_contact_top_box_title h1 {
+  font-family: "Lobster Two", cursive;
+  color: #fff;
+  font-size: 8rem;
+}
+.a_contact_top_box_title span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.a_contact_top_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.twitter {
+  width: 100%;
+  margin-top: 10%;
+}
+.twitter_iner {
+  margin: 0, auto;
+}
+.twitter_txt {
+  text-align: inherit;
+  margin-left: 30%;
+}
+.twitter_txt p {
+  font-size: large;
+  line-height: 135%;
+}
+.twitter_btn button {
+  width: 30%;
+  height: 10vw;
+  margin-top: 5%;
+}
+
+.a_contact_form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10% auto;
+  padding-left: 20%;
+}
+.a_contact_form_ttl {
+  width: 25%;
+  height: 100%;
+  font-size: large;
+  position: relative;
+  margin-bottom: 2%;
+}
+.a_contact_form_ttl p {
+  margin-bottom: 2%;
+}
+.a_contact_form_ttl :after {
+  content: "※";
+  color: brown;
+}
+.a_contact_form_txt {
+  display: inline-block;
+  width: 22%;
+  position: absolute;
+  left: 77%;
+  top: 40.5%;
+}
+.a_contact_form_txt :before {
+  content: "※";
+  color: brown;
+}
+.a_contact_form_box2 {
+  height: 7.5vh;
+  width: 100%;
+  padding-left: 5px;
+  font-size: 1rem;
+}
+.a_contact_form_example {
+  display: inline-block;
+  margin-top: 2%;
+}
+.a_contact_box {
+  margin-bottom: 7.5%;
+}
+.a_contact_box_selection {
+  display: flex;
+}
+.a_contact_txtarea {
+  width: 100%;
+  height: 30vh;
+  font-size: 1rem;
+  padding: 5px;
+  margin-right: 13%;
+}
+.a_contact_area_ttl p {
+  margin-bottom: 2%;
+}
+
+.privacy {
+  margin-top: 10%;
+}
+.privacy_ttl {
+  display: inline-block;
+  margin-bottom: 3%;
+}
+.privacy_ttl p {
+  font-size: large;
+}
+.privacy_txt {
+  border: 1px solid #000;
+  height: auto;
+  padding: 5%;
+}
+.privacy_txt p {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.privacy_chk {
+  display: flex;
+  margin-top: 5%;
+}
+.privacy_chk_list :after {
+  content: "※";
+  color: brown;
+}
+.privacy_chk p {
+  font-size: large;
+}
+.privacy_chk_txt {
+  margin-top: 3%;
+}
+
+.b_contact {
+  display: inline-block;
+  margin-top: 5%;
+  width: 10%;
+}
+.b_contact .button {
+  position: relative;
 }
 
 /*========= 画面遷移のためのCSS ===============*/
@@ -1003,7 +1167,49 @@ a {
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 5%;
+  padding: 3% 0 5%;
+}
+.para1_btnInner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  width: 95%;
+  top: 70%;
+}
+.para1_btn a {
+  color: #fff;
+  font-size: 1.7rem;
+  transition: 0.5s;
+}
+.para1_btn a:hover {
+  color: #2CC4CB;
+}
+.para1_btn a:hover::before {
+  color: #2CC4CB;
+}
+.para1_btn a::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: 39.5%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.para1_btn a::after {
+  content: "";
+  display: flex;
+  width: 55px;
+  height: 0%;
+  bottom: 0;
+  top: 12px;
+  border: 1px solid #fff;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(8vw);
 }
 
 .service_inner {
@@ -1028,7 +1234,7 @@ a {
   position: absolute;
   width: 88%;
   top: 12%;
-  border-bottom: 50vh solid #2CC4CB;
+  border-bottom: 64vh solid #2CC4CB;
   border-left: 300px solid transparent;
   border-right: 300px solid transparent;
   z-index: -1;
@@ -1096,6 +1302,47 @@ a {
   margin-top: 15vh;
 }
 
+.view_btn {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+}
+.view_btnInner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  width: 95%;
+  top: 11vh;
+}
+.view_btn a {
+  color: #000;
+  font-size: 1.7rem;
+}
+.view_btn a::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: 37.5%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+.view_btn a::after {
+  content: "";
+  display: flex;
+  width: 55px;
+  height: 0%;
+  bottom: 0;
+  top: 13px;
+  border: 1px solid #000;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(11.4vw);
+}
+
 .para2 {
   background-image: url(../img/para2.png);
   background-attachment: fixed;
@@ -1115,7 +1362,42 @@ a {
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 5%;
+  padding: 2% 0 5%;
+}
+.para2_btnInner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  width: 95%;
+  top: 70%;
+}
+.para2_btn a {
+  color: #fff;
+  font-size: 1.7rem;
+}
+.para2_btn a::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: 39.5%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.para2_btn a::after {
+  content: "";
+  display: flex;
+  width: 55px;
+  height: 0%;
+  bottom: 0;
+  top: 12px;
+  border: 1px solid #fff;
+  z-index: 1;
+  position: absolute;
+  transform: translateX(8vw);
 }
 
 .qa_ttl {
@@ -1132,7 +1414,7 @@ a {
   position: relative;
   width: 90%;
   margin: 5% auto 0;
-  border: 1px solid #8FF9E4;
+  border: 2px solid #8FF9E4;
 }
 .qa_item {
   position: relative;
@@ -1239,7 +1521,7 @@ a {
 .contact_boxInner {
   position: absolute;
   width: 100%;
-  top: 25%;
+  top: 23%;
 }
 .contact_btnInner {
   position: absolute;
