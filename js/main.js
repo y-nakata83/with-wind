@@ -275,3 +275,31 @@ $(function () {
     });
   });
 });
+
+$(function () {
+  $(window).scroll(function () {
+    $('.js-fadein').each(function () {
+      let scroll = $(window).scrollTop();
+      let triTop = $(this).offset().top + 100;
+      let winHeight = $(window).height();
+      if (scroll >= triTop - winHeight) {
+        $(this).addClass('fadein');
+      } else {
+        $(this).removeClass('fadein');
+      }
+    });
+  });
+});
+
+$(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          let speed = 500; // ミリ秒で記述
+            let href= $(this).attr("href");
+            let target = $(href == "#" || href == "" ? 'html' : href);
+            let position = target.offset().top;
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+            });
+        });
