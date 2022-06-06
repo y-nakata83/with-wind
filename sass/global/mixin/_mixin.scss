@@ -4,3 +4,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin contents {
+  display: inline-block;
+  width: 20%;
+  height: 50vh;
+  border-radius: 10px;
+  margin-left: 5%;
+  box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+}

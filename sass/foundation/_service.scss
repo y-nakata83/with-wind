@@ -47,7 +47,7 @@
   &_hp {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
 
     &_iner {
         display: inline-block;
@@ -107,6 +107,7 @@
     }
 
     &_contents {
+      position: relative;
       display: inline-block;
       width: 20%;
       height: 50vh;
@@ -149,10 +150,10 @@
       &_point {
         display: inline-block;
         position: absolute;
-        width: 10%;
-        height: 17%;
-        top: 21%;
-        left: 44%;
+        width: 60%;
+        height: 23%;
+        top: 0;
+        right: 0;
         clip-path: polygon(112% 100%, 100% 0%, 0% 0%, 40% 0%);
         background: #2CC4CB;
         border-radius: 10px;
@@ -209,4 +210,46 @@
   li {
     margin-top: 5%;
   }
+}
+
+.a_service_lp {
+  position: relative;
+  margin-top: 10%;
+
+  &_iner {
+    width: 100%;
+  }
+}
+
+.price_list_contents {
+  @include contents;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 20%;
+
+  &_name {
+    margin-top: 10%;
+
+    p {
+      font-weight: bolder;
+      font-size: 20px;
+    }
+  }
+
+  &_money {
+    margin-top: 10%;
+
+    p {
+      font-size: 20px;
+    }
+    span {
+      font-size: 10px;
+    }
+  }
+}
+
+.price_list {
+  display: inline-block;
+  width: 50%;
+  margin-top: 10%;
 }

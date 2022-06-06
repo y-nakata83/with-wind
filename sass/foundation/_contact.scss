@@ -64,12 +64,21 @@
     }
   }
 
-  &_btn  button{
+  &_btn  {
     width: 30%;
-    height: 10vw;
-    margin-top: 5%;
+    height: 5vw;
+    display: inline-block;
+    margin-top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
 
-  
+    span {
+      font-size: large;
+      display: inline-block;
+      height: 50px;
+      padding-top: 5%;
+      
+    }
   }
 }
 
@@ -104,7 +113,7 @@
         width: 22%;
         position: absolute;
         left: 77%;
-        top: 40.5%;
+        top: 41.8%;
         
         :before {
           content: "※";
@@ -130,6 +139,8 @@
 
     &_selection {
       display: flex;
+      width: 50%;
+      justify-content: space-evenly;
     }
   }
 
@@ -195,9 +206,12 @@
 .b_contact {
 display: inline-block;
 margin-top: 5%;
-width: 10%;
+width: 70%;
+line-height: 3;
+border: none;
 
-.button {
-  position: relative;
+  &:hover  {
+      color: $cWhite;
+    }
 }
-}
+
