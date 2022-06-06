@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    align-items: center;
   }
 
   &_left {
@@ -53,11 +54,15 @@
       width: 15%;
 
       &_hd {
-          text-align: center;
-          margin-top: 2%;
+        position: relative;
           display: inline-block;
-          position: relative;
-          cursor: pointer;
+
+          a {
+            display: block;
+            line-height: 3;
+            width: 100%;
+            height: 100%;
+          }
           &:after {
             content: '';
               position: absolute;
