@@ -225,6 +225,7 @@ select {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  align-items: center;
 }
 .header_left {
   width: 20%;
@@ -261,11 +262,14 @@ select {
   width: 15%;
 }
 .header_navItem_hd {
-  text-align: center;
-  margin-top: 2%;
-  display: inline-block;
   position: relative;
-  cursor: pointer;
+  display: inline-block;
+}
+.header_navItem_hd a {
+  display: block;
+  line-height: 3;
+  width: 100%;
+  height: 100%;
 }
 .header_navItem_hd:after {
   content: "";
@@ -536,13 +540,14 @@ select {
 .contents_wrap_box {
   display: flex;
   flex-direction: column;
+  margin-left: 12%;
 }
 .contents_wrap_box_list {
   display: inline-block;
 }
 .contents_wrap_box_list_img {
-  background: url(../img/checkblack.png) no-repeat;
-  width: 10%;
+  background: url(../img/checkblue.png) no-repeat;
+  width: 9%;
   height: 20px;
   background-size: cover;
   background-position: center;
@@ -550,7 +555,7 @@ select {
 }
 .contents_wrap_box_list_aimg {
   background: url(../img/checkpink.png) no-repeat;
-  width: 10%;
+  width: 9%;
   height: 20px;
   background-size: cover;
   background-position: center;
@@ -558,11 +563,11 @@ select {
 }
 .contents_wrap_box_list p {
   font-size: 10px;
-  position: absolute;
-  margin-top: -1%;
   margin-left: 5%;
+  padding-top: 2%;
 }
 .contents_wrap li {
+  display: flex;
   margin-top: 5%;
 }
 
@@ -573,6 +578,19 @@ select {
 .a_service_lp_iner {
   width: 100%;
 }
+.a_service_lp_box {
+  display: flex;
+  justify-content: space-between;
+}
+.a_service_lp_txt {
+  margin-top: 10%;
+}
+.a_service_lp_txt p {
+  font-size: large;
+}
+.a_service_lp_txt_img {
+  margin-top: 22%;
+}
 
 .price_list_contents {
   display: inline-block;
@@ -582,7 +600,7 @@ select {
   margin-left: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: 20%;
 }
 .price_list_contents_name {
@@ -645,7 +663,7 @@ select {
 .a_contact_top_img {
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 0;
 }
 
 .twitter {

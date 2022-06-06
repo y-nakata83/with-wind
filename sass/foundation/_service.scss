@@ -180,12 +180,13 @@
   &_box {
     display: flex;
     flex-direction: column;
+    margin-left: 12%;
 
     &_list {
       display: inline-block;
       &_img {
-        background: url(../img/checkblack.png)no-repeat;
-        width: 10%;
+        background: url(../img/checkblue.png)no-repeat;
+        width: 9%;
         height: 20px;
         background-size: cover;
         background-position: center;
@@ -193,7 +194,7 @@
       }
       &_aimg {
         background: url(../img/checkpink.png)no-repeat;
-          width: 10%;
+          width: 9%;
           height: 20px;
           background-size: cover;
           background-position: center;
@@ -201,13 +202,13 @@
       }
       p {
         font-size: 10px;
-        position: absolute;
-        margin-top: -1%;
         margin-left: 5%;
+        padding-top: 2%;
       }
     }
   }
   li {
+    display: flex;
     margin-top: 5%;
   }
 }
@@ -219,12 +220,30 @@
   &_iner {
     width: 100%;
   }
+
+  &_box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_txt {
+    margin-top: 10%;
+
+    p {
+      font-size: large;
+      
+    }
+
+    &_img {
+      margin-top: 22%
+    }
+  }
 }
 
 .price_list_contents {
   @include contents;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: 20%;
 
   &_name {
