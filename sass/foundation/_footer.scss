@@ -1,68 +1,87 @@
 @use "../global"as *;
 
 .footer {
+  width: 100%;
+  position: relative;
+  z-index: 99;
   &_inner {
-    width: 100%;
-    position: relative;
-    background-color: $cGray;
-    z-index: 99;
-    margin-top: 15vh;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-top: 15vh;
   }
-
   &_left {
     width: 20%;
   }
-
   &_logo {
     width: 40%;
-
+    &:hover {
+      opacity: 0.5;
+    }
     a {
       display: block;
       width: 100%;
       height: 100%;
-
       img {
         width: 100%;
       }
     }
   }
-
   &_right {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
   }
-
   &_nav {
     width: 100%;
-
     &Box {
       display: flex;
       justify-content: space-around;
     }
-
     &Item {
       padding: 1%;
       width: 15%;
+      &_hd {
+        text-align: center;
+        margin-top: 2%;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background: linear-gradient($cHiBlue, $cHiGreen);
+          transform-origin: bottom right;
+          transition: transform .4s cubic-bezier(.86, 0, .07, 1)
+        }
+        &:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left
+        }
+        a:hover {
+          opacity: 0.5;
+        }
+      }
     }
   }
-
   &_copy {
     position: relative;
     font-size: 15px;
     top: 25%;
     color: $cBlack;
-
+    margin-top: 15vh;
     &Inner {
       position: relative;
       width: 100%;
       text-align: center;
       height: 5vh;
-      background: $cGray;
+      background: $cWhite;
     }
   }
 }

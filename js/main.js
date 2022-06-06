@@ -259,3 +259,19 @@ $(function () {
     });
   });
 });
+
+//js-slideUp 上に出てくる
+$(function () {
+  $(window).scroll(function () {
+    $('.js-slideUp').each(function () {
+      let scroll = $(window).scrollTop();
+      let triTop = $(this).offset().top + 100;
+      let winHeight = $(window).height();
+      if (scroll >= triTop - winHeight) {
+        $(this).addClass('scrollin');
+      } else {
+        $(this).removeClass('scrollin');
+      }
+    });
+  });
+});
