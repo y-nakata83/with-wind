@@ -900,6 +900,9 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 15vh;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -1256,6 +1259,136 @@ a{
       }
       &Btn {
         font-size: 2vw;
+      }
+    }
+    &_left {
+      width: 40%;
+    }
+  }
+  .about {
+    &_item {
+      &Inner {
+        p {
+          font-size: 1.6vw;
+        }
+      }
+    }
+    &_copy {
+      h2 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .para1 {
+    p {
+      font-size: 5vw;
+    }
+    &_btn {
+      &Inner {
+        width: 85%;
+      }
+      a {
+        &::after {
+          transform: translateX(19vw);
+        }
+        &::before {
+          right: 22.5%;
+        }
+      }
+    }
+  }
+  .para2 {
+    p {
+      font-size: 5vw;
+    }
+    &_btn {
+      &Inner {
+        width: 85%;
+      }
+      a {
+        &::after {
+          transform: translateX(19vw);
+        }
+        &::before {
+          right: 22.5%;
+        }
+      }
+    }
+  }
+  .service {
+    &_txt {
+      &Box {
+        &R {
+          top: 30%;
+          h2 {
+            font-size: 4vw;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+        &L {
+          top: 30%;
+          h2 {
+            font-size: 3.7vw;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+    &_triangle {
+      border-bottom: 25vh;
+    }
+  }
+  .view {
+    &_btn {
+      &Inner {
+        width: 85%;
+      }
+      a {
+        &::after {
+          transform: translateX(26vw);
+        }
+        &::before {
+          right: 18.5%;
+        }
+      }
+    }
+  }
+  .contact {
+    p {
+      font-size: 5vw;
+    }
+    &_txt {
+      &Box {
+        h2 {
+          font-size: 1.9rem;
+        }
+        p {
+          font-size: 5vw;
+        }
+      }
+    }
+    &_btn {
+      &Inner {
+        width: 80%;
+        top: 65%;
+      }
+      a {
+        font-size: 2.7rem;
+        &::after {
+          transform: translateX(31vw);
+          top: 20px;
+        }
+        &::before {
+          top: 0%;
+          right: 11.5%;
+        }
       }
     }
   }

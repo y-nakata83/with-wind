@@ -1882,6 +1882,9 @@ a {
   justify-content: center;
   margin-top: 15vh;
 }
+.ec_inner img {
+  width: 100%;
+}
 
 .view_btn {
   position: relative;
@@ -2214,5 +2217,101 @@ a {
   }
   .header_navBtn {
     font-size: 2vw;
+  }
+  .header_left {
+    width: 40%;
+  }
+
+  .about_itemInner p {
+    font-size: 1.6vw;
+  }
+  .about_copy h2 {
+    font-size: 1.7rem;
+  }
+  .about_copy p {
+    font-size: 1.1rem;
+  }
+
+  .para1 p {
+    font-size: 5vw;
+  }
+  .para1_btnInner {
+    width: 85%;
+  }
+  .para1_btn a::after {
+    transform: translateX(19vw);
+  }
+  .para1_btn a::before {
+    right: 22.5%;
+  }
+
+  .para2 p {
+    font-size: 5vw;
+  }
+  .para2_btnInner {
+    width: 85%;
+  }
+  .para2_btn a::after {
+    transform: translateX(19vw);
+  }
+  .para2_btn a::before {
+    right: 22.5%;
+  }
+
+  .service_txtBoxR {
+    top: 30%;
+  }
+  .service_txtBoxR h2 {
+    font-size: 4vw;
+  }
+  .service_txtBoxR p {
+    font-size: 0.9rem;
+  }
+  .service_txtBoxL {
+    top: 30%;
+  }
+  .service_txtBoxL h2 {
+    font-size: 3.7vw;
+  }
+  .service_txtBoxL p {
+    font-size: 0.9rem;
+  }
+  .service_triangle {
+    border-bottom: 25vh;
+  }
+
+  .view_btnInner {
+    width: 85%;
+  }
+  .view_btn a::after {
+    transform: translateX(26vw);
+  }
+  .view_btn a::before {
+    right: 18.5%;
+  }
+
+  .contact p {
+    font-size: 5vw;
+  }
+  .contact_txtBox h2 {
+    font-size: 1.9rem;
+  }
+  .contact_txtBox p {
+    font-size: 5vw;
+  }
+  .contact_btnInner {
+    width: 80%;
+    top: 65%;
+  }
+  .contact_btn a {
+    font-size: 2.7rem;
+  }
+  .contact_btn a::after {
+    transform: translateX(31vw);
+    top: 20px;
+  }
+  .contact_btn a::before {
+    top: 0%;
+    right: 11.5%;
   }
 }
