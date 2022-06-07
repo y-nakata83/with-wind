@@ -71,7 +71,7 @@
 .hp_price {
   &_list_box {
     display: inline-block;
-    position: relative;
+    // position: relative;
     width: 100%;
     height: auto;
     margin-top: 10%;
@@ -109,11 +109,14 @@
     &_contents {
       position: relative;
       display: inline-block;
-      width: 20%;
-      height: 55vh;
+      width: 22%;
+      // height: 55vh;
       border-radius: 10px;
-      margin-left: 5%;
+      margin-left: 3%;
       box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+      &:first-child{
+        margin-left: 0;
+      }
 
       &_name {
         display: inline-block;
@@ -161,9 +164,9 @@
         p {
           color: $cWhite;
           transform: rotate(45deg);
-          margin-top: 14%;
-          margin-left: 60%;
-          font-size: 12px;
+          margin-top: 20%;
+          margin-left: 62%;
+          font-size: 14px;
         }
       }
     }
@@ -173,8 +176,7 @@
 .contents_wrap {
   display: inline-block;
   width: 100%;
-  height: 20px;
-  margin-top: 10%;
+  margin: 10% 0;
   text-align: center;
 
   &_box {
