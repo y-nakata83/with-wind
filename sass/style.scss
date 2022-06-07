@@ -557,6 +557,59 @@ a{
   }
 }
 
+.header {
+  &_hamburger {
+    &Inner {
+      display: none;
+      position: fixed;
+      z-index: 5;
+      right: 13px;
+      top: 12px;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      text-align: center;
+      transition: 0.5s all;
+    }
+    &.active {
+      transform: rotate(90deg);
+      span {
+        &:nth-child(1) {
+          top: 16px;
+          left: 6px;
+          background: black;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+          top: 16px;
+          background: black;
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          opacity: 0;
+        }
+      }
+    }
+    span {
+      display: none;
+      position: absolute;
+      width: 27px;
+      height: 2px;
+      left: 6px;
+      background: $cBlack;
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2) {
+        top: 10px;
+      }
+      &:nth-child(3) {
+        top: 20px;
+      }
+    }
+  }
+}
+
 //top
 
 .top{
@@ -847,6 +900,9 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 15vh;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -1154,6 +1210,185 @@ a{
         position: absolute;
         transform: translateX(8vw);
         transition: .5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    &_hamburger {
+      &Inner {
+        display: block;
+        right: 5vw;
+        top: 35px;
+        width: 35px;
+      }
+      &.active span:nth-child(1) {
+        background: $cWhite;
+      }
+      &.active span:nth-child(2) {
+        background: $cWhite;
+      }
+      span {
+        display: block;
+      }
+    }
+    &_nav {
+      display: none;
+      &Sp {
+        height: 151vh;
+        padding-top: 6vh;
+        top: 0vh;
+        &Item {
+          font-size: 4vw;
+          a {
+            font-size: 20px;
+          }
+        }
+        &Btn {
+          width: 40%;
+          a {
+            font-size: 4vw;
+          }
+        }
+      }
+      &Btn {
+        font-size: 2vw;
+      }
+    }
+    &_left {
+      width: 40%;
+    }
+  }
+  .about {
+    &_item {
+      &Inner {
+        p {
+          font-size: 1.6vw;
+        }
+      }
+    }
+    &_copy {
+      h2 {
+        font-size: 1.7rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .para1 {
+    p {
+      font-size: 5vw;
+    }
+    &_btn {
+      &Inner {
+        width: 85%;
+      }
+      a {
+        &::after {
+          transform: translateX(19vw);
+        }
+        &::before {
+          right: 22.5%;
+        }
+      }
+    }
+  }
+  .para2 {
+    p {
+      font-size: 5vw;
+    }
+    &_btn {
+      &Inner {
+        width: 85%;
+      }
+      a {
+        &::after {
+          transform: translateX(19vw);
+        }
+        &::before {
+          right: 22.5%;
+        }
+      }
+    }
+  }
+  .service {
+    &_txt {
+      &Box {
+        &R {
+          top: 30%;
+          h2 {
+            font-size: 4vw;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+        &L {
+          top: 30%;
+          h2 {
+            font-size: 3.7vw;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+    &_triangle {
+      border-bottom: 25vh;
+    }
+  }
+  .view {
+    &_btn {
+      &Inner {
+        width: 85%;
+      }
+      a {
+        &::after {
+          transform: translateX(26vw);
+        }
+        &::before {
+          right: 18.5%;
+        }
+      }
+    }
+  }
+  .contact {
+    p {
+      font-size: 5vw;
+    }
+    &_txt {
+      &Box {
+        h2 {
+          font-size: 1.9rem;
+        }
+        p {
+          font-size: 5vw;
+        }
+      }
+    }
+    &_btn {
+      &Inner {
+        width: 80%;
+        top: 65%;
+      }
+      a {
+        font-size: 2.7rem;
+        &::after {
+          transform: translateX(31vw);
+          top: 20px;
+        }
+        &::before {
+          top: 0%;
+          right: 11.5%;
+        }
       }
     }
   }

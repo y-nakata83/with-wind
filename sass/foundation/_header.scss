@@ -4,7 +4,7 @@
   width: 100%;
   position: fixed;
   z-index: 99;
-
+  
   &_inner {
     display: flex;
     justify-content: space-around;
@@ -41,9 +41,124 @@
     width: 50%;
   }
 
+  &_hamburger {
+    &Inner {
+      display: none;
+      position: fixed;
+      z-index: 5;
+      right: 13px;
+      top: 12px;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      text-align: center;
+      transition: 0.5s all;
+    }
+    &.active {
+      transform: rotate(90deg);
+      span {
+        &:nth-child(1) {
+          top: 16px;
+          left: 6px;
+          background: black;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+          top: 16px;
+          background: black;
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          opacity: 0;
+        }
+      }
+    }
+    span {
+      display: none;
+      position: absolute;
+      width: 27px;
+      height: 2px;
+      left: 6px;
+      background: $cBlack;
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2) {
+        top: 10px;
+      }
+      &:nth-child(3) {
+        top: 20px;
+      }
+    }
+  }
+
   &_nav {
     width: 100%;
-
+    //ハンバーガーメニューの部分↓
+    &Sp {
+      position: fixed;
+      z-index: 3;
+      top: 5vh;
+      left: 0;
+      color: $cWhite;
+      background: $cWhite;
+      opacity: .5;
+      text-align: center;
+      width: 100%;
+      height: 45vh;
+      padding-top: 2vh;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .6s ease,
+        visibility .6s ease;
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      &Item {
+        width: 80%;
+        margin: 0 auto;
+        padding: 3%;
+        font-size: 1vw;
+        font-weight: 700;
+        text-align: center;
+        a {
+          display: inline-block;
+          border-bottom: solid 3px $cHiBlue;
+          color: $cBlack;
+        }
+        &s {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      &Btn {
+        width: 30%;
+        margin: 0 auto;
+        padding: 2%;
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+    &Items {
+      width: 100%;
+      display: flex;
+      padding: 1.5% 3%;
+      text-align: center;
+      li {
+        width: 13%;
+        a {
+          font-size: 13px;
+          color: $cWhite;
+          transition: 0.5s;
+          &:hover {
+            color: $cHiBlue;
+          }
+        }
+      }
+    }
+    //ハンバーガーここまで↑
     &Box {
       display: flex;
       justify-content: space-around;
@@ -84,6 +199,56 @@
               opacity: 0.5;
             }
 
+      }
+    }
+  }
+  &_hamburger {
+    &Inner {
+      display: none;
+      position: fixed;
+      z-index: 5;
+      right: 13px;
+      top: 12px;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      text-align: center;
+      transition: 0.5s all;
+    }
+    &.active {
+      transform: rotate(90deg);
+      span {
+        &:nth-child(1) {
+          top: 16px;
+          left: 6px;
+          background: black;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+          top: 16px;
+          background: black;
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          opacity: 0;
+        }
+      }
+    }
+    span {
+      display: none;
+      position: absolute;
+      width: 27px;
+      height: 2px;
+      left: 6px;
+      background: $cBlack;
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2) {
+        top: 10px;
+      }
+      &:nth-child(3) {
+        top: 20px;
       }
     }
   }

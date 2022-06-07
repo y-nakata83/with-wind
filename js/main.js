@@ -276,6 +276,7 @@ $(function () {
   });
 });
 
+//js-fadein スッ
 $(function () {
   $(window).scroll(function () {
     $('.js-fadein').each(function () {
@@ -291,15 +292,40 @@ $(function () {
   });
 });
 
+//スムーススクロール
+
 $(function(){
-        // #で始まるリンクをクリックしたら実行されます
-        $('a[href^="#"]').click(function() {
-          // スクロールの速度
-          let speed = 500; // ミリ秒で記述
-            let href= $(this).attr("href");
-            let target = $(href == "#" || href == "" ? 'html' : href);
-            let position = target.offset().top;
-            $('body,html').animate({scrollTop:position}, speed, 'swing');
-            return false;
-            });
-        });
+  // #で始まるリンクをクリックしたら実行されます
+  $('a[href^="#"]').click(function() {
+    // スクロールの速度
+    let speed = 500; // ミリ秒で記述
+      let href= $(this).attr("href");
+      let target = $(href == "#" || href == "" ? 'html' : href);
+      let position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+      });
+});
+        
+//ハンバーガーメニュー
+$(function () {
+  $('.header_hamburger').click(function() {
+      $(this).toggleClass('active');
+      if ($(this).hasClass('active')) {
+          $('.header_navSp').addClass('active');
+      } else {
+          $('.header_navSp').removeClass('active');
+      }
+      });
+      $('a[href^="#"]').click(function() {
+        // スクロールの速度
+        let speed = 500; // ミリ秒で記述
+          let href= $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          });
+  $('.header_navSp').on('click', function () {
+      $('.header_hamburger').click();
+  });
+});
