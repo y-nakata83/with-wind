@@ -276,6 +276,7 @@ $(function () {
   });
 });
 
+//js-fadein スッ
 $(function () {
   $(window).scroll(function () {
     $('.js-fadein').each(function () {
@@ -290,6 +291,8 @@ $(function () {
     });
   });
 });
+
+//スムーススクロール
 
 $(function(){
         // #で始まるリンクをクリックしたら実行されます
