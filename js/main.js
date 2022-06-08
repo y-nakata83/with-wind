@@ -325,7 +325,7 @@ $(function () {
           let position = target.offset().top;
           $('body,html').animate({scrollTop:position}, speed, 'swing');
           });
-  $('.header_navSp').on('click', function () {
+  $('.header_navSp a').on('click', function () {
       $('.header_hamburger').click();
   });
 });
