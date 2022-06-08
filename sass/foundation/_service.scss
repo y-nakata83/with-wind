@@ -186,10 +186,11 @@
 
     &_list {
       display: inline-block;
+
       &_img {
         background: url(../img/checkblue.png)no-repeat;
         width: 9%;
-        height: 20px;
+        height: 25px;
         background-size: cover;
         background-position: center;
         margin-left: 15%;
@@ -197,7 +198,7 @@
       &_aimg {
         background: url(../img/checkpink.png)no-repeat;
           width: 9%;
-          height: 20px;
+          height: 25px;
           background-size: cover;
           background-position: center;
           margin-left: 15%;
