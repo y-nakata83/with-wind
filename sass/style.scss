@@ -559,7 +559,7 @@ a{
 
 .header {
   &_hamburger {
-    &Inner {
+    
       display: none;
       position: fixed;
       z-index: 5;
@@ -570,7 +570,7 @@ a{
       cursor: pointer;
       text-align: center;
       transition: 0.5s all;
-    }
+    
     &.active {
       transform: rotate(90deg);
       span {
@@ -1222,12 +1222,12 @@ a{
 @media screen and (max-width: 599px) {
   .header {
     &_hamburger {
-      &Inner {
+      
         display: block;
         right: 5vw;
         top: 35px;
         width: 35px;
-      }
+    
       &.active span:nth-child(1) {
         background: $cWhite;
       }
@@ -1241,9 +1241,8 @@ a{
     &_nav {
       display: none;
       &Sp {
-        height: 151vh;
+        height: 100vh;
         padding-top: 6vh;
-        top: 0vh;
         &Item {
           font-size: 4vw;
           a {
