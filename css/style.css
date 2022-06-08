@@ -211,7 +211,7 @@ select {
   line-height: 3;
 }
 .button a {
-  line-height: 1.5;
+  line-height: 3;
   display: block;
   width: 100%;
   height: 100%;
@@ -705,7 +705,7 @@ select {
 .contents_wrap_box_list_img {
   background: url(../img/checkblue.png) no-repeat;
   width: 9%;
-  height: 20px;
+  height: 25px;
   background-size: cover;
   background-position: center;
   margin-left: 15%;
@@ -713,7 +713,7 @@ select {
 .contents_wrap_box_list_aimg {
   background: url(../img/checkpink.png) no-repeat;
   width: 9%;
-  height: 20px;
+  height: 25px;
   background-size: cover;
   background-position: center;
   margin-left: 15%;
