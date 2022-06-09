@@ -13,10 +13,14 @@
 /*bodyにappearクラスがついたら出現*/
 body.appear .splashbg {
   display: block;
-  animation-name: PageAnime;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: PageAnime;
+          animation-name: PageAnime;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   content: "";
   position: fixed;
   z-index: 999;
@@ -24,21 +28,43 @@ body.appear .splashbg {
   height: 100vh;
   top: 0;
   left: 0;
-  transform: translateX(-300%) skewX(-45deg);
+  -webkit-transform: translateX(-300%) skewX(-45deg);
+      -ms-transform: translateX(-300%) skewX(-45deg);
+          transform: translateX(-300%) skewX(-45deg);
   // background-color: #ffffff80;
   background-color: $cLowBlue;
   /*伸びる背景色の設定*/
 }
 
-@keyframes PageAnime {
+@-webkit-keyframes PageAnime {
   0% {
-    transform-origin: left;
-    transform: translateX(-500%) skewX(45deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: translateX(-500%) skewX(45deg);
+            transform: translateX(-500%) skewX(45deg);
   }
 
   100% {
-    transform-origin: left;
-    transform: translateX(500%) skewX(45deg);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: translateX(500%) skewX(45deg);
+            transform: translateX(500%) skewX(45deg);
+  }
+}
+
+@keyframes PageAnime {
+  0% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: translateX(-500%) skewX(45deg);
+            transform: translateX(-500%) skewX(45deg);
+  }
+
+  100% {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: translateX(500%) skewX(45deg);
+            transform: translateX(500%) skewX(45deg);
   }
 }
 
@@ -50,11 +76,25 @@ body.appear .splashbg {
 
 /*bodyにappearクラスがついたら出現*/
 body.appear #container {
-  animation-name: PageAnimeAppear;
-  animation-duration: 1s;
-  animation-delay: 0.6s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: PageAnimeAppear;
+          animation-name: PageAnimeAppear;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   opacity: 0;
+}
+
+@-webkit-keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes PageAnimeAppear {
@@ -152,7 +192,9 @@ a{
   display: block;
   top: 45%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
   font-size: 2em;
   font-weight: bold;
 }
@@ -232,7 +274,41 @@ a{
   animation-delay: 600ms;
 }
 
+@-webkit-keyframes L {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    top: 50px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
 @keyframes L {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    top: 50px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes O {
   0% {
     top: 0px;
     opacity: 0;
@@ -266,7 +342,41 @@ a{
   }
 }
 
+@-webkit-keyframes A {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    top: 50px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
 @keyframes A {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    top: 50px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes D {
   0% {
     top: 0px;
     opacity: 0;
@@ -300,6 +410,23 @@ a{
   }
 }
 
+@-webkit-keyframes I {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    top: 50px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
 @keyframes I {
   0% {
     top: 0px;
@@ -317,7 +444,41 @@ a{
   }
 }
 
+@-webkit-keyframes N {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    top: 50px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
 @keyframes N {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    top: 50px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes G {
   0% {
     top: 0px;
     opacity: 0;
@@ -374,45 +535,90 @@ a{
 }
 
 .slideAnimeLeftRight {
-  animation-name: slideTextX100;
-  animation-delay: .3s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: slideTextX100;
+          animation-name: slideTextX100;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   opacity: 0;
 }
 
-@keyframes slideTextX100 {
+@-webkit-keyframes slideTextX100 {
   from {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     /*要素を左の枠外に移動*/
     opacity: 0;
   }
 
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     /*要素を元の位置に移動*/
     opacity: 1;
   }
 }
 
 .slideAnimeRightLeft {
-  animation-name: slideTextX-100;
-  animation-delay: .3s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: slideTextX-100;
+          animation-name: slideTextX-100;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   opacity: 0;
 }
 
 
-@keyframes slideTextX-100 {
+@-webkit-keyframes slideTextX-100 {
   from {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     /*要素を右の枠外に移動*/
     opacity: 0;
   }
 
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     /*要素を元の位置に移動*/
     opacity: 1;
   }
@@ -423,14 +629,17 @@ a{
   &Inner {
     position: relative;
     width: 100%;
-    transform: translateY(70vh);
+    -webkit-transform: translateY(70vh);
+        -ms-transform: translateY(70vh);
+            transform: translateY(70vh);
   }
   &5 {
     position: relative;
     width: 2px;
     height: 110px;
     background: transparent;
-    animation: scrollDown5 1.5s ease infinite;
+    -webkit-animation: scrollDown5 1.5s ease infinite;
+            animation: scrollDown5 1.5s ease infinite;
     border-radius: 100%;
     margin: 0 auto; //---you can romove this line---
     &:before {
@@ -440,29 +649,68 @@ a{
       top: 0;
       width: 100%;
       height: 100%;
+      background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop($cHiBlue), to(transparent));
+      background: -o-linear-gradient(transparent, $cHiBlue, transparent);
       background: linear-gradient(transparent, $cHiBlue, transparent);
     }
   }
 }
-@keyframes scrollDown5 {
+@-webkit-keyframes scrollDown5 {
   0% {
-    transform-origin: top;
-    transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
 
   45% {
-    transform-origin: top;
-    transform: scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 
   55% {
-    transform-origin: bottom;
-    transform: scaleY(1);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 
   100% {
-    transform-origin: bottom;
-    transform: scaleY(0);
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+@keyframes scrollDown5 {
+  0% {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+
+  45% {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+
+  55% {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+
+  100% {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
 }
 
@@ -473,7 +721,18 @@ a{
 }
 
 .fadein {
-  animation: fadein 1s forwards;
+  -webkit-animation: fadein 1s forwards;
+          animation: fadein 1s forwards;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
@@ -493,19 +752,37 @@ a{
 }
 
 .scrollin {
-  animation: fadeUpAnime .5s forwards;
-  animation-name: scrollin;
+  -webkit-animation: fadeUpAnime .5s forwards;
+          animation: fadeUpAnime .5s forwards;
+  -webkit-animation-name: scrollin;
+          animation-name: scrollin;
+}
+
+@-webkit-keyframes scrollin {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @keyframes scrollin {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -515,21 +792,41 @@ a{
 }
 
 .fadeLeft {
-  animation-name: fadeLeftAnime;
-  animation-duration: .7s;
-  animation-delay: .3s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: fadeLeftAnime;
+          animation-name: fadeLeftAnime;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @keyframes fadeLeftAnime {
   from {
     opacity: 0;
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -539,49 +836,77 @@ a{
 }
 
 .fadeRight {
-  animation-name: fadeRightAnime;
-  animation-duration: .7s;
-  animation-delay: .3s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: fadeRightAnime;
+          animation-name: fadeRightAnime;
+  -webkit-animation-duration: .7s;
+          animation-duration: .7s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @keyframes fadeRightAnime {
   from {
     opacity: 0;
-    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 .header {
   &_hamburger {
-    display: none;
-    position: fixed;
-    z-index: 5;
-    right: 13px;
-    top: 12px;
-    width: 42px;
-    height: 42px;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.5s all;
+      display: none;
+      position: fixed;
+      z-index: 5;
+      right: 13px;
+      top: 12px;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+      text-align: center;
+      -webkit-transition: 0.5s all;
+      -o-transition: 0.5s all;
+      transition: 0.5s all;
     &.active {
-      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
       span {
         &:nth-child(1) {
           top: 16px;
           left: 6px;
           background: black;
-          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
         }
         &:nth-child(2) {
           top: 16px;
           background: black;
-          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
         }
         &:nth-child(3) {
           opacity: 0;
@@ -671,13 +996,23 @@ a{
     margin-bottom: 5%;
   }
   &_box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   &_item{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: url(../img/item1.png);
     background-size: cover;
     background-position: center;
@@ -692,7 +1027,8 @@ a{
       font-size: 3vw;
       font-weight: 800;
       // border-top: 2px solid #2CC4CB;
-      text-decoration: wavy overline $cHiBlue;
+      -webkit-text-decoration: wavy overline $cHiBlue;
+              text-decoration: wavy overline $cHiBlue;
       padding-top: 3%;
       color: $cHiBlue;
     }
@@ -700,7 +1036,8 @@ a{
       background: url(../img/about1.png);
       background-size: cover;
       background-position: center;
-      animation-delay: .3s;
+      -webkit-animation-delay: .3s;
+              animation-delay: .3s;
       &::before {
         content: "02";
       }
@@ -709,7 +1046,8 @@ a{
       background: url(../img/about2.png);
       background-size: cover;
       background-position: center;
-      animation-delay: .6s;
+      -webkit-animation-delay: .6s;
+              animation-delay: .6s;
       &::before {
         content: "03";
       }
@@ -742,18 +1080,30 @@ a{
   p{
     color: $cWhite;
     font-size: 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100%;
     padding: 3% 0 5%;
   }
   &_btn {
     &Inner {
       position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-top: 0%;
       width: 95%;
       top: 70%;
@@ -761,6 +1111,8 @@ a{
     a {
       color: $cWhite;
       font-size: 1.7rem;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
       transition: .5s;
       &:hover {
         color: $cHiBlue;
@@ -780,10 +1132,14 @@ a{
         height: 40px;
         border: 2px solid $cWhite;
         border-radius: 50%;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
       }
       &::after {
         content: '';
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 55px;
         height: 0%;
@@ -792,7 +1148,11 @@ a{
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        transform: translateX(8vw);
+        -webkit-transform: translateX(8vw);
+            -ms-transform: translateX(8vw);
+                transform: translateX(8vw);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
       }
     }
@@ -831,15 +1191,22 @@ a{
     &F {
       width: 100%;
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       overflow: hidden;
     }
     &S {
       width: 100%;
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-top: 15vh;
-      flex-direction: row-reverse;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
       overflow: hidden;
     }
   }
@@ -895,8 +1262,12 @@ a{
   &_inner {
     position: relative;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 15vh;
     margin-bottom: 8%;
     img {
@@ -924,6 +1295,8 @@ a{
       padding: 0 10%;
       color: $cBlack;
       font-size: 1.7rem;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
       transition: .5s;
       &:hover {
         color: $cHiBlue;
@@ -943,10 +1316,14 @@ a{
         height: 40px;
         border: 2px solid $cBlack;
         border-radius: 50%;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
       }
       &::after {
         content: '';
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 55px;
         height: 0%;
@@ -956,7 +1333,11 @@ a{
         border: 1px solid $cBlack;
         z-index: 1;
         position: absolute;
-        transform: translateX(11.4vw);
+        -webkit-transform: translateX(11.4vw);
+            -ms-transform: translateX(11.4vw);
+                transform: translateX(11.4vw);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
       }
     }
@@ -977,18 +1358,30 @@ a{
   p{
     color: $cWhite;
     font-size: 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100%;
     padding: 2% 0 5%;
   }
   &_btn {
     &Inner {
       position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-top: 0%;
       width: 95%;
       top: 70%;
@@ -996,6 +1389,8 @@ a{
     a {
       color: $cWhite;
       font-size: 1.7rem;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
       transition: .5s;
       &:hover {
         color: $cHiBlue;
@@ -1015,10 +1410,14 @@ a{
         height: 40px;
         border: 2px solid $cWhite;
         border-radius: 50%;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
       }
       &::after {
         content: '';
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 55px;
         height: 0%;
@@ -1027,7 +1426,11 @@ a{
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        transform: translateX(8vw);
+        -webkit-transform: translateX(8vw);
+            -ms-transform: translateX(8vw);
+                transform: translateX(8vw);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
       }
     }
@@ -1053,8 +1456,13 @@ a{
   }
   &_item {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 98%;
     margin: 1% 1%;
     border: 1px solid $cBlack;
@@ -1062,9 +1470,13 @@ a{
   &_question {
     position: relative;
     width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 2% auto;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   &_icon {
     &Q {
@@ -1106,8 +1518,12 @@ a{
   }
   &_answer {
     position: relative;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 3% auto;
   }
@@ -1134,6 +1550,8 @@ a{
   }
   &_form {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 45vh;
@@ -1169,9 +1587,15 @@ a{
   &_btn {
     &Inner {
       position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin-top: 0%;
       width: 95%;
       top: 75%;
@@ -1179,6 +1603,8 @@ a{
     a {
       color: $cWhite;
       font-size: 1.7rem;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
       transition: .5s;
       &:hover {
         color: $cHiBlue;
@@ -1198,10 +1624,14 @@ a{
         height: 40px;
         border: 2px solid $cWhite;
         border-radius: 50%;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
       }
       &::after {
         content: '';
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 55px;
         height: 0%;
@@ -1210,7 +1640,11 @@ a{
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        transform: translateX(8vw);
+        -webkit-transform: translateX(8vw);
+            -ms-transform: translateX(8vw);
+                transform: translateX(8vw);
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
       }
     }
@@ -1293,7 +1727,9 @@ a{
       }
       a {
         &::after {
-          transform: translateX(19vw);
+          -webkit-transform: translateX(19vw);
+              -ms-transform: translateX(19vw);
+                  transform: translateX(19vw);
         }
         &::before {
           right: 22.5%;
@@ -1311,7 +1747,9 @@ a{
       }
       a {
         &::after {
-          transform: translateX(19vw);
+          -webkit-transform: translateX(19vw);
+              -ms-transform: translateX(19vw);
+                  transform: translateX(19vw);
         }
         &::before {
           right: 22.5%;
@@ -1356,7 +1794,9 @@ a{
       }
       a {
         &::after {
-          transform: translateX(26vw);
+          -webkit-transform: translateX(26vw);
+              -ms-transform: translateX(26vw);
+                  transform: translateX(26vw);
         }
         &::before {
           right: 18.5%;
@@ -1386,7 +1826,9 @@ a{
       a {
         font-size: 2.5rem;
         &::after {
-          transform: translateX(31vw);
+          -webkit-transform: translateX(31vw);
+              -ms-transform: translateX(31vw);
+                  transform: translateX(31vw);
           top: 20px;
         }
         &::before {

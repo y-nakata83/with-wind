@@ -6,10 +6,15 @@
   z-index: 99;
   
   &_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   &_left {
@@ -35,9 +40,15 @@
   }
 
   &_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 50%;
   }
 
@@ -52,21 +63,29 @@
       height: 42px;
       cursor: pointer;
       text-align: center;
+      -webkit-transition: 0.5s all;
+      -o-transition: 0.5s all;
       transition: 0.5s all;
     }
     &.active {
-      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
       span {
         &:nth-child(1) {
           top: 16px;
           left: 6px;
           background: black;
-          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
         }
         &:nth-child(2) {
           top: 16px;
           background: black;
-          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
         }
         &:nth-child(3) {
           opacity: 0;
@@ -106,12 +125,20 @@
       text-align: center;
       width: 50%;
       height: 45vh;
-      transform: translate(100%);
+      -webkit-transform: translate(100%);
+          -ms-transform: translate(100%);
+              transform: translate(100%);
       visibility: hidden;
+      -webkit-transition: all .6s ease,
+        visibility .6s ease;
+      -o-transition: all .6s ease,
+        visibility .6s ease;
       transition: all .6s ease,
         visibility .6s ease;
       &.active {
-        transform: translate(0);
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
         visibility: visible;
       }
       &Item {
@@ -130,8 +157,13 @@
           color: $cBlack;
         }
         &s {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
         }
       }
       &Btn {
@@ -145,6 +177,8 @@
     }
     &Items {
       width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       padding: 1.5% 3%;
       text-align: center;
@@ -153,6 +187,8 @@
         a {
           font-size: 13px;
           color: $cWhite;
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
           transition: 0.5s;
           &:hover {
             color: $cHiBlue;
@@ -162,8 +198,11 @@
     }
     //ハンバーガーここまで↑
     &Box {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
     }
 
     &Item {
@@ -183,18 +222,32 @@
             content: '';
               position: absolute;
               width: 100%;
-              transform: scaleX(0);
+              -webkit-transform: scaleX(0);
+                  -ms-transform: scaleX(0);
+                      transform: scaleX(0);
               height: 2px;
               bottom: 0;
               left: 0;
+              background: -webkit-gradient(linear, left top, left bottom, from($cHiBlue), to($cHiGreen));
+              background: -o-linear-gradient($cHiBlue, $cHiGreen);
               background: linear-gradient($cHiBlue, $cHiGreen);
-              transform-origin: bottom right;
-              transition: transform .4s cubic-bezier(.86, 0, .07, 1)
+              -webkit-transform-origin: bottom right;
+                  -ms-transform-origin: bottom right;
+                      transform-origin: bottom right;
+              -webkit-transition: -webkit-transform .4s cubic-bezier(.86, 0, .07, 1);
+              transition: -webkit-transform .4s cubic-bezier(.86, 0, .07, 1);
+              -o-transition: transform .4s cubic-bezier(.86, 0, .07, 1);
+              transition: transform .4s cubic-bezier(.86, 0, .07, 1);
+              transition: transform .4s cubic-bezier(.86, 0, .07, 1), -webkit-transform .4s cubic-bezier(.86, 0, .07, 1)
           }
 
           &:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left
+            -webkit-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                    transform: scaleX(1);
+            -webkit-transform-origin: bottom left;
+                -ms-transform-origin: bottom left;
+                    transform-origin: bottom left
           }
 
           a:hover {
@@ -215,21 +268,29 @@
       height: 42px;
       cursor: pointer;
       text-align: center;
+      -webkit-transition: 0.5s all;
+      -o-transition: 0.5s all;
       transition: 0.5s all;
     }
     &.active {
-      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
       span {
         &:nth-child(1) {
           top: 16px;
           left: 6px;
           background: black;
-          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
         }
         &:nth-child(2) {
           top: 16px;
           background: black;
-          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg);
         }
         &:nth-child(3) {
           opacity: 0;
