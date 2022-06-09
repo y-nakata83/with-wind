@@ -99,23 +99,19 @@
       position: fixed;
       z-index: 3;
       top: 0;
-      left: 0;
+      right: 0;
       color: $cWhite;
       background: $cHiBlue;
-      opacity: .5;
+      opacity: .8;
       text-align: center;
-      width: 100%;
+      width: 50%;
       height: 45vh;
-      opacity: 0;
-      transform: translate(-50%, 100%);
-      border-radius: 0 200% 0 0;
+      transform: translate(100%);
       visibility: hidden;
       transition: all .6s ease,
         visibility .6s ease;
       &.active {
-        border-radius: 0;
         transform: translate(0);
-        opacity: 1;
         visibility: visible;
       }
       &Item {
