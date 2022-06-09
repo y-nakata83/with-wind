@@ -453,7 +453,6 @@ select {
 
 .footer_inner {
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -482,23 +481,24 @@ select {
   align-items: center;
   width: 50%;
 }
-.footer_nav {
-  width: 100%;
-}
 .footer_navBox {
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .footer_navItem {
-  padding: 1%;
   width: 15%;
 }
 .footer_navItem_hd {
-  text-align: center;
-  margin-top: 2%;
   display: inline-block;
   position: relative;
-  cursor: pointer;
+}
+.footer_navItem_hd a {
+  display: block;
+  line-height: 3;
+  width: 100%;
+  height: 100%;
 }
 .footer_navItem_hd:after {
   content: "";
