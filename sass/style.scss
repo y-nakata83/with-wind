@@ -1341,7 +1341,10 @@ a{
       }
     }
     &_triangle {
-      border-bottom: 25vh;
+      border-bottom: 29vh solid $cHiGreen;
+      top: 25%;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
     }
   }
   .view {
@@ -1366,10 +1369,10 @@ a{
     &_txt {
       &Box {
         h2 {
-          font-size: 1.9rem;
+          font-size: 1.4rem;
         }
         p {
-          font-size: 5vw;
+          font-size: 4vw;
         }
       }
     }
@@ -1379,7 +1382,7 @@ a{
         top: 65%;
       }
       a {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         &::after {
           transform: translateX(31vw);
           top: 20px;
@@ -1389,6 +1392,26 @@ a{
           right: 11.5%;
         }
       }
+    }
+  }
+  .qa {
+    &_txt {
+      font-size: 1rem;
+    }
+    &_icon {
+      &Q {
+        width: 12%;
+        padding: 3%;
+      }
+      &A {
+        width: 12%;
+        padding: 3%;
+      }
+    }
+  }
+  .footer {
+    &_left {
+      width: 25%;
     }
   }
 }

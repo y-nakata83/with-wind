@@ -1127,7 +1127,7 @@ body.appear .splashbg {
   top: 0;
   left: 0;
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -2282,7 +2282,10 @@ a {
     font-size: 0.9rem;
   }
   .service_triangle {
-    border-bottom: 25vh;
+    border-bottom: 29vh solid #8FF9E4;
+    top: 25%;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
   }
 
   .view_btnInner {
@@ -2299,17 +2302,17 @@ a {
     font-size: 5vw;
   }
   .contact_txtBox h2 {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
   }
   .contact_txtBox p {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .contact_btnInner {
     width: 80%;
     top: 65%;
   }
   .contact_btn a {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
   .contact_btn a::after {
     transform: translateX(31vw);
@@ -2319,6 +2322,20 @@ a {
     top: 0%;
     right: 11.5%;
   }
-}
 
-/*# sourceMappingURL=style.css.map */
+  .qa_txt {
+    font-size: 1rem;
+  }
+  .qa_iconQ {
+    width: 12%;
+    padding: 3%;
+  }
+  .qa_iconA {
+    width: 12%;
+    padding: 3%;
+  }
+
+  .footer_left {
+    width: 25%;
+  }
+}
