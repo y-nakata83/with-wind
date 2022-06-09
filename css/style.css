@@ -1336,7 +1336,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -2424,32 +2424,29 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 15vh;
+  margin-bottom: 8%;
 }
 .ec_inner img {
   width: 100%;
 }
 
 .view_btn {
-  position: relative;
   width: 100%;
-  height: 10vh;
 }
 .view_btnInner {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 0%;
-  width: 95%;
-  top: 11vh;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .view_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 3;
+  padding: 0 10%;
   color: #000;
   font-size: 1.7rem;
   -webkit-transition: 0.5s;
@@ -2468,8 +2465,8 @@ a {
 .view_btn a::before {
   content: "";
   position: absolute;
-  top: -30%;
-  right: 37.5%;
+  top: 20%;
+  right: 4.5%;
   width: 40px;
   height: 40px;
   border: 2px solid #000;
@@ -2486,7 +2483,8 @@ a {
   width: 55px;
   height: 0%;
   bottom: 0;
-  top: 13px;
+  top: 46%;
+  right: 55%;
   border: 1px solid #000;
   z-index: 1;
   position: absolute;
@@ -2892,7 +2890,10 @@ a {
     font-size: 0.9rem;
   }
   .service_triangle {
-    border-bottom: 25vh;
+    border-bottom: 29vh solid #8FF9E4;
+    top: 25%;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
   }
 
   .view_btnInner {
@@ -2911,17 +2912,17 @@ a {
     font-size: 5vw;
   }
   .contact_txtBox h2 {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
   }
   .contact_txtBox p {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .contact_btnInner {
     width: 80%;
     top: 65%;
   }
   .contact_btn a {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
   .contact_btn a::after {
     -webkit-transform: translateX(31vw);
@@ -2932,5 +2933,20 @@ a {
   .contact_btn a::before {
     top: 0%;
     right: 11.5%;
+  }
+  .qa_txt {
+    font-size: 1rem;
+  }
+  .qa_iconQ {
+    width: 12%;
+    padding: 3%;
+  }
+  .qa_iconA {
+    width: 12%;
+    padding: 3%;
+  }
+
+  .footer_left {
+    width: 25%;
   }
 }
