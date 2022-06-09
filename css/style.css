@@ -304,23 +304,19 @@ select {
   position: fixed;
   z-index: 3;
   top: 0;
-  left: 0;
+  right: 0;
   color: #fff;
   background: #2CC4CB;
-  opacity: 0.5;
+  opacity: 0.8;
   text-align: center;
-  width: 100%;
+  width: 50%;
   height: 45vh;
-  opacity: 0;
-  transform: translate(-50%, 100%);
-  border-radius: 0 200% 0 0;
+  transform: translate(100%);
   visibility: hidden;
   transition: all 0.6s ease, visibility 0.6s ease;
 }
 .header_navSp.active {
-  border-radius: 0;
   transform: translate(0);
-  opacity: 1;
   visibility: visible;
 }
 .header_navSpItem {
@@ -453,7 +449,6 @@ select {
 
 .footer_inner {
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -482,23 +477,24 @@ select {
   align-items: center;
   width: 50%;
 }
-.footer_nav {
-  width: 100%;
-}
 .footer_navBox {
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .footer_navItem {
-  padding: 1%;
   width: 15%;
 }
 .footer_navItem_hd {
-  text-align: center;
-  margin-top: 2%;
   display: inline-block;
   position: relative;
-  cursor: pointer;
+}
+.footer_navItem_hd a {
+  display: block;
+  line-height: 3;
+  width: 100%;
+  height: 100%;
 }
 .footer_navItem_hd:after {
   content: "";
@@ -550,6 +546,8 @@ select {
   height: 60%;
   background-color: #8FF9E4;
   clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
+  opacity: 0;
+  animation: slidein-L 1s 1.5s forwards;
 }
 .a_service_top_box_title {
   display: inline-block;
@@ -572,6 +570,28 @@ select {
   position: absolute;
   top: 50%;
   right: 0;
+  opacity: 0;
+  animation: slidein-R 0.5s 2s forwards;
+}
+@keyframes slidein-R {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
+}
+@keyframes slidein-L {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
 }
 .a_service_hp {
   position: relative;
@@ -624,8 +644,10 @@ select {
 }
 .hp_price_list_wrap {
   display: flex;
-  width: 100%;
   justify-content: center;
+  align-items: center;
+  align-items: unset;
+  width: 100%;
   margin: 0 auto;
 }
 .hp_price_list_contents {
@@ -638,6 +660,12 @@ select {
 }
 .hp_price_list_contents:first-child {
   margin-left: 0;
+}
+.hp_price_list_contents:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.hp_price_list_contents:nth-child(3) {
+  animation-delay: 0.6s;
 }
 .hp_price_list_contents_name {
   display: inline-block;
@@ -749,17 +777,17 @@ select {
 .a_service_lp_txt_img {
   margin-top: 15%;
 }
+.a_service_lp_txt_img img {
+  width: 100%;
+}
 
 .lp_price_list_contents {
-  display: inline-block;
   width: 20%;
-  height: 50vh;
   border-radius: 10px;
   margin-left: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   text-align: center;
-  margin-top: 10%;
-  margin-left: 20%;
+  margin: 10% auto;
   width: 25%;
 }
 .lp_price_list_contents_name {
@@ -782,7 +810,6 @@ select {
 .lp_contents_wrap {
   display: inline-block;
   width: 100%;
-  height: 20px;
   margin-top: 10%;
   text-align: center;
 }
@@ -792,31 +819,24 @@ select {
   flex-direction: column;
   margin-left: 5%;
 }
+.lp_contents_box_list {
+  width: 60%;
+  margin: 3% auto;
+}
 .lp_contents_box_list_img {
   background: url(../img/checkblue.png) no-repeat;
-  width: 9%;
-  height: 30px;
+  width: 15%;
   background-size: cover;
   background-position: center;
-  margin-left: 15%;
-}
-.lp_contents_box_list_aimg {
-  background: url(../img/checkpink.png) no-repeat;
-  width: 9%;
-  height: 20px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 15%;
 }
 .lp_contents_box_list p {
   font-size: 15px;
   margin-left: 5%;
-  padding-top: 2%;
+  line-height: 2;
 }
 
 li {
   display: flex;
-  margin-top: 5%;
 }
 
 .lp_price_list {
@@ -825,8 +845,23 @@ li {
   margin-top: 10%;
 }
 
+.a_service_lp_title,
+.a_service_hp_title {
+  width: 100%;
+}
+.a_service_lp_title img,
+.a_service_hp_title img {
+  width: 100%;
+}
+
 .a_service_control {
   margin-top: 10%;
+}
+.a_service_control_img {
+  width: 100%;
+}
+.a_service_control_img img {
+  width: 100%;
 }
 .a_service_control_iner {
   width: 100%;
@@ -836,25 +871,19 @@ li {
   width: 50%;
   margin: 0 auto;
   margin-top: 10%;
-  line-height: 135%;
-  transform: translateX(18%);
 }
 .a_service_control_txt p {
   font-size: large;
 }
 
 .kp_price_list_contents {
-  display: inline-block;
   width: 20%;
-  height: 50vh;
   border-radius: 10px;
   margin-left: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   text-align: center;
-  margin-top: 10%;
-  transform: translateX(70%);
+  margin: 10% auto 0;
   width: 40%;
-  height: auto;
   border: solid 1px #8FF9E4;
 }
 .kp_price_list_contents_name {
@@ -877,43 +906,33 @@ li {
 .kp_contents_wrap {
   display: inline-block;
   width: 100%;
-  height: 18vw;
   margin-top: 10%;
   text-align: center;
+  padding-bottom: 5%;
 }
 
 .kp_contents_box {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 5%;
-  height: 16vw;
+}
+.kp_contents_box_list {
+  width: 50%;
 }
 .kp_contents_box_list_img {
   background: url(../img/checkblue.png) no-repeat;
-  width: 10%;
-  height: 30px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 15%;
-}
-.kp_contents_box_list_aimg {
-  background: url(../img/checkpink.png) no-repeat;
-  width: 10%;
-  height: 20px;
+  width: 7%;
   background-size: cover;
   background-position: center;
   margin-left: 15%;
 }
 .kp_contents_box_list p {
-  font-size: 15px;
+  font-size: 1.2vw;
   margin-left: 5%;
   padding-top: 2%;
 }
 
 li {
   display: flex;
-  margin-top: 5%;
 }
 
 .kp_price_list {
@@ -2282,7 +2301,10 @@ a {
     font-size: 0.9rem;
   }
   .service_triangle {
-    border-bottom: 25vh;
+    border-bottom: 29vh solid #8FF9E4;
+    top: 25%;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
   }
 
   .view_btnInner {
@@ -2299,17 +2321,17 @@ a {
     font-size: 5vw;
   }
   .contact_txtBox h2 {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
   }
   .contact_txtBox p {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .contact_btnInner {
     width: 80%;
     top: 65%;
   }
   .contact_btn a {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
   .contact_btn a::after {
     transform: translateX(31vw);
@@ -2318,5 +2340,21 @@ a {
   .contact_btn a::before {
     top: 0%;
     right: 11.5%;
+  }
+
+  .qa_txt {
+    font-size: 1rem;
+  }
+  .qa_iconQ {
+    width: 12%;
+    padding: 3%;
+  }
+  .qa_iconA {
+    width: 12%;
+    padding: 3%;
+  }
+
+  .footer_left {
+    width: 25%;
   }
 }
