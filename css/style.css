@@ -546,6 +546,8 @@ select {
   height: 60%;
   background-color: #8FF9E4;
   clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
+  opacity: 0;
+  animation: slidein-L 1s 1.5s forwards;
 }
 .a_service_top_box_title {
   display: inline-block;
@@ -568,6 +570,28 @@ select {
   position: absolute;
   top: 50%;
   right: 0;
+  opacity: 0;
+  animation: slidein-R 0.5s 2s forwards;
+}
+@keyframes slidein-R {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
+}
+@keyframes slidein-L {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
 }
 .a_service_hp {
   position: relative;
@@ -763,8 +787,7 @@ select {
   margin-left: 5%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   text-align: center;
-  margin-top: 10%;
-  margin-left: 20%;
+  margin: 10% auto;
   width: 25%;
 }
 .lp_price_list_contents_name {
