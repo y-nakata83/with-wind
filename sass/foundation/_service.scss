@@ -259,28 +259,20 @@
     margin-left: 5%;
 
     &_list {
-      display: inline-block;
-
-      &_img {
-        background: url(../img/checkblue.png)no-repeat;
-        width: 9%;
-        height: 25px;
-        background-size: cover;
-        background-position: center;
-        margin-left: 15%;
-      }
-      &_aimg {
-        background: url(../img/checkpink.png)no-repeat;
-          width: 9%;
-          height: 25px;
-          background-size: cover;
-          background-position: center;
-          margin-left: 15%;
+      position: relative;
+      text-align: start;
+      img{
+        position: absolute;
+        width: 12%;
+        top: 50%;
+        left: 13%;
+        transform: translate(-80%, -50%);
       }
       p {
         font-size: 15px;
-        margin-left: 5%;
-        padding-top: 1%;
+        width: 80%;
+        margin-left: 20%;
+        line-height: 2;
       }
     }
   }
@@ -335,6 +327,7 @@
   text-align: center;
   margin: 10% auto ;
   width: 25%;
+  padding-bottom: 3%;
   &_name {
     margin-top: 10%;
 
@@ -363,32 +356,29 @@
   text-align: center;
 }
   .lp_contents_box {
-
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 5%;
-
     &_list {
       width: 60%;
       margin: 3% auto;
-
-      &_img {
-        background: url(../img/checkblue.png)no-repeat;
+      position: relative;
+      text-align: start;
+      img{
+        position: absolute;
         width: 15%;
-        background-size: cover;
-        background-position: center;
+        top: 50%;
+        left: 13%;
+        transform: translate(-80%, -50%);
       }
-
       p {
         font-size: 15px;
-        margin-left: 5%;
+        width: 80%;
+        margin-left: 20%;
         line-height: 2;
       }
     }
@@ -490,7 +480,16 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   &_list {
+    position: relative;
     width: 50%;
+    text-align: start;
+    img{
+      position: absolute;
+      width: 10%;
+      top: 50%;
+      left: 15%;
+      transform: translate(-80%, -50%);
+    }
     &_img {
       background: url(../img/checkblue.png)no-repeat;
       width: 7%;
@@ -502,8 +501,9 @@
 
     p {
       font-size: 1.2vw;
-      margin-left: 5%;
-      padding-top: 2%;
+      line-height: 2;
+      width: 80%;
+      margin-left: 20%;
     }
   }
 }

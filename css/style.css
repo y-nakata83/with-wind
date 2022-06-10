@@ -831,28 +831,21 @@ select {
   margin-left: 5%;
 }
 .contents_wrap_box_list {
-  display: inline-block;
+  position: relative;
+  text-align: start;
 }
-.contents_wrap_box_list_img {
-  background: url(../img/checkblue.png) no-repeat;
-  width: 9%;
-  height: 25px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 15%;
-}
-.contents_wrap_box_list_aimg {
-  background: url(../img/checkpink.png) no-repeat;
-  width: 9%;
-  height: 25px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 15%;
+.contents_wrap_box_list img {
+  position: absolute;
+  width: 12%;
+  top: 50%;
+  left: 13%;
+  transform: translate(-80%, -50%);
 }
 .contents_wrap_box_list p {
   font-size: 15px;
-  margin-left: 5%;
-  padding-top: 1%;
+  width: 80%;
+  margin-left: 20%;
+  line-height: 2;
 }
 .contents_wrap li {
   display: -webkit-box;
@@ -898,6 +891,7 @@ select {
   text-align: center;
   margin: 10% auto;
   width: 25%;
+  padding-bottom: 3%;
 }
 .lp_price_list_contents_name {
   margin-top: 10%;
@@ -931,21 +925,24 @@ select {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 5%;
 }
 .lp_contents_box_list {
   width: 60%;
   margin: 3% auto;
+  position: relative;
+  text-align: start;
 }
-.lp_contents_box_list_img {
-  background: url(../img/checkblue.png) no-repeat;
+.lp_contents_box_list img {
+  position: absolute;
   width: 15%;
-  background-size: cover;
-  background-position: center;
+  top: 50%;
+  left: 13%;
+  transform: translate(-80%, -50%);
 }
 .lp_contents_box_list p {
   font-size: 15px;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 20%;
   line-height: 2;
 }
 
@@ -1035,7 +1032,16 @@ li {
   flex-wrap: wrap;
 }
 .kp_contents_box_list {
+  position: relative;
   width: 50%;
+  text-align: start;
+}
+.kp_contents_box_list img {
+  position: absolute;
+  width: 10%;
+  top: 50%;
+  left: 15%;
+  transform: translate(-80%, -50%);
 }
 .kp_contents_box_list_img {
   background: url(../img/checkblue.png) no-repeat;
@@ -1046,8 +1052,9 @@ li {
 }
 .kp_contents_box_list p {
   font-size: 1.2vw;
-  margin-left: 5%;
-  padding-top: 2%;
+  line-height: 2;
+  width: 80%;
+  margin-left: 20%;
 }
 
 li {
