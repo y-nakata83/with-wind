@@ -259,28 +259,20 @@
     margin-left: 5%;
 
     &_list {
-      display: inline-block;
-
-      &_img {
-        background: url(../img/checkblue.png)no-repeat;
-        width: 9%;
-        height: 25px;
-        background-size: cover;
-        background-position: center;
-        margin-left: 15%;
-      }
-      &_aimg {
-        background: url(../img/checkpink.png)no-repeat;
-          width: 9%;
-          height: 25px;
-          background-size: cover;
-          background-position: center;
-          margin-left: 15%;
+      position: relative;
+      text-align: start;
+      img{
+        position: absolute;
+        width: 12%;
+        top: 50%;
+        left: 13%;
+        transform: translate(-80%, -50%);
       }
       p {
         font-size: 15px;
-        margin-left: 5%;
-        padding-top: 1%;
+        width: 80%;
+        margin-left: 20%;
+        line-height: 2;
       }
     }
   }

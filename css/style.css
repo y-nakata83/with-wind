@@ -831,28 +831,21 @@ select {
   margin-left: 5%;
 }
 .contents_wrap_box_list {
-  display: inline-block;
+  position: relative;
+  text-align: start;
 }
-.contents_wrap_box_list_img {
-  background: url(../img/checkblue.png) no-repeat;
-  width: 9%;
-  height: 25px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 15%;
-}
-.contents_wrap_box_list_aimg {
-  background: url(../img/checkpink.png) no-repeat;
-  width: 9%;
-  height: 25px;
-  background-size: cover;
-  background-position: center;
-  margin-left: 15%;
+.contents_wrap_box_list img {
+  position: absolute;
+  width: 12%;
+  top: 50%;
+  left: 13%;
+  transform: translate(-80%, -50%);
 }
 .contents_wrap_box_list p {
   font-size: 15px;
-  margin-left: 5%;
-  padding-top: 1%;
+  width: 80%;
+  margin-left: 20%;
+  line-height: 2;
 }
 .contents_wrap li {
   display: -webkit-box;
