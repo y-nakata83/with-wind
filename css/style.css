@@ -410,7 +410,6 @@ select {
 }
 .header_navItem_hd {
   position: relative;
-  display: inline-block;
 }
 .header_navItem_hd a {
   display: block;
