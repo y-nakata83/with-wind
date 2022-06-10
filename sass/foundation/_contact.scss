@@ -17,10 +17,14 @@
       width: 90%;
       height: 60%;
       background-color: #8FF9E4;
-      clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
-      animation: slidein-L 1s 1.5s
+      -webkit-clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
+              clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
+      opacity: 0;
+      -webkit-animation: slidein-L 1s 1.5s
       forwards;
-
+              animation: slidein-L 1s 1.5s
+      forwards;
+      
       &_title {
         display: inline-block;
         position: absolute;
@@ -46,9 +50,66 @@
       position: absolute;
       top: 50%;
       right: 0;
-      animation: slidein-R .5s 2s forwards;
+      opacity: 0;
+      -webkit-animation: slidein-R .5s 2s forwards;
+              animation: slidein-R .5s 2s forwards;
     }
   }
+    @-webkit-keyframes slidein-R {
+      from {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+  
+      to {
+        opacity: 1;
+        -webkit-transform: 0;
+        transform: 0;
+      }
+    }
+  
+    @keyframes slidein-R {
+      from {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+  
+      to {
+        opacity: 1;
+        -webkit-transform: 0;
+        transform: 0;
+      }
+    }
+  
+    @-webkit-keyframes slidein-L {
+      from {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+  
+      to {
+        opacity: 1;
+        -webkit-transform: 0;
+        transform: 0;
+      }
+    }
+  
+    @keyframes slidein-L {
+      from {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+  
+      to {
+        opacity: 1;
+        -webkit-transform: 0;
+        transform: 0;
+      }
+    }
 }
 
 .twitter {
@@ -69,11 +130,12 @@
 
   &_btn  {
     width: 30%;
-    height: 5vw;
-    display: inline-block;
+    height: 70px;
     margin-top: 2%;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 
     a {
       font-size: large;
@@ -84,8 +146,13 @@
 
 .a_contact {
   &_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 65%;
     margin: 5% auto 10%;
 
@@ -132,9 +199,13 @@
     // display: inline-grid;
 
     &_selection {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       width: 50%;
-      justify-content: space-evenly;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
     }
   }
 
@@ -178,6 +249,8 @@
     }
   }
   &_chk {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 5%;
 
@@ -198,10 +271,10 @@
   }
 }
 .b_contact {
-display: inline-block;
-margin-top: 5%;
-width: 70%;
-line-height: 3;
+margin: 5% auto;
+width: 50%;
+height: 70px;
+line-height: 5;
 border: none;
 
   &:hover  {
@@ -211,9 +284,14 @@ border: none;
 .hisu {
   width: 60%;
   text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: space-around;
-  justify-content: space-between;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
 
   ::before {

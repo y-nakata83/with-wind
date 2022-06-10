@@ -1104,7 +1104,10 @@ li {
   width: 90%;
   height: 60%;
   background-color: #8FF9E4;
+  -webkit-clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
+  opacity: 0;
+  -webkit-animation: slidein-L 1s 1.5s forwards;
   animation: slidein-L 1s 1.5s forwards;
 }
 .a_contact_top_box_title {
@@ -1128,7 +1131,57 @@ li {
   position: absolute;
   top: 50%;
   right: 0;
+  opacity: 0;
+  -webkit-animation: slidein-R 0.5s 2s forwards;
   animation: slidein-R 0.5s 2s forwards;
+}
+@-webkit-keyframes slidein-R {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: 0;
+    transform: 0;
+  }
+}
+@keyframes slidein-R {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: 0;
+    transform: 0;
+  }
+}
+@-webkit-keyframes slidein-L {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: 0;
+    transform: 0;
+  }
+}
+@keyframes slidein-L {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: 0;
+    transform: 0;
+  }
 }
 
 .twitter {
@@ -1148,10 +1201,11 @@ li {
 }
 .twitter_btn {
   width: 30%;
-  height: 5vw;
-  display: inline-block;
+  height: 70px;
   margin-top: 2%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 .twitter_btn a {
@@ -1160,7 +1214,12 @@ li {
 }
 
 .a_contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 65%;
   margin: 5% auto 10%;
@@ -1202,8 +1261,12 @@ li {
   margin-bottom: 7.5%;
 }
 .a_contact_box_selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 .a_contact_txtarea {
@@ -1237,6 +1300,8 @@ li {
   line-height: 30px;
 }
 .privacy_chk {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 5%;
 }
@@ -1252,10 +1317,10 @@ li {
 }
 
 .b_contact {
-  display: inline-block;
-  margin-top: 5%;
-  width: 70%;
-  line-height: 3;
+  margin: 5% auto;
+  width: 50%;
+  height: 70px;
+  line-height: 5;
   border: none;
 }
 .b_contact:hover {
@@ -1265,8 +1330,13 @@ li {
 .hisu {
   width: 60%;
   text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: distribute;
   align-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
 }
