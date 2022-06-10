@@ -304,6 +304,7 @@
   }
 
   &_txt {
+    width: 60%;
     margin-top: 13%;
     line-height: 135%;
 
@@ -520,4 +521,23 @@ li {
   display: inline-block;
   width: 50%;
   margin-top: 10%;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .a_service_top_img{
+    top: 55%;
+  }
+  .a_service_hp{
+    margin-top: 5%;
+  }
+  .hp_price_list_contents{
+    width: 27%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  html{
+    font-size: 13px;
+  }
 }
