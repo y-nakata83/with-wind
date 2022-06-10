@@ -870,6 +870,7 @@ select {
   justify-content: space-between;
 }
 .a_service_lp_txt {
+  width: 60%;
   margin-top: 13%;
   line-height: 135%;
 }
@@ -1069,6 +1070,24 @@ li {
   margin-top: 10%;
 }
 
+@media screen and (max-width: 1024px) {
+  .a_service_top_img {
+    top: 55%;
+  }
+
+  .a_service_hp {
+    margin-top: 5%;
+  }
+
+  .hp_price_list_contents {
+    width: 27%;
+  }
+}
+@media screen and (max-width: 599px) {
+  html {
+    font-size: 13px;
+  }
+}
 .a_contact_top {
   position: relative;
   width: 100%;
