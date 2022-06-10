@@ -310,6 +310,7 @@
 
     p {
       font-size: large;
+      line-height: 135%
 
     }
 
@@ -424,11 +425,12 @@
   }
 
   &_txt {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     margin-top: 10%;
     p {
       font-size: large;
+      line-height: 135%
     }
   }
 }
@@ -437,7 +439,7 @@
   @include contents;
   text-align: center;
   margin: 10% auto 0;
-  width: 40%;
+  width: 45%;
 
   border: solid 1px $cHiGreen;
 
@@ -507,13 +509,16 @@
       margin-left: 20%;
     }
   }
+
+  li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3%;
+  }
 }
 
-li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+
 
 
 

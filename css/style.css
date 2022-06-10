@@ -876,6 +876,7 @@ select {
 }
 .a_service_lp_txt p {
   font-size: large;
+  line-height: 135%;
 }
 .a_service_lp_txt_img {
   margin-top: 15%;
@@ -982,12 +983,13 @@ li {
   display: block;
 }
 .a_service_control_txt {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   margin-top: 10%;
 }
 .a_service_control_txt p {
   font-size: large;
+  line-height: 135%;
 }
 
 .kp_price_list_contents {
@@ -997,7 +999,7 @@ li {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   text-align: center;
   margin: 10% auto 0;
-  width: 40%;
+  width: 45%;
   border: solid 1px #8FF9E4;
 }
 .kp_price_list_contents_name {
@@ -1057,11 +1059,11 @@ li {
   width: 80%;
   margin-left: 20%;
 }
-
-li {
+.kp_contents_box li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 3%;
 }
 
 .kp_price_list {
