@@ -2293,11 +2293,14 @@ a {
   height: 100%;
   padding: 3% 0 5%;
 }
+.para1_btn {
+  width: 100%;
+}
 .para1_btnInner {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2305,10 +2308,15 @@ a {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 0%;
-  width: 95%;
+  width: 25%;
+  left: 55%;
+  transform: translateX(-50%);
   top: 70%;
 }
 .para1_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #fff;
   font-size: 1.7rem;
   -webkit-transition: 0.5s;
@@ -2328,7 +2336,7 @@ a {
   content: "";
   position: absolute;
   top: -30%;
-  right: 39.5%;
+  right: 46.5%;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -2555,11 +2563,14 @@ a {
   height: 100%;
   padding: 2% 0 5%;
 }
+.para2_btn {
+  width: 100%;
+}
 .para2_btnInner {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2567,10 +2578,15 @@ a {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 0%;
-  width: 95%;
+  width: 25%;
+  left: 55%;
+  transform: translateX(-50%);
   top: 70%;
 }
 .para2_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #fff;
   font-size: 1.7rem;
   -webkit-transition: 0.5s;
@@ -2590,7 +2606,7 @@ a {
   content: "";
   position: absolute;
   top: -30%;
-  right: 39.5%;
+  right: 46.5%;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -2757,11 +2773,14 @@ a {
   width: 100%;
   top: 23%;
 }
+.contact_btn {
+  width: 100%;
+}
 .contact_btnInner {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2769,10 +2788,15 @@ a {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 0%;
-  width: 95%;
-  top: 75%;
+  width: 25%;
+  left: 45%;
+  transform: translateX(-50%);
+  top: 70%;
 }
 .contact_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #fff;
   font-size: 1.7rem;
   -webkit-transition: 0.5s;
@@ -2792,7 +2816,7 @@ a {
   content: "";
   position: absolute;
   top: -30%;
-  right: 39.5%;
+  right: 10.5%;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -2813,9 +2837,9 @@ a {
   border: 1px solid #fff;
   z-index: 1;
   position: absolute;
-  -webkit-transform: translateX(8vw);
-  -ms-transform: translateX(8vw);
-  transform: translateX(8vw);
+  -webkit-transform: translateX(17vw);
+  -ms-transform: translateX(17vw);
+  transform: translateX(17vw);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
