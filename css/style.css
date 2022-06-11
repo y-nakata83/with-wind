@@ -2901,30 +2901,26 @@ a {
     font-size: 5vw;
   }
   .para1_btnInner {
-    width: 85%;
-  }
-  .para1_btn a::after {
-    -webkit-transform: translateX(19vw);
-    -ms-transform: translateX(19vw);
-    transform: translateX(19vw);
+    left: 50%;
   }
   .para1_btn a::before {
-    right: 22.5%;
+    right: -11.5%;
+  }
+  .para1_btn a::after {
+    transform: translateX(15vw);
   }
 
   .para2 p {
     font-size: 5vw;
   }
   .para2_btnInner {
-    width: 85%;
-  }
-  .para2_btn a::after {
-    -webkit-transform: translateX(19vw);
-    -ms-transform: translateX(19vw);
-    transform: translateX(19vw);
+    left: 50%;
   }
   .para2_btn a::before {
-    right: 22.5%;
+    right: -11.5%;
+  }
+  .para2_btn a::after {
+    transform: translateX(15vw);
   }
 
   .service_txtBoxR {
@@ -2953,15 +2949,11 @@ a {
   }
 
   .view_btnInner {
-    width: 85%;
-  }
-  .view_btn a::after {
-    -webkit-transform: translateX(26vw);
-    -ms-transform: translateX(26vw);
-    transform: translateX(26vw);
+    left: 40%;
   }
   .view_btn a::before {
-    right: 18.5%;
+    top: 15%;
+    right: 4.5%;
   }
 
   .contact p {
@@ -2974,21 +2966,13 @@ a {
     font-size: 4vw;
   }
   .contact_btnInner {
-    width: 80%;
-    top: 65%;
-  }
-  .contact_btn a {
-    font-size: 2.5rem;
-  }
-  .contact_btn a::after {
-    -webkit-transform: translateX(31vw);
-    -ms-transform: translateX(31vw);
-    transform: translateX(31vw);
-    top: 20px;
+    left: 40%;
   }
   .contact_btn a::before {
-    top: 0%;
-    right: 11.5%;
+    right: -39.5%;
+  }
+  .contact_btn a::after {
+    transform: translateX(22vw);
   }
 
   .qa_txt {

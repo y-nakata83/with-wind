@@ -1744,16 +1744,14 @@ a{
     }
     &_btn {
       &Inner {
-        width: 85%;
+        left: 50%;
       }
       a {
-        &::after {
-          -webkit-transform: translateX(19vw);
-              -ms-transform: translateX(19vw);
-                  transform: translateX(19vw);
-        }
         &::before {
-          right: 22.5%;
+          right: -11.5%;
+        }
+        &::after {
+          transform: translateX(15vw);
         }
       }
     }
@@ -1764,16 +1762,14 @@ a{
     }
     &_btn {
       &Inner {
-        width: 85%;
+        left: 50%;
       }
       a {
-        &::after {
-          -webkit-transform: translateX(19vw);
-              -ms-transform: translateX(19vw);
-                  transform: translateX(19vw);
-        }
         &::before {
-          right: 22.5%;
+          right: -11.5%;
+        }
+        &::after {
+          transform: translateX(15vw);
         }
       }
     }
@@ -1811,16 +1807,12 @@ a{
   .view {
     &_btn {
       &Inner {
-        width: 85%;
+        left: 40%;
       }
       a {
-        &::after {
-          -webkit-transform: translateX(26vw);
-              -ms-transform: translateX(26vw);
-                  transform: translateX(26vw);
-        }
         &::before {
-          right: 18.5%;
+          top: 15%;
+          right: 4.5%;
         }
       }
     }
@@ -1841,20 +1833,14 @@ a{
     }
     &_btn {
       &Inner {
-        width: 80%;
-        top: 65%;
+        left: 40%;
       }
       a {
-        font-size: 2.5rem;
-        &::after {
-          -webkit-transform: translateX(31vw);
-              -ms-transform: translateX(31vw);
-                  transform: translateX(31vw);
-          top: 20px;
-        }
         &::before {
-          top: 0%;
-          right: 11.5%;
+          right: -39.5%;
+        }
+        &::after {
+          transform: translateX(22vw);
         }
       }
     }
