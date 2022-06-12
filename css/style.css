@@ -175,6 +175,20 @@ select {
   vertical-align: middle;
 }
 
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
 .button {
   background: rgba(192, 192, 192, 0.287);
   text-align: center;
@@ -578,19 +592,24 @@ select {
 }
 
 .a_service_top {
-  position: relative;
   width: 100%;
-  height: 75vw;
+  height: 100vh;
 }
 .a_service_top_iner {
+  position: relative;
   display: inline-block;
   width: 100%;
   height: 100%;
-  margin-top: 8%;
 }
 .a_service_top_box {
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
   width: 90%;
-  height: 60%;
+  height: 35%;
+  left: 0%;
   background-color: #8FF9E4;
   -webkit-clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
@@ -601,8 +620,6 @@ select {
 .a_service_top_box_title {
   display: inline-block;
   position: absolute;
-  width: 30%;
-  height: auto;
   top: 30%;
   left: 10%;
 }
@@ -610,20 +627,28 @@ select {
   font-family: "Lobster Two", cursive;
   color: #fff;
   font-size: 8rem;
+  width: 100%;
+  line-height: 0.6;
 }
 .a_service_top_box_title span {
-  font-size: 2rem;
+  font-size: 0.3em;
   font-weight: bolder;
+  color: #000;
 }
 .a_service_top_img {
   position: absolute;
-  max-width: 70%;
-  overflow: auto;
-  top: 50%;
+  width: 60%;
+  -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
+  bottom: 20%;
   right: 0;
   opacity: 0;
   -webkit-animation: slidein-R 0.5s 2s forwards;
   animation: slidein-R 0.5s 2s forwards;
+}
+.a_service_top_img img {
+  width: 100%;
 }
 @-webkit-keyframes slidein-R {
   from {
@@ -741,9 +766,6 @@ select {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.hp_price_list_contents:first-child {
-  margin-left: 0;
-}
 .hp_price_list_contents:nth-child(2) {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
@@ -772,7 +794,7 @@ select {
   font-size: 10px;
 }
 .hp_price_list_contents_money strong {
-  font-size: 20px;
+  font-size: 2rem;
 }
 .hp_price_list_contents_money span {
   font-size: 10px;
@@ -1089,11 +1111,21 @@ li {
   }
 
   .a_service_top_img {
-    max-width: 70%;
+    width: 90%;
   }
 
   .a_service_hp_txt p {
     font-size: 14px;
+  }
+
+  .hp_price_list_wrap {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  .hp_price_list_contents {
+    width: 30%;
+    margin-left: 0;
   }
 
   .contents_wrap_box_list p {
@@ -1122,13 +1154,22 @@ li {
     font-size: 13px;
   }
 
-  .a_service_top_img img {
-    height: 150px;
+  .hp_price_list_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .hp_price_list_contents_point {
-    -webkit-clip-path: polygon(130% 100%, 100% 0%, 0% 0%, 40% 0%);
-    clip-path: polygon(130% 100%, 100% 0%, 0% 0%, 40% 0%);
+    display: inline-block;
+    position: absolute;
+    width: 70%;
+    height: 23%;
+    top: 0px;
+    right: 0px;
+    -webkit-clip-path: polygon(105% 100%, 100% 0%, 0% 0%, 44% 0%);
+    clip-path: polygon(105% 100%, 100% 0%, 0% 0%, 44% 0%);
     background: #2CC4CB;
     border-radius: 10px;
   }
@@ -1469,7 +1510,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -2992,5 +3033,3 @@ a {
     width: 25%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
