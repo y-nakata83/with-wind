@@ -2,19 +2,24 @@
 
 .a_service {
   &_top {
-    position: relative;
     width: 100%;
-    height: 75vw;
+    height: 100vh;
 
     &_iner {
+      position: relative;
       display: inline-block;
       width: 100%;
       height: 100%;
-      margin-top: 8%;
     }
     &_box {
+      position: absolute;
+      top: 30%;
+      -webkit-transform: translateY(-30%);
+          -ms-transform: translateY(-30%);
+              transform: translateY(-30%);
       width: 90%;
-      height: 60%;
+      height: 35%;
+      left: 0%;
       background-color: #8FF9E4;
       -webkit-clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
               clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
@@ -25,8 +30,6 @@
       &_title {
         display: inline-block;
         position: absolute;
-        width: 30%;
-        height: auto;
         top: 30%;
         left: 10%;
 
@@ -34,22 +37,31 @@
           font-family: "Lobster Two", cursive;
           color: #fff;
           font-size: 8rem;
+          width: 100%;
+          line-height: 0.6;
         }
         span {
-          font-size: 2rem;
+          font-size: 0.3em;
           font-weight: bolder;
+          color: $cBlack;
         }
       }
     }
     &_img {
       position: absolute;
-      max-width: 70%;
-      overflow: auto;
-      top: 50%;
+      width: 60%;
+      -webkit-transform: translateY(-20%);
+          -ms-transform: translateY(-20%);
+              transform: translateY(-20%);
+      bottom: 20%;
       right: 0;
       opacity: 0;
       -webkit-animation: slidein-R .5s 2s forwards;
               animation: slidein-R .5s 2s forwards;
+
+              img {
+                width: 100%;
+              }
     }
   }
 @-webkit-keyframes slidein-R {
@@ -174,9 +186,6 @@
       margin-left: 3%;
       -webkit-box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
               box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
-      &:first-child{
-        margin-left: 0;
-      }
       &:nth-child(2){
         -webkit-animation-delay: .3s;
                 animation-delay: .3s;
@@ -207,7 +216,7 @@
           font-size: 10px;
         }
         strong {
-          font-size: 20px;
+          font-size: 2rem;
         }
         span {
           font-size: 10px;
@@ -559,12 +568,21 @@
   }
 
 .a_service_top_img {
-
-  max-width: 70%;
+  width: 90%;
 }
 
 .a_service_hp_txt p {
   font-size: 14px;
+}
+
+.hp_price_list_wrap {
+  width: 90%;
+  justify-content: space-between;
+}
+
+.hp_price_list_contents {
+  width: 30%;
+  margin-left: 0;
 }
 
 .contents_wrap_box_list p {
@@ -595,15 +613,23 @@
     font-size: 13px;
   }
 
-  .a_service_top_img {
-    img {
-      height: 150px;
+    .hp_price_list_wrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
-  }
+
 
   .hp_price_list_contents_point {
-    -webkit-clip-path: polygon(130% 100%, 100% 0%, 0% 0%, 40% 0%);
-            clip-path: polygon(130% 100%, 100% 0%, 0% 0%, 40% 0%);
+    display: inline-block;
+    position: absolute;
+    width: 70%;
+    height: 23%;
+    top: 0px;
+    right: 0px;
+    -webkit-clip-path: polygon(105% 100%, 100% 0%, 0% 0%, 44% 0%);
+            clip-path: polygon(105% 100%, 100% 0%, 0% 0%, 44% 0%);
     background: #2CC4CB;
     border-radius: 10px;
   }
