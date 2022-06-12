@@ -215,6 +215,7 @@ select {
   display: block;
   width: 100%;
   height: 100%;
+  font-size: 1rem;
 }
 
 .header {
@@ -578,6 +579,8 @@ select {
 }
 .a_service_top_img {
   position: absolute;
+  max-width: 70%;
+  overflow: auto;
   top: 50%;
   right: 0;
   opacity: 0;
@@ -1034,6 +1037,13 @@ li {
   .hp_price_list_contents {
     width: 27%;
   }
+
+  .hp_price_list_contents_money_btn {
+    margin: auto;
+    margin-top: 10%;
+    max-width: 70%;
+    min-width: 80%;
+  }
 }
 @media screen and (max-width: 768px) {
   .a_service_top_box_title h1 {
@@ -1052,16 +1062,13 @@ li {
     font-size: 10px;
   }
 
-  .hp_price_list_contents_money_btn {
-    width: 60%;
-  }
-
   .lp_contents_box_list p {
     font-size: 10px;
   }
 
   .lp_price_list {
     width: 60%;
+    min-width: 90%;
   }
 
   .a_service_lp_txt p {
@@ -1142,6 +1149,8 @@ li {
 }
 .a_contact_top_img {
   position: absolute;
+  max-width: 70%;
+  overflow: auto;
   top: 50%;
   right: 0;
   opacity: 0;
@@ -1422,7 +1431,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -2945,5 +2954,3 @@ a {
     width: 25%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
