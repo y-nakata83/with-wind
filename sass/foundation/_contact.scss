@@ -48,6 +48,8 @@
 
     &_img {
       position: absolute;
+      max-width: 70%;
+      overflow: auto;
       top: 50%;
       right: 0;
       opacity: 0;
