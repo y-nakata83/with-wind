@@ -55,7 +55,7 @@
   &_hamburger {
     display: none;
     position: relative;
-    background-color: $cHiGreen;
+    background-color: rgba($color:#8FC31F, $alpha: .6);
     border-radius: 80% 0 80% 0;
     // z-index: 5;
     // right: 13px;
@@ -108,9 +108,10 @@
       &:nth-of-type(1),
       &:nth-of-type(3){
         height: 2px;
-        background: $cHiGreen;
+        background: $cHiBlue;
         width: 62%;
         left: 10px;
+        opacity: 0;
       }
     }
     &.active{
@@ -121,6 +122,7 @@
           transform: translateY(6px) rotate(-45deg);
           width: 30%;
           background: $cWhite;
+          opacity: 1;
         }
         &:nth-of-type(2){
           opacity: 0;
@@ -131,6 +133,7 @@
           transform: translateY(-6px) rotate(45deg);
           width: 30%;
           background: $cWhite;
+          opacity: 1;
         }
       }
     }
@@ -144,8 +147,8 @@
       z-index: 3;
       top: 0;
       right: 0;
-      background: $cHiGreen;
-      // opacity: .8;
+      background: #8FC31F;
+      opacity: .8;
       text-align: center;
       width: 100%;
       height: 100vh;
@@ -154,7 +157,7 @@
       //         transform: translate(-100%, -100%);
       border-radius: 0 85% 0 85%;
       transform-origin: right bottom;
-      transform: scale(0.05);
+      transform: scale(0.03);
       visibility: hidden;
       -webkit-transition: all .6s ease,
         visibility .6s ease;
