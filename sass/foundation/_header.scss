@@ -63,6 +63,7 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
+    z-index: 999;
     // text-align: center;
     // transition: 0.5s all;
 
@@ -148,7 +149,7 @@
       top: 0;
       right: 0;
       background: #8FC31F;
-      opacity: .8;
+      opacity: .9;
       text-align: center;
       width: 100%;
       height: 100vh;
@@ -174,21 +175,58 @@
         transform: scale(1);
       }
       &Item {
-        width: 60%;
+        width: 35%;
         display: inline-block;
         margin: 0 auto;
         font-size: 1vw;
         font-weight: 700;
+        position: absolute;
+        &:nth-child(1){
+          top: 10%;
+          left: 10%;
+          transform: translate(-10%,-10%);
+        }
+        &:nth-child(2){
+          top: 30%;
+          left: 30%;
+          transform: translate(-30%, -30%);
+        }
+        &:nth-child(3){
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:nth-child(4){
+          top: 70%;
+          left: 70%;
+          transform: translate(-70%, -70%);
+        }
+        &:nth-child(5){
+          top: 90%;
+          left: 90%;
+          transform: translate(-90%, -90%);
+          text-decoration: wavy underline;
+          text-underline-offset: 0.3em;
+          a{
+            text-decoration: overline wavy;
+          }
+        }
+
         a {
           display: block;
           width: 100%;
           height: 100%;
           line-height: 3;
-          margin-bottom: 3%;
           // border-bottom: solid 3px $cHiBlue;
           color: $cWhite;
         }
         &s {
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transform: translate(-50%, -50%);
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -281,6 +319,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 1024px) {
   .header{
     &_inner{
@@ -300,12 +340,8 @@
     &Sp {
       visibility: visible;
       height: 100vh;
-      padding-top: 15vh;
       &Item {
-        font-size: 4vw;
-        a {
-          font-size: 20px;
-        }
+        font-size: 3.5vw;
       }
     }
   }
@@ -314,4 +350,10 @@
     margin-left: 5%;
   }
 }
+}
+
+@media screen and (max-width:599px) {
+  .header_navSpItem{
+    font-size: 5vw;
+  }
 }
