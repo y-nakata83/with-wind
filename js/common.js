@@ -70,9 +70,9 @@ $(function () {
   $('.header_hamburger').click(function() {
       $(this).toggleClass('active');
       if ($(this).hasClass('active')) {
-          $('.header_navSp').addClass('active');
+          $('.header_navSp,.header_navSpItems').addClass('active');
       } else {
-          $('.header_navSp').removeClass('active');
+          $('.header_navSp,.header_navSpItems').removeClass('active');
       }
       });
       $('a[href^="#"]').click(function() {

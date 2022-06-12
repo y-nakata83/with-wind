@@ -169,7 +169,6 @@
         visibility: visible;
         transform-origin: right bottom;
         transform: scale(1);
-        
       }
       &Item {
         width: 60%;
@@ -194,30 +193,35 @@
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column;
-        }
-      }
-    }
-    &Items {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      padding: 1.5% 3%;
-      text-align: center;
-      li {
-        width: 13%;
-        a {
-          font-size: 13px;
-          color: $cWhite;
-          -webkit-transition: 0.5s;
-          -o-transition: 0.5s;
-          transition: 0.5s;
-          &:hover {
-            color: $cHiBlue;
+          visibility: hidden;
+          transition: visivility .6s ease;
+          &.active{
+            visibility: visible;
           }
         }
       }
     }
+    // &Items {
+    //   width: 100%;
+    //   display: -webkit-box;
+    //   display: -ms-flexbox;
+    //   display: flex;
+    //   padding: 1.5% 3%;
+    //   text-align: center;
+    //   li {
+    //     width: 13%;
+    //     a {
+    //       font-size: 13px;
+    //       color: $cWhite;
+    //       -webkit-transition: 0.5s;
+    //       -o-transition: 0.5s;
+    //       transition: 0.5s;
+    //       &:hover {
+    //         color: $cHiBlue;
+    //       }
+    //     }
+    //   }
+    // }
     //ハンバーガーここまで↑
     &Box {
       display: -webkit-box;
@@ -276,6 +280,12 @@
 
 @media screen and (max-width: 1024px) {
   .header{
+    &_inner{
+      justify-content: space-between;
+    }
+    &_right{
+      width: 13%;
+    }
     &_hamburger{
       display: block;
       span {
@@ -297,7 +307,8 @@
     }
   }
   &_left {
-    width: 40%;
+    width: 25%;
+    margin-left: 5%;
   }
 }
 }
