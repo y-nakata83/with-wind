@@ -1587,6 +1587,43 @@ li {
     display: inline-block;
   }
 }
+div.wrap {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+div.wrap div {
+  position: relative;
+  margin: 50px 0;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  margin: 10px;
+  padding: 0 10px;
+  -webkit-transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+.active {
+  top: 60px;
+  font-size: 20px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #000;
+  font-size: 20px;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
 /*========= 画面遷移のためのCSS ===============*/
 /*画面遷移アニメーション*/
 .splashbg {
