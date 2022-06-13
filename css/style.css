@@ -481,6 +481,9 @@ html {
 }
 
 @media screen and (max-width: 1024px) {
+  .header {
+    position: absolute;
+  }
   .header_inner {
     justify-content: space-between;
   }
@@ -489,6 +492,9 @@ html {
   }
   .header_hamburger {
     display: block;
+    position: fixed;
+    top: 5%;
+    right: 5%;
   }
   .header_hamburger span {
     display: block;
@@ -1572,7 +1578,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: rgba(44, 196, 203, 0.1882352941);
+  background-color: #2CC4CB30;
   /*伸びる背景色の設定*/
 }
 
@@ -3357,3 +3363,5 @@ a {
     font-size: 1.1rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
