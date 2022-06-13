@@ -323,6 +323,7 @@
 
 @media screen and (max-width: 1024px) {
   .header{
+    position: absolute;
     &_inner{
       justify-content: space-between;
     }
@@ -331,6 +332,9 @@
     }
     &_hamburger{
       display: block;
+      position: fixed;
+      top: 5%;
+      right: 5%;
       span {
         display: block;
       }
