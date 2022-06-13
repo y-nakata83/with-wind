@@ -74,21 +74,57 @@
             <p>は必須項目なります</p>
           </div>
           <form action="#" class="a_contact_form" id="form">
-            <div class="a_contact_box">
+            <div class="wrap">
+              <div class="a_contact_form_ttl"><p>お客様</p></div>
+              <div>
+                <label for="fname"><p>例) 山田 太郎</p></label>
+                <input id="fname" type="text" class="cool" />
+              </div>
+              <div class="a_contact_form_ttl"><p>メールアドレス</p></div>
+              <div>
+                <label for="email">
+                  <p>例) yamada@****</p>
+                </label>
+                <input id="email" type="text" class="cool" />
+              </div>
+              <div class="a_contact_box">
+                <label for="radio" class="a_contact_form_ttl _ttl">
+                  <p>お問い合わせの種類</p>
+                </label>
+                <div class="a_contact_box_selection">
+                  <div class="l">
+                    <input type="radio" name="sex" value="LP制作" checked> LP制作
+                  </div>
+                  <div class="h">
+                    <input type="radio" name="sex" value="HP制作"> HP制作
+                  </div>
+                  <div class="o">
+                    <input type="radio" name="sex" value="その他お問い合わせ"> その他お問い合わせ
+                  </div>
+                </div>
+              </div>
+              <div class="a_contact_box_area">
+                  <p>お問い合わせ内容</p>
+                <label for="message" class="a_contact_area_ttl">
+                </label>
+                <textarea name="message" class="a_contact_txtarea" id="message" required="required"></textarea>
+              </div>
+            </div>
+            <!-- <div class="a_contact_box"> 
               <label for="name" class="a_contact_form_ttl"><p>お客様</p></label>
               <input type="text" class="a_contact_form_box2" name="" required="required">
                 <div class="a_contact_form_example">
                   <p>例) 山田 太郎</p>
                 </div>
-            </div>
-            <div class="a_contact_box">
+            </div>-->
+            <!-- <div class="a_contact_box"> 
               <label for="email" class="a_contact_form_ttl"><p>メールアドレス</p></label>
               <input type="email" class="a_contact_form_box2" name="" required="required">
                 <div class="a_contact_form_example">
                   <p>例) yamada@****</p>
                 </div>
-            </div>
-            <div class="a_contact_box">
+            </div>-->
+            <!-- <div class="a_contact_box"> 
               <label for="radio" class="a_contact_form_ttl _ttl"><p>お問い合わせの種類</p></label>
               <div class="a_contact_box_selection">
                 <div class="l">
@@ -101,11 +137,11 @@
                   <input type="radio" name="sex" value="その他お問い合わせ"> その他お問い合わせ
                 </div>
               </div>
-            </div>
-            <div class="a_contact_box_area">
+            </div>-->
+            <!-- <div class="a_contact_box_area">
               <label for="message" class="a_contact_area_ttl"><p>お問い合わせ内容</p></label>
               <textarea name="message" class="a_contact_txtarea" id="message" required="required"></textarea>
-            </div>
+            </div>-->
             <div class="privacy">
               <div class="privacy_ttl">
                 <p><strong>プライバシーポリシー</strong></p>
