@@ -2384,27 +2384,23 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: inline-block;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin-top: 0%;
-  width: 25%;
-  left: 55%;
+  width: 20%;
+  left: 50%;
   transform: translateX(-50%);
-  top: 70%;
+  top: 60%;
 }
 .para1_btn a {
   display: block;
-  width: 100%;
+  width: 60%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  line-height: 3;
+  text-align: center;
 }
 .para1_btn a:hover {
   color: #2CC4CB;
@@ -2418,8 +2414,8 @@ a {
 .para1_btn a::before {
   content: "";
   position: absolute;
-  top: -30%;
-  right: 46.5%;
+  top: 25%;
+  right: 20.5%;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -2436,13 +2432,13 @@ a {
   width: 55px;
   height: 0%;
   bottom: 0;
-  top: 12px;
+  top: 50%;
   border: 1px solid #fff;
   z-index: 1;
   position: absolute;
-  -webkit-transform: translateX(8vw);
-  -ms-transform: translateX(8vw);
-  transform: translateX(8vw);
+  -webkit-transform: translateX(10.5vw);
+  -ms-transform: translateX(10.5vw);
+  transform: translateX(10.5vw);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -2560,21 +2556,21 @@ a {
   position: relative;
   display: inline-block;
   text-align: center;
-  width: 25%;
+  width: 20%;
   left: 50%;
   transform: translateX(-50%);
 }
 .view_btn a {
   display: block;
-  width: 100%;
+  width: 60%;
   height: 100%;
   line-height: 3;
-  padding: 0 10%;
   color: #000;
   font-size: 1.7rem;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  text-align: center;
 }
 .view_btn a:hover {
   color: #2CC4CB;
@@ -2588,8 +2584,8 @@ a {
 .view_btn a::before {
   content: "";
   position: absolute;
-  top: 20%;
-  right: 4.5%;
+  top: 25%;
+  right: 13.5%;
   width: 40px;
   height: 40px;
   border: 2px solid #000;
@@ -2606,14 +2602,13 @@ a {
   width: 55px;
   height: 0%;
   bottom: 0;
-  top: 46%;
-  right: 55%;
+  top: 50%;
   border: 1px solid #000;
   z-index: 1;
   position: absolute;
-  -webkit-transform: translateX(11.4vw);
-  -ms-transform: translateX(11.4vw);
-  transform: translateX(11.4vw);
+  -webkit-transform: translateX(12vw);
+  -ms-transform: translateX(12vw);
+  transform: translateX(12vw);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -2654,27 +2649,23 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: inline-block;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin-top: 0%;
-  width: 25%;
-  left: 55%;
+  width: 20%;
+  left: 50%;
   transform: translateX(-50%);
-  top: 70%;
+  top: 60%;
 }
 .para2_btn a {
   display: block;
-  width: 100%;
+  width: 60%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
+  text-align: center;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  line-height: 3;
 }
 .para2_btn a:hover {
   color: #2CC4CB;
@@ -2688,8 +2679,8 @@ a {
 .para2_btn a::before {
   content: "";
   position: absolute;
-  top: -30%;
-  right: 46.5%;
+  top: 25%;
+  right: 20.5%;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -2706,13 +2697,13 @@ a {
   width: 55px;
   height: 0%;
   bottom: 0;
-  top: 12px;
+  top: 50%;
   border: 1px solid #fff;
   z-index: 1;
   position: absolute;
-  -webkit-transform: translateX(8vw);
-  -ms-transform: translateX(8vw);
-  transform: translateX(8vw);
+  -webkit-transform: translateX(10.5vw);
+  -ms-transform: translateX(10.5vw);
+  transform: translateX(10.5vw);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -2864,27 +2855,23 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: inline-block;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin-top: 0%;
-  width: 25%;
-  left: 45%;
+  width: 20%;
+  left: 50%;
   transform: translateX(-50%);
-  top: 70%;
+  top: 60%;
 }
 .contact_btn a {
   display: block;
-  width: 100%;
+  width: 60%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  line-height: 3;
+  text-align: center;
 }
 .contact_btn a:hover {
   color: #2CC4CB;
@@ -2898,8 +2885,8 @@ a {
 .contact_btn a::before {
   content: "";
   position: absolute;
-  top: -30%;
-  right: 10.5%;
+  top: 25%;
+  right: 20.5%;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -2916,13 +2903,13 @@ a {
   width: 55px;
   height: 0%;
   bottom: 0;
-  top: 12px;
+  top: 50%;
   border: 1px solid #fff;
   z-index: 1;
   position: absolute;
-  -webkit-transform: translateX(17vw);
-  -ms-transform: translateX(17vw);
-  transform: translateX(17vw);
+  -webkit-transform: translateX(10.5vw);
+  -ms-transform: translateX(10.5vw);
+  transform: translateX(10.5vw);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
