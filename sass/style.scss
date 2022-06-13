@@ -1600,7 +1600,58 @@ a{
 }
 
 @media screen and (max-width: 1024px) {
-  
+  .para {
+    &1 {
+      &_btn {
+        a {
+          &::before {
+            right: 7.5%;
+          }
+          &::after {
+            transform: translateX(11vw);
+          }
+        }
+      }
+    }
+    &2 {
+      &_btn {
+        a {
+          &::before {
+            right: 7.5%;
+          }
+          &::after {
+            transform: translateX(11vw);
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    &_btn {
+      a {
+        &::before {
+          right: 7.5%;
+        }
+        &::after {
+          transform: translateX(11vw);
+        }
+      }
+    }
+  }
+  .view {
+    &_btn {
+      a {
+        width: 70%;
+        &::before {
+            right: -7.5%;
+          }
+        
+          &::after {
+            transform: translateX(14vw);
+          }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -1627,11 +1678,12 @@ a{
     }
     &_btn {
       &Inner {
-        left: 50%;
+        left: 48%;
       }
       a {
         &::before {
-          right: -11.5%;
+          right: -40.5%;
+          top: 20%;
         }
         &::after {
           transform: translateX(15vw);
@@ -1645,11 +1697,12 @@ a{
     }
     &_btn {
       &Inner {
-        left: 50%;
+        left: 48%;
       }
       a {
         &::before {
-          right: -11.5%;
+          right: -40.5%;
+          top: 20%;
         }
         &::after {
           transform: translateX(15vw);
@@ -1661,27 +1714,29 @@ a{
     &_txt {
       &Box {
         &R {
+          width: 35%;
           top: 30%;
           h2 {
             font-size: 4vw;
           }
           p {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
           }
         }
         &L {
+          width: 35%;
           top: 30%;
           h2 {
             font-size: 3.7vw;
           }
           p {
-            font-size: 0.9rem;
+            font-size: 1.1rem;
           }
         }
       }
     }
     &_triangle {
-      border-bottom: 29vh solid $cHiGreen;
+      border-bottom: 29vh solid $cHiBlue;
       top: 25%;
       border-left: 150px solid transparent;
       border-right: 150px solid transparent;
@@ -1690,12 +1745,16 @@ a{
   .view {
     &_btn {
       &Inner {
-        left: 40%;
+        left: 47%;
       }
       a {
+        width: 97%;
         &::before {
-          top: 15%;
-          right: 4.5%;
+          top: 18%;
+          right: -62.5%;
+        }
+        &::after {
+          transform: translateX(20vw);
         }
       }
     }
@@ -1711,19 +1770,22 @@ a{
         }
         p {
           font-size: 4vw;
+          margin-top: 7%;
         }
       }
     }
     &_btn {
       &Inner {
-        left: 40%;
+        left: 48%;
       }
       a {
         &::before {
-          right: -39.5%;
+          right: -40.5%;
+          top: 20%;
         }
+      
         &::after {
-          transform: translateX(22vw);
+          transform: translateX(15vw);
         }
       }
     }
@@ -1731,6 +1793,7 @@ a{
   .qa {
     &_txt {
       font-size: 1rem;
+      line-height: 35px;
     }
     &_icon {
       &Q {
