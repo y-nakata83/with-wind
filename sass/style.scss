@@ -998,11 +998,11 @@ a{
     &Inner{
       background-color: $cBlack;
       width: 100%;
-      padding: 10%;
+      padding: 8%;
       color: $cWhite;
       text-align: justify;
       p{
-        font-size: 1.1vw;
+        font-size: 1.5rem;
         line-height: 2;
       }
     }
@@ -1230,6 +1230,7 @@ a{
       text-align: center;
       width: 20%;
       left: 50%;
+      margin-top: 5vh;
       transform: translateX(-50%);
     }
     a {
@@ -1599,7 +1600,18 @@ a{
   }
 }
 
+//レスポンシブ対応
+
 @media screen and (max-width: 1024px) {
+  .about {
+    &_item {
+      &Inner {
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
   .para {
     &1 {
       &_btn {
@@ -1667,8 +1679,24 @@ a{
         }
       }
     }
+    &2 {
+      a {
+        &::before {
+          right: -7.5%;
+          top: 20%;
+        }
+        &::after {
+          transform: translateX(12vw);
+        }
+      }
+    }
   }
   .service {
+    &_triangle {
+      width: 100%;
+      border-left: 250px solid transparent;
+      border-right: 250px solid transparent;
+    }
     &_txt {
       &Box {
         &R {
@@ -1695,6 +1723,20 @@ a{
       }
     }
   }
+  .contact {
+    &_btn {
+      a {
+        &::before {
+          right: -7.5%;
+          top: 20%;
+        }
+    
+        &::after {
+          transform: translateX(12vw);
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -1702,7 +1744,7 @@ a{
     &_item {
       &Inner {
         p {
-          font-size: 1.6vw;
+          font-size: 1rem;
         }
       }
     }
@@ -1737,6 +1779,9 @@ a{
   .para2 {
     p {
       font-size: 5vw;
+    }
+    &_inner {
+      margin-top: 8vh;
     }
     &_btn {
       &Inner {
@@ -1779,10 +1824,8 @@ a{
       }
     }
     &_triangle {
-      border-bottom: 29vh solid $cHiBlue;
-      top: 25%;
-      border-left: 150px solid transparent;
-      border-right: 150px solid transparent;
+      border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
     }
   }
   .view {
@@ -1794,25 +1837,22 @@ a{
         width: 97%;
         &::before {
           top: 18%;
-          right: -62.5%;
+          right: -43.5%;
         }
         &::after {
-          transform: translateX(20vw);
+          transform: translateX(23vw);
         }
       }
     }
   }
   .contact {
-    p {
-      font-size: 5vw;
-    }
     &_txt {
       &Box {
         h2 {
-          font-size: 1.4rem;
+          font-size: 1.8rem;
         }
         p {
-          font-size: 4vw;
+          font-size: 1.4rem;
           margin-top: 7%;
         }
       }
@@ -1836,7 +1876,7 @@ a{
   .qa {
     &_txt {
       font-size: 1rem;
-      line-height: 35px;
+      line-height: 2;
     }
     &_icon {
       &Q {
@@ -1848,10 +1888,311 @@ a{
         padding: 3%;
       }
     }
+    &_title {
+      line-height: 1.5;
+    }
   }
   .footer {
     &_left {
       width: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .para {
+    &1 {
+      &_btn {
+        a {
+          &::before {
+            width: 30px;
+            height: 30px;
+            right: -39.5%;
+            top: 25%;
+          }
+          &::after {
+            width: 40px;
+            transform: translateX(17vw);
+          }
+        }
+      }
+    }
+  }
+  .view {
+    &_btn {
+      a {
+        &::before {
+          top: 25%;
+          width: 30px;
+          height: 25px;
+        }
+        &::after {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .para {
+    &1 {
+      &_btn {
+        &Inner {
+          left: 46%;
+        }
+        a {
+          &::before {
+            right: -58.5%;
+            top: 29%;
+            width: 25px;
+            height: 25px;
+          }
+          &::after {
+            width: 30px;
+            transform: translateX(21vw);
+          }
+        }
+      }
+    }
+    &2 {
+      &_btn {
+        &Inner {
+          left: 46%;
+        }
+        a {
+          &::before {
+            right: -58.5%;
+            top: 29%;
+            width: 25px;
+            height: 25px;
+          }
+          &::after {
+            width: 30px;
+            transform: translateX(21vw);
+          }
+        }
+      }
+    }
+  }
+  .about {
+    &_box {
+      margin-top: 20%;
+    }
+    &_item {
+      &Inner {
+        padding: 14%;
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    &_copy {
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .service {
+    &_triangle {
+      border-bottom: 30vh solid $cHiBlue;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+    }
+    &_txt {
+      &Box {
+        &R {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+        &L {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  .view {
+    &_btn {
+      &Inner {
+        left: 46%;
+      }
+      a {
+        font-size: 1.4rem;
+        &::before {
+          right: -39.5%;
+          top: 25%;
+          width: 25px;
+          height: 25px;
+        }
+        &::after {
+          width: 30px;
+          transform: translateX(24vw);
+        }
+      }
+    }
+  }
+  .contact {
+    &_btn {
+      &Inner {
+        left: 46%;
+      }
+  
+      a {
+        &::before {
+          right: -58.5%;
+          top: 29%;
+          width: 25px;
+          height: 25px;
+        }
+  
+        &::after {
+          width: 30px;
+          transform: translateX(21vw);
+        }
+      }
+    }
+    &_txt {
+      &Box {
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .about {
+    &_copy {
+      h2 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .view {
+    &_btn {
+      &Inner {
+        width: 27%;
+      }
+      a {
+        &::after {
+          transform: translateX(27vw);
+        }
+      }
+    }
+  }
+  .para {
+    &2 {
+      &_btn {
+        a {
+          &::after {
+            transform: translateX(22vw);
+          }
+          &::before {
+            right: -68.5%;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    &_btn {
+      a {
+        &::after {
+          transform: translateX(23vw);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .para {
+    &1 {
+      &_btn {
+        a {
+          &::before {
+            right: -75.5%;
+          }
+          &::after {
+            transform: translateX(23vw);
+          }
+        }
+      }
+    }
+    &2 {
+      &_btn {
+        a {
+          &::before {
+            right: -75.5%;
+          }
+          &::after {
+            transform: translateX(23vw);
+          }
+        }
+      }
+    }
+  }
+  .about {
+    &_copy {
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+    &_item {
+      &Inner {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .service {
+    &_txt {
+      &Box {
+        &R {
+          top: 25%;
+        }
+        &L {
+          top: 25%;
+        }
+      }
+    }
+  }
+  .view {
+    &_btn {
+      &Inner {
+        a {
+          &::before {
+            right: -41.5%;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    &_btn {
+      a {
+        &::before {
+          right: -75.5%;
+        }
+  
+        &::after {
+          transform: translateX(23vw);
+        }
+      }
+    }
+    h2 {
+      font-size: 1.1rem;
     }
   }
 }
