@@ -1651,7 +1651,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: rgba(44, 196, 203, 0.1882352941);
+  background-color: #2CC4CB30;
   /*伸びる背景色の設定*/
 }
 
@@ -3436,3 +3436,5 @@ a {
     font-size: 1.1rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
