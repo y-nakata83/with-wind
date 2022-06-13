@@ -609,8 +609,15 @@
 }
 
 @media screen and (max-width: 599px) {
-  html{
-    font-size: 13px;
+
+.a_service_top_box_title h1 {
+    font-size: 4rem;
+  }
+
+.a_service_hp_txt {
+    display: block;
+    width: 90%;
+    margin: 10% auto;
   }
 
     .hp_price_list_wrap {
@@ -620,30 +627,81 @@
               flex-direction: column;
     }
 
-
-  .hp_price_list_contents_point {
-    display: inline-block;
-    position: absolute;
-    width: 70%;
-    height: 23%;
-    top: 0px;
-    right: 0px;
-    -webkit-clip-path: polygon(105% 100%, 100% 0%, 0% 0%, 44% 0%);
-            clip-path: polygon(105% 100%, 100% 0%, 0% 0%, 44% 0%);
-    background: #2CC4CB;
-    border-radius: 10px;
-  }
-  .hp_price_list_contents_point p {
-    margin-top: 17%;
-    margin-left: 57%;
-    font-size: 10px;
-  }
-
-    .lp_price_list_contents {
-      width: 30%;
+    .hp_price_list_title {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
     }
 
-  .kp_price_list_contents {
-    width: 50%;
+        .hp_price_list_contents {
+          width: 80%;
+          margin: 0 auto 10%;
+        }
+
+    .hp_price_list_contents_point {
+      -webkit-clip-path: polygon(105% 100%, 100% 0%, 0% 0%, 44% 0%);
+      clip-path: polygon(103% 100%, 100% 0%, 0% 0%, 51% 0%);
+    }
+
+  .hp_price_list_contents_point p {
+    font-size: 1rem;
   }
+
+    .contents_wrap_box_list img {
+      width: 10%;
+    }
+
+    .contents_wrap_box_list p {
+      font-size: 1rem;
+    }
+
+    .a_service_lp_box {
+      flex-direction: column-reverse;
+    }
+
+    .a_service_lp_txt {
+      width: 90%;
+      margin: 10% auto;
+    }
+
+        .a_service_lp_txt_img img {
+          display: none;
+        }
+
+    .lp_price_list_contents {
+      width: 80%;
+    }
+
+    .lp_price_list_contents_money p {
+      font-size: 2rem;
+    }
+
+    .lp_contents_box_list p {
+      font-size: 1rem;
+    }
+
+    .a_service_control_txt {
+      width: 80%;
+    }
+
+    .a_service_control_txt p {
+      font-size: 1rem;
+    }
+  .kp_price_list_contents {
+    width: 80%;
+  }
+
+  .kp_price_list_contents_money p {
+    font-size: 2rem;
+  }
+    
+  .kp_contents_box_list {
+      width: 100%;
+    }
+
+  .kp_contents_box_list p {
+    font-size: 1rem;
+  }
+
 }
