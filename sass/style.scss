@@ -1042,27 +1042,23 @@ a{
       display: -webkit-box;
       display: -ms-flexbox;
       display: inline-block;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       margin-top: 0%;
-      width: 25%;
-      left: 55%;
+      width: 20%;
+      left: 50%;
       transform: translateX(-50%);
-      top: 70%;
+      top: 60%;
     }
     a {
       display: block;
-      width: 100%;
+      width: 60%;
       height: 100%;
       color: $cWhite;
       font-size: 1.7rem;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
+      line-height: 3;
+      text-align: center;
       &:hover {
         color: $cHiBlue;
         &::before {
@@ -1075,8 +1071,8 @@ a{
       &::before {
         content: '';
         position: absolute;
-        top: -30%;
-        right: 46.5%;
+        top: 25%;
+        right: 20.5%;
         width: 40px;
         height: 40px;
         border: 2px solid $cWhite;
@@ -1093,13 +1089,13 @@ a{
         width: 55px;
         height: 0%;
         bottom: 0;
-        top: 12px;
+        top: 50%;
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        -webkit-transform: translateX(8vw);
-            -ms-transform: translateX(8vw);
-                transform: translateX(8vw);
+        -webkit-transform: translateX(10.5vw);
+            -ms-transform: translateX(10.5vw);
+                transform: translateX(10.5vw);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
@@ -1232,21 +1228,21 @@ a{
       position: relative;
       display: inline-block;
       text-align: center;
-      width: 25%;
+      width: 20%;
       left: 50%;
       transform: translateX(-50%);
     }
     a {
       display: block;
-      width: 100%;
+      width: 60%;
       height: 100%;
       line-height: 3;
-      padding: 0 10%;
       color: $cBlack;
       font-size: 1.7rem;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
+      text-align: center;
       &:hover {
         color: $cHiBlue;
         &::before {
@@ -1259,8 +1255,8 @@ a{
       &::before {
         content: '';
         position: absolute;
-        top: 20%;
-        right: 4.5%;
+        top: 25%;
+        right: 13.5%;
         width: 40px;
         height: 40px;
         border: 2px solid $cBlack;
@@ -1277,14 +1273,13 @@ a{
         width: 55px;
         height: 0%;
         bottom: 0;
-        top: 46%;
-        right: 55%;
+        top: 50%;
         border: 1px solid $cBlack;
         z-index: 1;
         position: absolute;
-        -webkit-transform: translateX(11.4vw);
-            -ms-transform: translateX(11.4vw);
-                transform: translateX(11.4vw);
+        -webkit-transform: translateX(12vw);
+            -ms-transform: translateX(12vw);
+                transform: translateX(12vw);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
@@ -1326,27 +1321,23 @@ a{
       display: -webkit-box;
       display: -ms-flexbox;
       display: inline-block;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
       margin-top: 0%;
-      width: 25%;
-      left: 55%;
+      width: 20%;
+      left: 50%;
       transform: translateX(-50%);
-      top: 70%;
+      top: 60%;
     }
     a {
       display: block;
-      width: 100%;
+      width: 60%;
       height: 100%;
       color: $cWhite;
       font-size: 1.7rem;
+      text-align: center;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
+      line-height: 3;
       &:hover {
         color: $cHiBlue;
         &::before {
@@ -1359,8 +1350,8 @@ a{
       &::before {
         content: '';
         position: absolute;
-        top: -30%;
-        right: 46.5%;
+        top: 25%;
+        right: 20.5%;
         width: 40px;
         height: 40px;
         border: 2px solid $cWhite;
@@ -1377,13 +1368,13 @@ a{
         width: 55px;
         height: 0%;
         bottom: 0;
-        top: 12px;
+        top: 50%;
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        -webkit-transform: translateX(8vw);
-        -ms-transform: translateX(8vw);
-        transform: translateX(8vw);
+        -webkit-transform: translateX(10.5vw);
+        -ms-transform: translateX(10.5vw);
+        transform: translateX(10.5vw);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
@@ -1546,29 +1537,23 @@ a{
       display: -webkit-box;
       display: -ms-flexbox;
       display: inline-block;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
       margin-top: 0%;
-      width: 25%;
-      left: 45%;
+      width: 20%;
+      left: 50%;
       transform: translateX(-50%);
-      top: 70%;
+      top: 60%;
     }
-
     a {
       display: block;
-      width: 100%;
+      width: 60%;
       height: 100%;
       color: $cWhite;
       font-size: 1.7rem;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
-
+      line-height: 3;
+      text-align: center;
       &:hover {
         color: $cHiBlue;
         &::before {
@@ -1581,8 +1566,8 @@ a{
       &::before {
         content: '';
         position: absolute;
-        top: -30%;
-        right: 10.5%;
+        top: 25%;
+        right: 20.5%;
         width: 40px;
         height: 40px;
         border: 2px solid $cWhite;
@@ -1591,7 +1576,6 @@ a{
         -o-transition: .5s;
         transition: .5s;
       }
-
       &::after {
         content: '';
         display: -webkit-box;
@@ -1600,13 +1584,13 @@ a{
         width: 55px;
         height: 0%;
         bottom: 0;
-        top: 12px;
+        top: 50%;
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        -webkit-transform: translateX(17vw);
-        -ms-transform: translateX(17vw);
-        transform: translateX(17vw);
+        -webkit-transform: translateX(10.5vw);
+        -ms-transform: translateX(10.5vw);
+        transform: translateX(10.5vw);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
