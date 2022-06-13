@@ -2946,6 +2946,32 @@ a {
     transform: translateX(14vw);
   }
 }
+@media screen and (max-width: 768px) {
+  .para1 a::before {
+    right: -7.5%;
+    top: 20%;
+  }
+  .para1 a::after {
+    transform: translateX(12vw);
+  }
+
+  .service_txtBoxR {
+    top: 30%;
+  }
+  .service_txtBoxL {
+    top: 30%;
+  }
+
+  .view_btnInner {
+    width: 25%;
+  }
+  .view_btn a::before {
+    top: 20%;
+  }
+  .view_btn a::after {
+    transform: translateX(17vw);
+  }
+}
 @media screen and (max-width: 599px) {
   .about_itemInner p {
     font-size: 1.6vw;

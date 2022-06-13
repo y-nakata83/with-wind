@@ -1654,6 +1654,49 @@ a{
   }
 }
 
+@media screen and (max-width: 768px) {
+  .para {
+    &1 {
+      a {
+        &::before {
+          right: -7.5%;
+          top: 20%;
+        }
+        &::after {
+          transform: translateX(12vw);
+        }
+      }
+    }
+  }
+  .service {
+    &_txt {
+      &Box {
+        &R {
+          top: 30%;
+        }
+        &L {
+          top: 30%;
+        }
+      }
+    }
+  }
+  .view {
+    &_btn {
+      &Inner {
+        width: 25%;
+      }
+      a {
+        &::before {
+          top: 20%;
+        }
+        &::after {
+          transform: translateX(17vw);
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 599px) {
   .about {
     &_item {
