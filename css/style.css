@@ -1034,7 +1034,7 @@ li {
   margin-top: 10%;
 }
 .kp_price_list_contents_money p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 .kp_price_list_contents_money span {
   font-size: 10px;
@@ -1253,17 +1253,23 @@ li {
 .a_contact_top {
   position: relative;
   width: 100%;
-  height: 75vw;
+  height: 100vh;
 }
 .a_contact_top_iner {
+  position: relative;
   display: inline-block;
   width: 100%;
   height: 100%;
-  margin-top: 8%;
 }
 .a_contact_top_box {
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
   width: 90%;
-  height: 60%;
+  height: 40%;
+  left: 0%;
   background-color: #8FF9E4;
   -webkit-clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(65% 0%, 0% 0%, 0% 100%, 100% 100%);
@@ -1274,8 +1280,6 @@ li {
 .a_contact_top_box_title {
   display: inline-block;
   position: absolute;
-  width: 30%;
-  height: auto;
   top: 30%;
   left: 10%;
 }
@@ -1283,20 +1287,28 @@ li {
   font-family: "Lobster Two", cursive;
   color: #fff;
   font-size: 8rem;
+  width: 100%;
+  line-height: 0.6;
 }
 .a_contact_top_box_title span {
-  font-size: 2rem;
+  font-size: 0.3em;
   font-weight: bolder;
+  color: #000;
 }
 .a_contact_top_img {
   position: absolute;
-  max-width: 70%;
-  overflow: auto;
-  top: 50%;
+  width: 60%;
+  -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
+  bottom: 20%;
   right: 0;
   opacity: 0;
   -webkit-animation: slidein-R 0.5s 2s forwards;
   animation: slidein-R 0.5s 2s forwards;
+}
+.a_contact_top_img img {
+  width: 100%;
 }
 @-webkit-keyframes slidein-R {
   from {
@@ -1355,8 +1367,8 @@ li {
   margin: 0, auto;
 }
 .twitter_txt {
-  text-align: inherit;
-  margin-left: 30%;
+  margin: 0 auto;
+  text-align: center;
 }
 .twitter_txt p {
   font-size: large;
@@ -1475,6 +1487,9 @@ li {
 .privacy_chk_txt {
   margin-top: 3%;
 }
+.privacy_chk_txt p {
+  font-size: 1rem;
+}
 
 .b_contact {
   margin: 5% auto;
@@ -1506,8 +1521,16 @@ li {
 }
 
 @media screen and (max-width: 1024px) {
-  .a_contact_box {
-    margin-bottom: 12.5%;
+  .a_contact_top_box_title h1 {
+    font-size: 6.5rem;
+  }
+
+  .privacy_chk_txt p {
+    font-size: 0.8rem;
+  }
+
+  .a_contact_box_selection {
+    width: 80%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1516,33 +1539,46 @@ li {
   }
 
   .a_contact_top_img {
-    max-width: 70%;
+    width: 90%;
   }
 
   .twitter_txt {
     margin-left: 20%;
   }
-
-  .a_contact_box_selection {
-    width: 80%;
-  }
 }
 @media screen and (max-width: 599px) {
+  .a_contact_top_box_title h1 {
+    font-size: 3.5rem;
+  }
+
   .twitter_txt {
     margin-left: 15%;
     width: 70%;
-  }
-
-  .a_contact_top_img img {
-    height: 150px;
   }
 
   .twitter_txt p {
     font-size: 15px;
   }
 
+  .twitter_btn {
+    width: 40%;
+  }
+
+  .twitter_btn a {
+    font-size: 1.2rem;
+  }
+
   .privacy_chk p {
     font-size: 15px;
+  }
+
+  .a_contact_box_selection {
+    flex-direction: column;
+    line-height: 2;
+  }
+
+  .l, .h, .o {
+    display: inline-block;
   }
 }
 /*========= 画面遷移のためのCSS ===============*/
