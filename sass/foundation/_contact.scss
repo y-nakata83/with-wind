@@ -170,7 +170,7 @@
     margin: 5% auto 10%;
 
     &_ttl {
-        width: 25%;
+        width: 100%;
         height: 100%;
         font-size: large;
         position: relative;
@@ -311,6 +311,54 @@ border: none;
     }
 }
 
+///////テキストボックス/////// 
+
+div.wrap {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+div.wrap div {
+  position: relative;
+  margin: 30px 0;
+
+}
+
+label {
+  position: absolute;
+  top: 0;
+  font-size: 30px;
+  margin: 10px;
+  padding: 0 10px;
+  -webkit-transition: top .2s ease-in-out,
+    font-size .2s ease-in-out;
+  transition: top .2s ease-in-out,
+    font-size .2s ease-in-out;
+
+    p {
+    font-size: 1.5rem;
+    } 
+}
+
+.activeC {
+  top: 60px;
+  font-size: 20px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid $cBlack;
+  font-size: 20px;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+
+
 //////////レスポンシブ///////// 
 
 @media screen and (max-width: 1024px) {
@@ -324,6 +372,7 @@ border: none;
     .a_contact_box_selection {
       width: 80%;
     }
+
 }
 
 
@@ -335,10 +384,6 @@ border: none;
   .a_contact_top_img {
     width: 90%;
   }
-
-.twitter_txt {
-  margin-left: 20%;
-}
 
 
 
@@ -381,42 +426,3 @@ border: none;
 
 }
 
-///////テキストボックス/////// 
-
-div.wrap {
-  width: 100%;
-  margin: 0 auto;
-  vertical-align: middle;
-}
-
-div.wrap div {
-  position: relative;
-  margin: 50px 0;
-}
-
-label {
-  position: absolute;
-  top: 0;
-  font-size: 30px;
-  margin: 10px;
-  padding: 0 10px;
-  -webkit-transition: top .2s ease-in-out,
-    font-size .2s ease-in-out;
-  transition: top .2s ease-in-out,
-    font-size .2s ease-in-out;
-}
-.active {
-  // top: 60px;
-  font-size: 20px;
-}
-
-input[type=text] {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid $cBlack;
-  font-size: 20px;
-}
-
-input[type=text]:focus {
-  outline: none;
-}
