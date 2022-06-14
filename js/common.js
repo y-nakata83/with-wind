@@ -92,11 +92,11 @@ $(function () {
 //////テキストボックス////////
 
 $('input').on('focusin', function() {
-  $(this).parent().find('label').addClass('active');
+  $(this).parent().find('label').addClass('activeC');
 });
 
 $('input').on('focusout', function() {
   if (!this.value) {
-    $(this).parent().find('label').removeClass('active');
+    $(this).parent().find('label').removeClass('activeC');
   }
 });
