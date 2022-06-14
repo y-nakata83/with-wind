@@ -905,7 +905,7 @@ a{
   &_ttl {
     width: 100%;
     text-align: center;
-    margin: 15vh auto;
+    margin: 10% auto;
     h3 {
       font-size: 5rem;
       color: $cHiGreen;
@@ -1002,7 +1002,7 @@ a{
       color: $cWhite;
       text-align: justify;
       p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         line-height: 2;
       }
     }
@@ -1603,11 +1603,15 @@ a{
 //レスポンシブ対応
 
 @media screen and (max-width: 1024px) {
+  .no-sp{
+    display: none;
+  }
   .about {
     &_item {
+      width: 32%;
       &Inner {
         p {
-          font-size: 1.3rem;
+          // font-size: 1.3rem;
         }
       }
     }
@@ -1741,7 +1745,12 @@ a{
 
 @media screen and (max-width: 599px) {
   .about {
+    &_box{
+      flex-direction: column;
+    }
     &_item {
+      width: 80%;
+      margin:0 auto 10%;
       &Inner {
         p {
           font-size: 1rem;
@@ -1981,7 +1990,7 @@ a{
     }
     &_item {
       &Inner {
-        padding: 14%;
+        // padding: 14%;
         p {
           font-size: 0.9rem;
         }
@@ -2116,6 +2125,13 @@ a{
 }
 
 @media screen and (max-width: 375px) {
+  .top{
+    &_name{
+      h1{
+        font-size: 4rem;
+      }
+    }
+  }
   .para {
     &1 {
       &_btn {
@@ -2145,7 +2161,7 @@ a{
   .about {
     &_copy {
       h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
     }
     &_item {
