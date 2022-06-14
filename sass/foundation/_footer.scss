@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 15vh;
   }
   &_left {
     width: 20%;
@@ -83,6 +82,19 @@
       text-align: center;
       height: 5vh;
       background: $cWhite;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .footer{
+    display: unset;
+    &_logo{
+      width: 50%;
+      margin: 0 auto;
+    }
+    &_right{
+      display: none;
     }
   }
 }
