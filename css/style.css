@@ -2432,7 +2432,7 @@ a {
 .about_ttl {
   width: 100%;
   text-align: center;
-  margin: 15vh auto;
+  margin: 10% auto;
 }
 .about_ttl h3 {
   font-size: 5rem;
@@ -2529,7 +2529,7 @@ a {
   text-align: justify;
 }
 .about_itemInner p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 2;
 }
 
@@ -3101,10 +3101,13 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  .about_itemInner p {
-    font-size: 1.3rem;
+  .no-sp {
+    display: none;
   }
 
+  .about_item {
+    width: 32%;
+  }
   .para1_btn a::before {
     right: 7.5%;
   }
@@ -3182,6 +3185,13 @@ a {
   }
 }
 @media screen and (max-width: 599px) {
+  .about_box {
+    flex-direction: column;
+  }
+  .about_item {
+    width: 80%;
+    margin: 0 auto 10%;
+  }
   .about_itemInner p {
     font-size: 1rem;
   }
@@ -3352,9 +3362,6 @@ a {
   .about_box {
     margin-top: 20%;
   }
-  .about_itemInner {
-    padding: 14%;
-  }
   .about_itemInner p {
     font-size: 0.9rem;
   }
@@ -3438,6 +3445,10 @@ a {
   }
 }
 @media screen and (max-width: 375px) {
+  .top_name h1 {
+    font-size: 4rem;
+  }
+
   .para1_btn a::before {
     right: -75.5%;
   }
@@ -3452,7 +3463,7 @@ a {
   }
 
   .about_copy h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .about_itemInner p {
     font-size: 0.8rem;
