@@ -3108,6 +3108,7 @@ a {
   .about_item {
     width: 32%;
   }
+
   .para1_btn a::before {
     right: 7.5%;
   }
