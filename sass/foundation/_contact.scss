@@ -221,6 +221,11 @@
 
     }
   }
+  &_boxT {
+    p {
+      font-size: 1.5rem;
+    }
+  }
 
   &_txtarea {
     width: 100%;
@@ -384,8 +389,10 @@ input[type=text]:focus {
   .a_contact_top_img {
     width: 90%;
   }
-
-
+  
+    .a_contact_form {
+      width: 80%;
+    }
 
 }
 
@@ -411,8 +418,12 @@ input[type=text]:focus {
   font-size: 1.2rem;
 }
 
+.a_contact_form {
+  width: 90%;
+}
+
 .privacy_chk p {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .a_contact_box_selection {
