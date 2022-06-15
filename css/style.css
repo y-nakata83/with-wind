@@ -2635,7 +2635,7 @@ a {
 .service_ttl {
   width: 100%;
   text-align: center;
-  margin: 15vh auto;
+  margin: 10% auto;
 }
 .service_ttl h3 {
   font-size: 5rem;
@@ -2646,7 +2646,7 @@ a {
   font-size: 2rem;
   margin-top: 2%;
 }
-.service_triangle {
+.service_triangleL, .service_triangleR {
   position: absolute;
   width: 88%;
   top: 12%;
@@ -2897,7 +2897,7 @@ a {
 .qa_ttl {
   width: 100%;
   text-align: center;
-  margin: 15vh auto;
+  margin: 10% auto;
 }
 .qa_ttl h3 {
   font-size: 5rem;
@@ -2989,7 +2989,7 @@ a {
 .contact_ttl {
   width: 100%;
   text-align: center;
-  margin: 15vh auto;
+  margin: 10% auto;
 }
 .contact_ttl h3 {
   font-size: 5rem;
@@ -3463,6 +3463,9 @@ a {
     transform: translateX(23vw);
   }
 
+  .about_ttl h3 {
+    font-size: 4rem;
+  }
   .about_copy h2 {
     font-size: 1.2rem;
   }
@@ -3470,11 +3473,48 @@ a {
     font-size: 0.8rem;
   }
 
+  .service_ttl h3 {
+    font-size: 4rem;
+  }
+  .service_triangleL {
+    border-left: unset;
+    top: 0;
+    left: 0;
+    width: 85%;
+    border-bottom: 35vh solid #2CC4CB;
+    border-right: 150px solid transparent;
+  }
+  .service_triangleR {
+    border-right: unset;
+    top: 0;
+    right: 0;
+    width: 85%;
+    border-bottom: 35vh solid #2CC4CB;
+    border-left: 150px solid transparent;
+  }
+  .service_itemF {
+    flex-direction: column-reverse;
+  }
+  .service_itemS {
+    flex-direction: column;
+  }
+  .service_imgL, .service_imgR {
+    margin: 0 auto;
+    width: 80%;
+  }
   .service_txtBoxR {
-    top: 25%;
+    padding-top: 15%;
+    margin: 0 auto 10%;
+    width: 80%;
+    text-align: center;
+    position: unset;
   }
   .service_txtBoxL {
-    top: 25%;
+    padding-top: 15%;
+    margin: 0 auto 10%;
+    width: 80%;
+    text-align: center;
+    position: unset;
   }
 
   .view_btnInner a::before {
