@@ -1215,7 +1215,7 @@ a{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 15vh;
+    margin-top: 15%;
     margin-bottom: 8%;
     img {
       width: 100%;
@@ -1392,7 +1392,7 @@ a{
     text-align: center;
     margin: 10% auto;
     h3 {
-      font-size: 5rem;
+      font-size: 4rem;
       color: $cHiGreen;
       font-family: 'Lobster Two',
     }
@@ -1488,7 +1488,7 @@ a{
     text-align: center;
     margin: 10% auto;
     h3 {
-      font-size: 5rem;
+      font-size: 4rem;
       color: $cHiGreen;
       font-family: 'Lobster Two',
     }
@@ -1845,7 +1845,7 @@ a{
         left: 47%;
       }
       a {
-        width: 97%;
+        width: 100%;
         &::before {
           top: 18%;
           right: -43.5%;
