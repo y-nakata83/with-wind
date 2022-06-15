@@ -2726,7 +2726,7 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 15vh;
+  margin-top: 15%;
   margin-bottom: 8%;
 }
 .ec_inner img {
@@ -2900,7 +2900,7 @@ a {
   margin: 10% auto;
 }
 .qa_ttl h3 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #8FF9E4;
   font-family: "Lobster Two";
 }
@@ -2992,7 +2992,7 @@ a {
   margin: 10% auto;
 }
 .contact_ttl h3 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #8FF9E4;
   font-family: "Lobster Two";
 }
@@ -3263,7 +3263,7 @@ a {
     left: 47%;
   }
   .view_btn a {
-    width: 97%;
+    width: 100%;
   }
   .view_btn a::before {
     top: 18%;
