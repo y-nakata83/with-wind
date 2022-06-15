@@ -3254,9 +3254,45 @@ a {
   .service_txtBoxL p {
     font-size: 1.1rem;
   }
-  .service_triangle {
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
+  .service_triangleL {
+    border-left: unset;
+    top: 0;
+    left: 0;
+    width: 85%;
+    border-bottom: 35vh solid #2CC4CB;
+    border-right: 150px solid transparent;
+  }
+  .service_triangleR {
+    border-right: unset;
+    top: 0;
+    right: 0;
+    width: 85%;
+    border-bottom: 35vh solid #2CC4CB;
+    border-left: 150px solid transparent;
+  }
+  .service_itemF {
+    flex-direction: column-reverse;
+  }
+  .service_itemS {
+    flex-direction: column;
+  }
+  .service_imgL, .service_imgR {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .service_txtBoxR {
+    padding-top: 15%;
+    margin: 0 auto 10%;
+    width: 80%;
+    text-align: center;
+    position: unset;
+  }
+  .service_txtBoxL {
+    padding-top: 15%;
+    margin: 0 auto 10%;
+    width: 80%;
+    text-align: center;
+    position: unset;
   }
 
   .view_btnInner {
@@ -3475,46 +3511,6 @@ a {
 
   .service_ttl h3 {
     font-size: 4rem;
-  }
-  .service_triangleL {
-    border-left: unset;
-    top: 0;
-    left: 0;
-    width: 85%;
-    border-bottom: 35vh solid #2CC4CB;
-    border-right: 150px solid transparent;
-  }
-  .service_triangleR {
-    border-right: unset;
-    top: 0;
-    right: 0;
-    width: 85%;
-    border-bottom: 35vh solid #2CC4CB;
-    border-left: 150px solid transparent;
-  }
-  .service_itemF {
-    flex-direction: column-reverse;
-  }
-  .service_itemS {
-    flex-direction: column;
-  }
-  .service_imgL, .service_imgR {
-    margin: 0 auto;
-    width: 80%;
-  }
-  .service_txtBoxR {
-    padding-top: 15%;
-    margin: 0 auto 10%;
-    width: 80%;
-    text-align: center;
-    position: unset;
-  }
-  .service_txtBoxL {
-    padding-top: 15%;
-    margin: 0 auto 10%;
-    width: 80%;
-    text-align: center;
-    position: unset;
   }
 
   .view_btnInner a::before {

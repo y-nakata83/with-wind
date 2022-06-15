@@ -1835,8 +1835,62 @@ a{
       }
     }
     &_triangle {
-      border-left: 200px solid transparent;
-      border-right: 200px solid transparent;
+      &L {
+        border-left: unset;
+        top: 0;
+        left: 0;
+        width: 85%;
+        border-bottom: 35vh solid #2CC4CB;
+        border-right: 150px solid transparent;
+      }
+
+      &R {
+        border-right: unset;
+        top: 0;
+        right: 0;
+        width: 85%;
+        border-bottom: 35vh solid #2CC4CB;
+        border-left: 150px solid transparent;
+      }
+    }
+
+    &_item {
+      &F {
+        flex-direction: column-reverse;
+      }
+
+      &S {
+        flex-direction: column;
+      }
+    }
+
+    &_img {
+
+      &L,
+      &R {
+        margin: 0 auto;
+        width: 80%;
+      }
+    }
+
+    &_txt {
+      &Box {
+        &R {
+          padding-top: 15%;
+          margin: 0 auto 10%;
+          width: 80%;
+          text-align: center;
+          position: unset;
+        }
+
+        &L {
+          padding-top: 15%;
+          margin: 0 auto 10%;
+          width: 80%;
+          text-align: center;
+          position: unset;
+        }
+      }
     }
   }
   .view {
@@ -2183,56 +2237,6 @@ a{
     &_ttl{
       h3{
         font-size: 4rem;
-      }
-    }
-    &_triangle{
-      &L{
-        border-left: unset;
-        top: 0;
-        left: 0;
-        width: 85%;
-        border-bottom: 35vh solid #2CC4CB;
-        border-right: 150px solid transparent;
-      }
-      &R{
-        border-right: unset;
-        top: 0;
-        right: 0;
-        width: 85%;
-        border-bottom: 35vh solid #2CC4CB;
-        border-left: 150px solid transparent;
-      }
-    }
-    &_item{
-      &F{
-        flex-direction: column-reverse;
-      }
-      &S{
-        flex-direction: column;
-      }
-    }
-    &_img{
-      &L,&R{
-        margin: 0 auto;
-        width: 80%;
-      }
-    }
-    &_txt {
-      &Box {
-        &R {
-          padding-top: 15%;
-          margin: 0 auto 10%;
-          width: 80%;
-          text-align: center;
-          position: unset;
-        }
-        &L {
-          padding-top: 15%;
-          margin: 0 auto 10%;
-          width: 80%;
-          text-align: center;
-          position: unset;
-        }
       }
     }
   }
