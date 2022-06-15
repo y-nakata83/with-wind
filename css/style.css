@@ -1677,6 +1677,12 @@ input[type=text]:focus {
   .l, .h, .o {
     display: inline-block;
   }
+
+  .b_contact {
+    width: 50%;
+    height: 50px;
+    line-height: 3;
+  }
 }
 /*========= 画面遷移のためのCSS ===============*/
 /*画面遷移アニメーション*/
