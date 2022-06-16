@@ -874,8 +874,6 @@ a{
   }
 }
 
-
-
 //top
 
 .top{
@@ -2211,14 +2209,14 @@ a{
   .view {
     &_btn {
       &Inner {
-        width: 27%;
+        width: 105px;
       }
       a {
         &::before {
           right: -46.5%;
         }
         &::after {
-          transform: translateX(28vw);
+          transform: translateX(12vw);
         }
       }
     }
