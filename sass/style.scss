@@ -1229,15 +1229,14 @@ a{
     &Inner {
       position: relative;
       display: inline-block;
-      text-align: center;
-      width: 20%;
+      width:215px;
       left: 50%;
-      margin-top: 5vh;
+      margin-top: 5%;
       transform: translateX(-50%);
     }
     a {
       display: block;
-      width: 60%;
+      width: 100%;
       height: 100%;
       line-height: 3;
       color: $cBlack;
@@ -1245,7 +1244,6 @@ a{
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
-      text-align: center;
       &:hover {
         color: $cHiBlue;
         &::before {
@@ -1258,8 +1256,9 @@ a{
       &::before {
         content: '';
         position: absolute;
-        top: 25%;
-        right: 13.5%;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
         width: 40px;
         height: 40px;
         border: 2px solid $cBlack;
@@ -1270,19 +1269,15 @@ a{
       }
       &::after {
         content: '';
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 55px;
+        width: 45px;
         height: 0%;
         bottom: 0;
         top: 50%;
+        right: 7%;
+        transform: translate(-7%,-50%);
         border: 1px solid $cBlack;
         z-index: 1;
         position: absolute;
-        -webkit-transform: translateX(12vw);
-            -ms-transform: translateX(12vw);
-                transform: translateX(12vw);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
@@ -1611,11 +1606,6 @@ a{
   .about {
     &_item {
       width: 32%;
-      // &Inner {
-      //   p {
-      //     font-size: 1.3rem;
-      //   }
-      // }
     }
   }
   .para {
@@ -1653,20 +1643,6 @@ a{
         &::after {
           transform: translateX(11vw);
         }
-      }
-    }
-  }
-  .view {
-    &_btn {
-      a {
-        width: 70%;
-        &::before {
-            right: -7.5%;
-          }
-        
-          &::after {
-            transform: translateX(14vw);
-          }
       }
     }
   }
@@ -1717,15 +1693,7 @@ a{
   .view {
     &_btn {
       &Inner {
-        width: 25%;
-      }
-      a {
-        &::before {
-          top: 20%;
-        }
-        &::after {
-          transform: translateX(17vw);
-        }
+        width: 195px;
       }
     }
   }
@@ -1893,23 +1861,13 @@ a{
       }
     }
   }
-  .view {
-    &_btn {
-      &Inner {
-        left: 47%;
-      }
-      a {
-        width: 100%;
-        &::before {
-          top: 18%;
-          right: -43.5%;
-        }
-        &::after {
-          transform: translateX(23vw);
-        }
-      }
-    }
-  }
+  // .view {
+  //   &_btn {
+  //     &Inner {
+  //       left: 47%;
+  //     }
+  //   }
+  // }
   .contact {
     &_txt {
       &Box {
@@ -1983,20 +1941,11 @@ a{
       }
     }
   }
-  .view {
-    &_btn {
-      a {
-        &::before {
-          top: 25%;
-          width: 30px;
-          height: 25px;
-        }
-        &::after {
-          width: 40px;
-        }
-      }
-    }
-  }
+  // .view {
+  //   &_btn {
+     
+  //   }
+  // }
 }
 
 @media screen and (max-width: 414px) {
@@ -2085,20 +2034,10 @@ a{
   .view {
     &_btn {
       &Inner {
-        left: 46%;
+        width: 170px;
       }
       a {
         font-size: 1.4rem;
-        &::before {
-          right: -39.5%;
-          top: 25%;
-          width: 25px;
-          height: 25px;
-        }
-        &::after {
-          width: 30px;
-          transform: translateX(24vw);
-        }
       }
     }
   }
@@ -2143,18 +2082,13 @@ a{
       }
     }
   }
-  .view {
-    &_btn {
-      &Inner {
-        width: 27%;
-      }
-      a {
-        &::after {
-          transform: translateX(27vw);
-        }
-      }
-    }
-  }
+  // .view {
+  //   &_btn {
+  //     &Inner {
+  //       width: 27%;
+  //     }
+  //   }
+  // }
   .para {
     &2 {
       &_btn {
@@ -2240,17 +2174,17 @@ a{
       }
     }
   }
-  .view {
-    &_btn {
-      &Inner {
-        a {
-          &::before {
-            right: -41.5%;
-          }
-        }
-      }
-    }
-  }
+  // .view {
+  //   &_btn {
+  //     &Inner {
+  //       a {
+  //         &::before {
+  //           right: -41.5%;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   .contact {
     &_btn {
       a {
