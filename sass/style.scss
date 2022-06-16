@@ -1699,9 +1699,16 @@ a{
   }
   .service {
     &_triangle {
-      width: 100%;
-      border-left: 250px solid transparent;
-      border-right: 250px solid transparent;
+      &R {
+        width: 100%;
+        border-left: 250px solid transparent;
+        border-right: 250px solid transparent;
+      }
+      &L {
+        width: 100%;
+        border-left: 250px solid transparent;
+        border-right: 250px solid transparent;
+      }
     }
     &_txt {
       &Box {
@@ -1730,6 +1737,14 @@ a{
     }
   }
   .contact {
+    &_txt {
+      &Box {
+        p {
+          margin-top: 6%;
+          font-size: 1.7rem;
+        }
+      }
+    }
     &_btn {
       a {
         &::before {
@@ -1768,43 +1783,49 @@ a{
       }
     }
   }
-  .para1 {
-    p {
-      font-size: 5vw;
-    }
-    &_btn {
-      &Inner {
-        left: 48%;
+  .para {
+    &1 {
+      p {
+        font-size: 5vw;
       }
-      a {
-        &::before {
-          right: -40.5%;
-          top: 20%;
+      &_btn {
+        &Inner {
+          left: 48%;
         }
-        &::after {
-          transform: translateX(15vw);
+        a {
+          &::before {
+            width: 35px;
+            height: 35px;
+            right: -39.5%;
+            top: 24%;
+          }
+          &::after {
+            transform: translateX(17vw);
+            width: 45px;
+          }
         }
       }
     }
-  }
-  .para2 {
-    p {
-      font-size: 5vw;
-    }
-    &_inner {
-      margin-top: 8vh;
-    }
-    &_btn {
-      &Inner {
-        left: 48%;
+    &2 {
+      p {
+        font-size: 5vw;
       }
-      a {
-        &::before {
-          right: -40.5%;
-          top: 20%;
+      &_inner {
+        margin-top: 8vh;
+      }
+      &_btn {
+        &Inner {
+          left: 48%;
         }
-        &::after {
-          transform: translateX(15vw);
+        a {
+          &::before {
+            right: -40.5%;
+            top: 20%;
+          }
+          &::after {
+            width: 45px;
+            transform: translateX(17vw);
+          }
         }
       }
     }
@@ -1835,8 +1856,14 @@ a{
       }
     }
     &_triangle {
-      border-left: 200px solid transparent;
-      border-right: 200px solid transparent;
+      &R {
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+      }
+      &L {
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+      }
     }
   }
   .view {
@@ -1847,11 +1874,12 @@ a{
       a {
         width: 100%;
         &::before {
-          top: 18%;
-          right: -43.5%;
+          top: 20%;
+          right: -40.5%;
         }
         &::after {
-          transform: translateX(23vw);
+          width: 45px;
+          transform: translateX(24vw);
         }
       }
     }
@@ -1860,7 +1888,7 @@ a{
     &_txt {
       &Box {
         h2 {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
         }
         p {
           font-size: 1.4rem;
@@ -1879,7 +1907,8 @@ a{
         }
       
         &::after {
-          transform: translateX(15vw);
+          width: 45px;
+          transform: translateX(17vw);
         }
       }
     }
@@ -1911,6 +1940,36 @@ a{
 }
 
 @media screen and (max-width: 540px) {
+  .service {
+    &_txt {
+      &Box {
+        &R {
+          top: 30%;
+          left: 58%;
+          p {
+            font-size: 1rem;
+          }
+        }
+        &L {
+          top: 27%;
+          right: 54%;
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    &_triangle {
+      &R {
+        border-right: 125px solid transparent;
+        border-left: 125px solid transparent;
+      }
+      &L {
+        border-right: 125px solid transparent;
+        border-left: 125px solid transparent;
+      }
+    }
+  }
   .para {
     &1 {
       &_btn {
@@ -1918,12 +1977,28 @@ a{
           &::before {
             width: 30px;
             height: 30px;
-            right: -39.5%;
-            top: 25%;
+            right: -43.5%;
+            top: 26%;
           }
           &::after {
             width: 40px;
-            transform: translateX(17vw);
+            transform: translateX(18vw);
+          }
+        }
+      }
+    }
+    &2 {
+      &_btn {
+        a {
+          &::before {
+            width: 30px;
+            height: 30px;
+            right: -43.5%;
+            top: 26%;
+          }
+          &::after {
+            width: 40px;
+            transform: translateX(18vw);
           }
         }
       }
@@ -1935,9 +2010,34 @@ a{
         &::before {
           top: 25%;
           width: 30px;
-          height: 25px;
+          height: 30px;
+          right: -42.5%;
         }
         &::after {
+          width: 40px;
+          transform: translateX(25vw);
+        }
+      }
+    }
+  }
+  .contact {
+    &_txt {
+      &Box {
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &_btn {
+      a {
+        &::before {
+          width: 30px;
+          height: 30px;
+          right: -42.5%;
+          top: 26%;
+        }
+        &::after {
+          transform: translateX(18vw);
           width: 40px;
         }
       }
@@ -1954,14 +2054,14 @@ a{
         }
         a {
           &::before {
-            right: -58.5%;
-            top: 29%;
+            right: -68.5%;
+            top: 30%;
             width: 25px;
             height: 25px;
           }
           &::after {
             width: 30px;
-            transform: translateX(21vw);
+            transform: translateX(23vw);
           }
         }
       }
@@ -1973,14 +2073,14 @@ a{
         }
         a {
           &::before {
-            right: -58.5%;
-            top: 29%;
+            right: -68.5%;
+            top: 30%;
             width: 25px;
             height: 25px;
           }
           &::after {
             width: 30px;
-            transform: translateX(21vw);
+            transform: translateX(23vw);
           }
         }
       }
@@ -2000,7 +2100,7 @@ a{
     }
     &_copy {
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
       p {
         font-size: 1rem;
@@ -2009,9 +2109,16 @@ a{
   }
   .service {
     &_triangle {
-      border-bottom: 30vh solid $cHiBlue;
-      border-left: 150px solid transparent;
-      border-right: 150px solid transparent;
+      &L {
+        border-bottom: 30vh solid $cHiBlue;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+      }
+      &R {
+        border-bottom: 30vh solid $cHiBlue;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+      }
     }
     &_txt {
       &Box {
@@ -2036,14 +2143,14 @@ a{
       a {
         font-size: 1.4rem;
         &::before {
-          right: -39.5%;
-          top: 25%;
+          right: -49.5%;
+          top: 26%;
           width: 25px;
           height: 25px;
         }
         &::after {
           width: 30px;
-          transform: translateX(24vw);
+          transform: translateX(26vw);
         }
       }
     }
@@ -2056,22 +2163,22 @@ a{
   
       a {
         &::before {
-          right: -58.5%;
-          top: 29%;
+          right: -69.5%;
+          top: 30%;
           width: 25px;
           height: 25px;
         }
   
         &::after {
           width: 30px;
-          transform: translateX(21vw);
+          transform: translateX(23vw);
         }
       }
     }
     &_txt {
       &Box {
         h2 {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
         }
       }
     }
@@ -2082,7 +2189,7 @@ a{
   .about {
     &_copy {
       h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
       p {
         font-size: 0.8rem;
@@ -2095,21 +2202,36 @@ a{
         width: 27%;
       }
       a {
+        &::before {
+          right: -46.5%;
+        }
         &::after {
-          transform: translateX(27vw);
+          transform: translateX(28vw);
         }
       }
     }
   }
   .para {
+    &1 {
+      &_btn {
+        a {
+          &::before {
+            right: -81.5%;
+          }
+          &::after {
+            transform: translateX(25vw);
+          }
+        }
+      }
+    }
     &2 {
       &_btn {
         a {
           &::after {
-            transform: translateX(22vw);
+            transform: translateX(24vw);
           }
           &::before {
-            right: -68.5%;
+            right: -76.5%;
           }
         }
       }
@@ -2118,8 +2240,12 @@ a{
   .contact {
     &_btn {
       a {
+        &::before {
+          right: -77.5%;
+          top: 30%;
+        }
         &::after {
-          transform: translateX(23vw);
+          transform: translateX(24vw);
         }
       }
     }
@@ -2139,10 +2265,11 @@ a{
       &_btn {
         a {
           &::before {
-            right: -75.5%;
+            right: -85.5%;
+            top: 30%;
           }
           &::after {
-            transform: translateX(23vw);
+            transform: translateX(25vw);
           }
         }
       }
@@ -2151,10 +2278,11 @@ a{
       &_btn {
         a {
           &::before {
-            right: -75.5%;
+            right: -85.5%;
+            top: 30%;
           }
           &::after {
-            transform: translateX(23vw);
+            transform: translateX(25vw);
           }
         }
       }
@@ -2240,8 +2368,9 @@ a{
     &_btn {
       &Inner {
         a {
+          font-size: 1.3rem;
           &::before {
-            right: -41.5%;
+            right: -43.5%;
           }
         }
       }
@@ -2251,16 +2380,17 @@ a{
     &_btn {
       a {
         &::before {
-          right: -75.5%;
+          right: -85.5%;
+          top: 30%;
         }
   
         &::after {
-          transform: translateX(23vw);
+          transform: translateX(25vw);
         }
       }
     }
     h2 {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 }
