@@ -1494,6 +1494,9 @@ li {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
+.a_contact_boxT p {
+  font-size: 1.5rem;
+}
 .a_contact_txtarea {
   width: 100%;
   height: 30vh;
@@ -1631,6 +1634,10 @@ input[type=text]:focus {
   .a_contact_top_img {
     width: 90%;
   }
+
+  .a_contact_form {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 599px) {
   .a_contact_top_box_title h1 {
@@ -1654,8 +1661,12 @@ input[type=text]:focus {
     font-size: 1.2rem;
   }
 
+  .a_contact_form {
+    width: 90%;
+  }
+
   .privacy_chk p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .a_contact_box_selection {
@@ -1665,6 +1676,12 @@ input[type=text]:focus {
 
   .l, .h, .o {
     display: inline-block;
+  }
+
+  .b_contact {
+    width: 50%;
+    height: 50px;
+    line-height: 3;
   }
 }
 /*========= 画面遷移のためのCSS ===============*/
