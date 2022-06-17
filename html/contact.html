@@ -74,19 +74,19 @@
           <div class="a_contact_form_txt">
             <p>は必須項目なります</p>
           </div>
-          <form action="#" class="a_contact_form" id="form">
+          <form action="mail.php" class="a_contact_form" id="form" method="post">
             <div class="wrap">
               <div class="a_contact_form_ttl"><p>お客様</p></div>
               <div>
                 <label for="fname"><p>例) 山田 太郎</p></label>
-                <input id="fname" type="text" class="cool" />
+                <input id="fname" type="お名前" class="cool" />
               </div>
               <div class="a_contact_form_ttl"><p>メールアドレス</p></div>
               <div>
                 <label for="email">
                   <p>例) yamada@****</p>
                 </label>
-                <input id="email" type="text" class="cool" />
+                <input id="email" type="メール" class="cool" />
               </div>
               <div class="a_contact_box">
                 <label for="radio" class="a_contact_form_ttl _ttl">
@@ -94,13 +94,13 @@
                 </label>
                 <div class="a_contact_box_selection">
                   <div class="l">
-                    <input type="radio" name="sex" value="LP制作" checked> LP制作
+                    <input type="radio" name="選択" value="LP制作" checked> LP制作
                   </div>
                   <div class="h">
-                    <input type="radio" name="sex" value="HP制作"> HP制作
+                    <input type="radio" name="選択" value="HP制作"> HP制作
                   </div>
                   <div class="o">
-                    <input type="radio" name="sex" value="その他お問い合わせ"> その他お問い合わせ
+                    <input type="radio" name="選択" value="その他お問い合わせ"> その他お問い合わせ
                   </div>
                 </div>
               </div>
@@ -153,7 +153,7 @@
                   </p>
                 </div>
                   <div class="privacy_chk">
-                    <input type="checkbox" name="level" value="ok">
+                    <input type="checkbox" name="個人情報の取扱について" value="ok">
                     <div class="privacy_chk_list">
                       <p>個人情報の取扱いについて、上記に同意します。</p>
                     </div>
