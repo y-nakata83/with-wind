@@ -1711,7 +1711,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -2564,7 +2564,7 @@ a {
 }
 .para1 p {
   color: #fff;
-  font-size: 3vw;
+  font-size: 2.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2712,7 +2712,7 @@ a {
   left: 60%;
 }
 .service_txtBoxR h2 {
-  font-size: 3vw;
+  font-size: 2.7rem;
 }
 .service_txtBoxR p {
   font-size: 1.3rem;
@@ -2726,7 +2726,7 @@ a {
   right: 58%;
 }
 .service_txtBoxL h2 {
-  font-size: 3vw;
+  font-size: 2.7rem;
 }
 .service_txtBoxL p {
   font-size: 1.3rem;
@@ -2825,7 +2825,7 @@ a {
 }
 .para2 p {
   color: #fff;
-  font-size: 3vw;
+  font-size: 2.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3134,6 +3134,16 @@ a {
     transform: translateX(11vw);
   }
 
+  .service_txtBoxR h2 {
+    font-size: 2.5rem;
+  }
+  .service_txtBoxL h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact_txtBox p {
+    margin-top: 4%;
+  }
   .contact_btn a::before {
     right: 7.5%;
   }
@@ -3170,8 +3180,14 @@ a {
   .service_txtBoxR {
     top: 30%;
   }
+  .service_txtBoxR h2 {
+    font-size: 2.2rem;
+  }
   .service_txtBoxL {
     top: 30%;
+  }
+  .service_txtBoxL h2 {
+    font-size: 2.2rem;
   }
 
   .view_btnInner {
@@ -3208,9 +3224,6 @@ a {
     font-size: 1.1rem;
   }
 
-  .para1 p {
-    font-size: 5vw;
-  }
   .para1_btnInner {
     left: 48%;
   }
@@ -3225,7 +3238,7 @@ a {
     width: 45px;
   }
   .para2 p {
-    font-size: 5vw;
+    font-size: 2.3rem;
   }
   .para2_inner {
     margin-top: 8vh;
@@ -3247,7 +3260,7 @@ a {
     top: 30%;
   }
   .service_txtBoxR h2 {
-    font-size: 4vw;
+    font-size: 1.6rem;
   }
   .service_txtBoxR p {
     font-size: 1.1rem;
@@ -3257,7 +3270,7 @@ a {
     top: 30%;
   }
   .service_txtBoxL h2 {
-    font-size: 3.7vw;
+    font-size: 1.6rem;
   }
   .service_txtBoxL p {
     font-size: 1.1rem;
@@ -3360,12 +3373,18 @@ a {
     top: 30%;
     left: 58%;
   }
+  .service_txtBoxR h2 {
+    font-size: 1.5rem;
+  }
   .service_txtBoxR p {
     font-size: 1rem;
   }
   .service_txtBoxL {
     top: 27%;
     right: 54%;
+  }
+  .service_txtBoxL h2 {
+    font-size: 1.5rem;
   }
   .service_txtBoxL p {
     font-size: 1rem;
@@ -3388,6 +3407,9 @@ a {
   .para1_btn a::after {
     width: 40px;
     transform: translateX(18vw);
+  }
+  .para2 p {
+    font-size: 2.1rem;
   }
   .para2_btn a::before {
     width: 30px;
@@ -3426,6 +3448,9 @@ a {
   }
 }
 @media screen and (max-width: 414px) {
+  .para1 p {
+    font-size: 2rem;
+  }
   .para1_btnInner {
     left: 46%;
   }
@@ -3438,6 +3463,9 @@ a {
   .para1_btn a::after {
     width: 30px;
     transform: translateX(23vw);
+  }
+  .para2 p {
+    font-size: 1.7rem;
   }
   .para2_btnInner {
     left: 46%;
@@ -3459,11 +3487,14 @@ a {
   .about_itemInner p {
     font-size: 0.9rem;
   }
+  .about_ttl h3 {
+    font-size: 4rem;
+  }
   .about_copy h2 {
     font-size: 1.4rem;
   }
   .about_copy p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .service_triangleL {
@@ -3476,8 +3507,20 @@ a {
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
   }
+  .service_ttl h3 {
+    font-size: 4rem;
+  }
+  .service_txtBoxR {
+    top: 23%;
+  }
+  .service_txtBoxR h2 {
+    font-size: 1.1rem;
+  }
   .service_txtBoxR p {
     font-size: 0.8rem;
+  }
+  .service_txtBoxL h2 {
+    font-size: 1.1rem;
   }
   .service_txtBoxL p {
     font-size: 0.8rem;
@@ -3514,7 +3557,7 @@ a {
     transform: translateX(23vw);
   }
   .contact_txtBox h2 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 393px) {
@@ -3540,6 +3583,9 @@ a {
   }
   .para1_btn a::after {
     transform: translateX(25vw);
+  }
+  .para2 p {
+    font-size: 1.6rem;
   }
   .para2_btn a::after {
     transform: translateX(24vw);
@@ -3567,6 +3613,9 @@ a {
   }
   .para1_btn a::after {
     transform: translateX(25vw);
+  }
+  .para2 p {
+    font-size: 1.5rem;
   }
   .para2_btn a::before {
     right: -85.5%;
@@ -3648,5 +3697,3 @@ a {
     font-size: 1rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

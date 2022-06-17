@@ -1020,7 +1020,7 @@ a{
   }
   p{
     color: $cWhite;
-    font-size: 3vw;
+    font-size: 2.7rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1177,7 +1177,7 @@ a{
         top: 45%;
         left: 60%;
         h2 {
-          font-size: 3vw;
+          font-size: 2.7rem;
         }
         p {
           font-size: 1.3rem;
@@ -1191,7 +1191,7 @@ a{
         top: 45%;
         right: 58%;
         h2 {
-          font-size: 3vw;
+          font-size: 2.7rem;
         }
         p {
           font-size: 1.3rem;
@@ -1297,7 +1297,7 @@ a{
   }
   p{
     color: $cWhite;
-    font-size: 3vw;
+    font-size: 2.7rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1632,7 +1632,30 @@ a{
       }
     }
   }
+  .service {
+    &_txt {
+      &Box {
+        &R {
+          h2 {
+            font-size: 2.5rem;
+          }
+        }
+        &L {
+          h2 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
   .contact {
+    &_txt {
+      &Box {
+        p {
+          margin-top: 4%;
+        }
+      }
+    }
     &_btn {
       a {
         &::before {
@@ -1687,9 +1710,15 @@ a{
     &_txt {
       &Box {
         &R {
+          h2 {
+            font-size: 2.2rem;
+          }
           top: 30%;
         }
         &L {
+          h2 {
+            font-size: 2.2rem;
+          }
           top: 30%;
         }
       }
@@ -1751,9 +1780,6 @@ a{
   }
   .para {
     &1 {
-      p {
-        font-size: 5vw;
-      }
       &_btn {
         &Inner {
           left: 48%;
@@ -1774,7 +1800,7 @@ a{
     }
     &2 {
       p {
-        font-size: 5vw;
+        font-size: 2.3rem;
       }
       &_inner {
         margin-top: 8vh;
@@ -1803,7 +1829,7 @@ a{
           width: 35%;
           top: 30%;
           h2 {
-            font-size: 4vw;
+            font-size: 1.6rem;
           }
           p {
             font-size: 1.1rem;
@@ -1813,7 +1839,7 @@ a{
           width: 35%;
           top: 30%;
           h2 {
-            font-size: 3.7vw;
+            font-size: 1.6rem;
           }
           p {
             font-size: 1.1rem;
@@ -1956,6 +1982,9 @@ a{
         &R {
           top: 30%;
           left: 58%;
+          h2 {
+            font-size: 1.5rem;
+          }
           p {
             font-size: 1rem;
           }
@@ -1963,6 +1992,9 @@ a{
         &L {
           top: 27%;
           right: 54%;
+          h2 {
+            font-size: 1.5rem;
+          }
           p {
             font-size: 1rem;
           }
@@ -1998,6 +2030,9 @@ a{
       }
     }
     &2 {
+      p {
+        font-size: 2.1rem;
+      }
       &_btn {
         a {
           &::before {
@@ -2058,6 +2093,9 @@ a{
 @media screen and (max-width: 414px) {
   .para {
     &1 {
+      p {
+        font-size: 2rem;
+      }
       &_btn {
         &Inner {
           left: 46%;
@@ -2077,6 +2115,9 @@ a{
       }
     }
     &2 {
+      p {
+        font-size: 1.7rem;
+      }
       &_btn {
         &Inner {
           left: 46%;
@@ -2108,12 +2149,17 @@ a{
         }
       }
     }
+    &_ttl {
+      h3 {
+        font-size: 4rem;
+      }
+    }
     &_copy {
       h2 {
         font-size: 1.4rem;
       }
       p {
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
   }
@@ -2130,14 +2176,26 @@ a{
         border-right: 100px solid transparent;
       }
     }
+    &_ttl {
+      h3 {
+        font-size: 4rem;
+      }
+    }
     &_txt {
       &Box {
         &R {
+          top: 23%;
+          h2 {
+            font-size: 1.1rem;
+          }
           p {
             font-size: 0.8rem;
           }
         }
         &L {
+          h2 {
+            font-size: 1.1rem;
+          }
           p {
             font-size: 0.8rem;
           }
@@ -2188,7 +2246,7 @@ a{
     &_txt {
       &Box {
         h2 {
-          font-size: 1.1rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -2235,6 +2293,9 @@ a{
       }
     }
     &2 {
+      p {
+        font-size: 1.6rem;
+      }
       &_btn {
         a {
           &::after {
@@ -2285,6 +2346,9 @@ a{
       }
     }
     &2 {
+      p {
+        font-size: 1.5rem;
+      }
       &_btn {
         a {
           &::before {
