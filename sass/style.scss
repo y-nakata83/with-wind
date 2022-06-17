@@ -1041,14 +1041,14 @@ a{
       display: -ms-flexbox;
       display: inline-block;
       margin-top: 0%;
-      width: 220px;
+      width: 180px;
       left: 50%;
       transform: translateX(-50%);
       top: 60%;
     }
     a {
       display: block;
-      width: 80%;
+      width: 100%;
       height: 100%;
       color: $cWhite;
       font-size: 1.7rem;
@@ -1056,7 +1056,6 @@ a{
       -o-transition: .5s;
       transition: .5s;
       line-height: 3;
-      text-align: center;
       &:hover {
         color: $cHiBlue;
         &::before {
@@ -1069,10 +1068,11 @@ a{
       &::before {
         content: '';
         position: absolute;
-        top: 25%;
+        top: 50%;
         right: 0;
         width: 40px;
         height: 40px;
+        transform: translateY(-50%);
         border: 2px solid $cWhite;
         border-radius: 50%;
         -webkit-transition: .5s;
@@ -1085,15 +1085,14 @@ a{
         display: -ms-flexbox;
         display: flex;
         width: 45px;
+        right: 10%;
+        transform: translate(-7%, -50%);
         height: 0%;
         bottom: 0;
         top: 50%;
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        -webkit-transform: translateX(10.5vw);
-            -ms-transform: translateX(10.5vw);
-                transform: translateX(10.5vw);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
@@ -1318,18 +1317,17 @@ a{
       display: -ms-flexbox;
       display: inline-block;
       margin-top: 0%;
-      width: 220px;
+      width: 180px;
       left: 50%;
       transform: translateX(-50%);
       top: 60%;
     }
     a {
       display: block;
-      width: 80%;
+      width: 100%;
       height: 100%;
       color: $cWhite;
       font-size: 1.7rem;
-      text-align: center;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s;
@@ -1346,10 +1344,11 @@ a{
       &::before {
         content: '';
         position: absolute;
-        top: 25%;
+        top: 50%;
         right: 0;
         width: 40px;
         height: 40px;
+        transform: translateY(-50%);
         border: 2px solid $cWhite;
         border-radius: 50%;
         -webkit-transition: .5s;
@@ -1368,9 +1367,8 @@ a{
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        -webkit-transform: translateX(10.5vw);
-        -ms-transform: translateX(10.5vw);
-        transform: translateX(10.5vw);
+        right: 10%;
+        transform: translate(-7%, -50%);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
@@ -1534,14 +1532,14 @@ a{
       display: -ms-flexbox;
       display: inline-block;
       margin-top: 0%;
-      width: 220px;
+      width: 265px;
       left: 50%;
       transform: translateX(-50%);
       top: 60%;
     }
     a {
       display: block;
-      width: 80%;
+      width: 100%;
       height: 100%;
       color: $cWhite;
       font-size: 1.7rem;
@@ -1549,7 +1547,6 @@ a{
       -o-transition: .5s;
       transition: .5s;
       line-height: 3;
-      text-align: center;
       &:hover {
         color: $cHiBlue;
         &::before {
@@ -1562,10 +1559,11 @@ a{
       &::before {
         content: '';
         position: absolute;
-        top: 25%;
+        top: 50%;
         right: 0;
         width: 40px;
         height: 40px;
+        transform: translateY(-50%);
         border: 2px solid $cWhite;
         border-radius: 50%;
         -webkit-transition: .5s;
@@ -1579,14 +1577,13 @@ a{
         display: flex;
         width: 45px;
         height: 0%;
+        right: 7%;
         bottom: 0;
         top: 50%;
         border: 1px solid $cWhite;
         z-index: 1;
         position: absolute;
-        -webkit-transform: translateX(10.5vw);
-        -ms-transform: translateX(10.5vw);
-        transform: translateX(10.5vw);
+        transform: translate(-7%, -50%);
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
@@ -1600,6 +1597,22 @@ a{
 @media screen and (max-width: 1024px) {
   .no-sp{
     display: none;
+  }
+  .para {
+    &1 {
+      &_btn {
+        a {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    &2 {
+      &_btn {
+        a {
+          font-size: 1.8rem;
+        }
+      }
+    }
   }
   .about {
     &_item {
@@ -1627,17 +1640,13 @@ a{
       &Box {
         p {
           margin-top: 4%;
+          font-size: 1.6rem;
         }
       }
     }
     &_btn {
       a {
-        &::before {
-          right: 7.5%;
-        }
-        &::after {
-          transform: translateX(11vw);
-        }
+        font-size: 1.8rem;
       }
     }
   }
@@ -1647,14 +1656,10 @@ a{
   .service {
     &_triangle {
       &R {
-        width: 100%;
-        border-left: 250px solid transparent;
-        border-right: 250px solid transparent;
+        border-left: 200px solid transparent;
       }
       &L {
-        width: 100%;
-        border-left: 250px solid transparent;
-        border-right: 250px solid transparent;
+        border-right: 200px solid transparent;
       }
     }
     &_txt {
@@ -1674,10 +1679,26 @@ a{
       }
     }
   }
+  .para {
+    &1 {
+      &_btn {
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+    &2 {
+      &_btn {
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
   .view {
     &_btn {
       &Inner {
-        width: 195px;
+        width: 200px;
       }
     }
   }
@@ -1688,6 +1709,11 @@ a{
           margin-top: 6%;
           font-size: 1.7rem;
         }
+      }
+    }
+    &_btn {
+      a {
+        font-size: 2rem;
       }
     }
   }
@@ -1814,6 +1840,11 @@ a{
   //     }
     }
   }
+  .para2 {
+    p {
+      font-size: 2.4rem;
+    }
+  }
   .contact {
     &_txt {
       &Box {
@@ -1823,22 +1854,6 @@ a{
         p {
           font-size: 1.4rem;
           margin-top: 7%;
-        }
-      }
-    }
-    &_btn {
-      &Inner {
-        left: 48%;
-      }
-      a {
-        &::before {
-          right: -40.5%;
-          top: 20%;
-        }
-      
-        &::after {
-          width: 45px;
-          transform: translateX(17vw);
         }
       }
     }
@@ -1910,10 +1925,6 @@ a{
     &1 {
       &_btn {
         a {
-          &::before {
-            width: 30px;
-            height: 30px;
-          }
           &::after {
             width: 40px;
           }
@@ -1926,10 +1937,6 @@ a{
       }
       &_btn {
         a {
-          &::before {
-            width: 30px;
-            height: 30px;
-          }
           &::after {
             width: 40px;
           }
@@ -1940,10 +1947,7 @@ a{
   .view {
     &_btn {
       a {
-        &::before {
-          width: 30px;
-          height: 30px;
-        }
+        font-size: 1.8rem;
         &::after {
           width: 40px;
         }
@@ -1960,10 +1964,6 @@ a{
     }
     &_btn {
       a {
-        &::before {
-          width: 30px;
-          height: 30px;
-        }
         &::after {
           width: 40px;
         }
@@ -1978,38 +1978,10 @@ a{
       p {
         font-size: 2rem;
       }
-      &_btn {
-        &Inner {
-          left: 46%;
-        }
-        a {
-          &::before {
-            width: 25px;
-            height: 25px;
-          }
-          &::after {
-            width: 30px;
-          }
-        }
-      }
     }
     &2 {
       p {
         font-size: 1.7rem;
-      }
-      &_btn {
-        &Inner {
-          left: 46%;
-        }
-        a {
-          &::before {
-            width: 25px;
-            height: 25px;
-          }
-          &::after {
-            width: 30px;
-          }
-        }
       }
     }
   }
@@ -2079,58 +2051,22 @@ a{
       }
     }
   }
-  .view {
-    &_btn {
-      &Inner {
-        width: 170px;
-      }
-      a {
-        font-size: 1.4rem;
-        &::before {
-          right: -49.5%;
-          top: 26%;
-          width: 25px;
-          height: 25px;
-        }
-        &::after {
-          width: 30px;
-          transform: translateX(26vw);
-        }
-      }
-    }
-  }
-  .contact {
-    &_btn {
-      &Inner {
-        left: 46%;
-      }
-  
-      a {
-        &::before {
-          right: -69.5%;
-          top: 30%;
-          width: 25px;
-          height: 25px;
-        }
-  
-        &::after {
-          width: 30px;
-          transform: translateX(23vw);
-        }
-      }
-    }
-    &_txt {
-      &Box {
-        h2 {
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 393px) {
+  .service {
+    &_ttl {
+      h3 {
+        font-size: 3.5rem;
+      }
+    }
+  }
   .about {
+    &_ttl {
+      h3 {
+        font-size: 3.5rem;
+      }
+    }
     &_copy {
       h2 {
         font-size: 1.3rem;
@@ -2143,56 +2079,42 @@ a{
   .view {
     &_btn {
       &Inner {
-        width: 105px;
-      }
-      a {
-        &::before {
-          right: -46.5%;
-        }
-        &::after {
-          transform: translateX(12vw);
-        }
+        margin-top: 10%;
       }
     }
   }
   .para {
     &1 {
-      &_btn {
-        a {
-          &::before {
-            right: -81.5%;
-          }
-          &::after {
-            transform: translateX(25vw);
-          }
-        }
+      p {
+        font-size: 1.9rem;
       }
     }
     &2 {
+      &_inner {
+        margin-top: 10vh;
+      }
       p {
         font-size: 1.6rem;
       }
-      &_btn {
-        a {
-          &::after {
-            transform: translateX(24vw);
-          }
-          &::before {
-            right: -76.5%;
-          }
-        }
+    }
+  }
+  .qa {
+    &_ttl {
+      h3 {
+        font-size: 3.5rem;
       }
     }
   }
   .contact {
-    &_btn {
-      a {
-        &::before {
-          right: -77.5%;
-          top: 30%;
-        }
-        &::after {
-          transform: translateX(24vw);
+    &_ttl {
+      h3 {
+        font-size: 3.5rem;
+      }
+    }
+    &_txt {
+      &Box {
+        h2 {
+          font-size: 1.45rem;
         }
       }
     }
@@ -2209,41 +2131,17 @@ a{
   }
   .para {
     &1 {
-      &_btn {
-        a {
-          &::before {
-            right: -85.5%;
-            top: 30%;
-          }
-          &::after {
-            transform: translateX(25vw);
-          }
-        }
+      p {
+        font-size: 1.7rem;
       }
     }
     &2 {
       p {
         font-size: 1.5rem;
       }
-      &_btn {
-        a {
-          &::before {
-            right: -85.5%;
-            top: 30%;
-          }
-          &::after {
-            transform: translateX(25vw);
-          }
-        }
-      }
     }
   }
   .about {
-    &_ttl{
-      h3{
-        font-size: 4rem;
-      }
-    }
     &_copy {
       h2 {
         font-size: 1.2rem;
@@ -2258,11 +2156,6 @@ a{
     }
   }
   .service {
-    &_ttl{
-      h3{
-        font-size: 4rem;
-      }
-    }
     &_triangle{
       &L{
         border-left: unset;
@@ -2314,44 +2207,11 @@ a{
       }
     }
   }
-  .view {
-    &_btn {
-      &Inner {
-        a {
-          font-size: 1.3rem;
-          &::before {
-            right: -43.5%;
-          }
-        }
-      }
-    }
-  }
-  // .view {
-  //   &_btn {
-  //     &Inner {
-  //       a {
-  //         &::before {
-  //           right: -41.5%;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
   .contact {
-    &_btn {
-      a {
-        &::before {
-          right: -85.5%;
-          top: 30%;
-        }
-  
-        &::after {
-          transform: translateX(25vw);
-        }
+    &_txt {
+      &Box {
+        font-size: 1.4rem;
       }
-    }
-    h2 {
-      font-size: 1rem;
     }
   }
 }

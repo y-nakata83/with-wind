@@ -2586,14 +2586,14 @@ a {
   display: -ms-flexbox;
   display: inline-block;
   margin-top: 0%;
-  width: 220px;
+  width: 180px;
   left: 50%;
   transform: translateX(-50%);
   top: 60%;
 }
 .para1_btn a {
   display: block;
-  width: 80%;
+  width: 100%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
@@ -2601,7 +2601,6 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
   line-height: 3;
-  text-align: center;
 }
 .para1_btn a:hover {
   color: #2CC4CB;
@@ -2615,10 +2614,11 @@ a {
 .para1_btn a::before {
   content: "";
   position: absolute;
-  top: 25%;
+  top: 50%;
   right: 0;
   width: 40px;
   height: 40px;
+  transform: translateY(-50%);
   border: 2px solid #fff;
   border-radius: 50%;
   -webkit-transition: 0.5s;
@@ -2631,15 +2631,14 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 45px;
+  right: 10%;
+  transform: translate(-7%, -50%);
   height: 0%;
   bottom: 0;
   top: 50%;
   border: 1px solid #fff;
   z-index: 1;
   position: absolute;
-  -webkit-transform: translateX(10.5vw);
-  -ms-transform: translateX(10.5vw);
-  transform: translateX(10.5vw);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -2847,18 +2846,17 @@ a {
   display: -ms-flexbox;
   display: inline-block;
   margin-top: 0%;
-  width: 220px;
+  width: 180px;
   left: 50%;
   transform: translateX(-50%);
   top: 60%;
 }
 .para2_btn a {
   display: block;
-  width: 80%;
+  width: 100%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
-  text-align: center;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -2876,10 +2874,11 @@ a {
 .para2_btn a::before {
   content: "";
   position: absolute;
-  top: 25%;
+  top: 50%;
   right: 0;
   width: 40px;
   height: 40px;
+  transform: translateY(-50%);
   border: 2px solid #fff;
   border-radius: 50%;
   -webkit-transition: 0.5s;
@@ -2898,9 +2897,8 @@ a {
   border: 1px solid #fff;
   z-index: 1;
   position: absolute;
-  -webkit-transform: translateX(10.5vw);
-  -ms-transform: translateX(10.5vw);
-  transform: translateX(10.5vw);
+  right: 10%;
+  transform: translate(-7%, -50%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -3053,14 +3051,14 @@ a {
   display: -ms-flexbox;
   display: inline-block;
   margin-top: 0%;
-  width: 220px;
+  width: 265px;
   left: 50%;
   transform: translateX(-50%);
   top: 60%;
 }
 .contact_btn a {
   display: block;
-  width: 80%;
+  width: 100%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
@@ -3068,7 +3066,6 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
   line-height: 3;
-  text-align: center;
 }
 .contact_btn a:hover {
   color: #2CC4CB;
@@ -3082,10 +3079,11 @@ a {
 .contact_btn a::before {
   content: "";
   position: absolute;
-  top: 25%;
+  top: 50%;
   right: 0;
   width: 40px;
   height: 40px;
+  transform: translateY(-50%);
   border: 2px solid #fff;
   border-radius: 50%;
   -webkit-transition: 0.5s;
@@ -3099,14 +3097,13 @@ a {
   display: flex;
   width: 45px;
   height: 0%;
+  right: 7%;
   bottom: 0;
   top: 50%;
   border: 1px solid #fff;
   z-index: 1;
   position: absolute;
-  -webkit-transform: translateX(10.5vw);
-  -ms-transform: translateX(10.5vw);
-  transform: translateX(10.5vw);
+  transform: translate(-7%, -50%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -3115,6 +3112,13 @@ a {
 @media screen and (max-width: 1024px) {
   .no-sp {
     display: none;
+  }
+
+  .para1_btn a {
+    font-size: 1.8rem;
+  }
+  .para2_btn a {
+    font-size: 1.8rem;
   }
 
   .about_item {
@@ -3130,24 +3134,18 @@ a {
 
   .contact_txtBox p {
     margin-top: 4%;
+    font-size: 1.6rem;
   }
-  .contact_btn a::before {
-    right: 7.5%;
-  }
-  .contact_btn a::after {
-    transform: translateX(11vw);
+  .contact_btn a {
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 768px) {
   .service_triangleR {
-    width: 100%;
-    border-left: 250px solid transparent;
-    border-right: 250px solid transparent;
+    border-left: 200px solid transparent;
   }
   .service_triangleL {
-    width: 100%;
-    border-left: 250px solid transparent;
-    border-right: 250px solid transparent;
+    border-right: 200px solid transparent;
   }
   .service_txtBoxR {
     top: 30%;
@@ -3162,13 +3160,23 @@ a {
     font-size: 2.2rem;
   }
 
+  .para1_btn a {
+    font-size: 2rem;
+  }
+  .para2_btn a {
+    font-size: 2rem;
+  }
+
   .view_btnInner {
-    width: 195px;
+    width: 200px;
   }
 
   .contact_txtBox p {
     margin-top: 6%;
     font-size: 1.7rem;
+  }
+  .contact_btn a {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 599px) {
@@ -3263,23 +3271,16 @@ a {
     position: unset;
   }
 
+  .para2 p {
+    font-size: 2.4rem;
+  }
+
   .contact_txtBox h2 {
     font-size: 1.6rem;
   }
   .contact_txtBox p {
     font-size: 1.4rem;
     margin-top: 7%;
-  }
-  .contact_btnInner {
-    left: 48%;
-  }
-  .contact_btn a::before {
-    right: -40.5%;
-    top: 20%;
-  }
-  .contact_btn a::after {
-    width: 45px;
-    transform: translateX(17vw);
   }
 
   .qa_txt {
@@ -3332,27 +3333,18 @@ a {
     border-left: 125px solid transparent;
   }
 
-  .para1_btn a::before {
-    width: 30px;
-    height: 30px;
-  }
   .para1_btn a::after {
     width: 40px;
   }
   .para2 p {
     font-size: 2.1rem;
   }
-  .para2_btn a::before {
-    width: 30px;
-    height: 30px;
-  }
   .para2_btn a::after {
     width: 40px;
   }
 
-  .view_btn a::before {
-    width: 30px;
-    height: 30px;
+  .view_btn a {
+    font-size: 1.8rem;
   }
   .view_btn a::after {
     width: 40px;
@@ -3360,10 +3352,6 @@ a {
 
   .contact_txtBox h2 {
     font-size: 1.5rem;
-  }
-  .contact_btn a::before {
-    width: 30px;
-    height: 30px;
   }
   .contact_btn a::after {
     width: 40px;
@@ -3373,28 +3361,8 @@ a {
   .para1 p {
     font-size: 2rem;
   }
-  .para1_btnInner {
-    left: 46%;
-  }
-  .para1_btn a::before {
-    width: 25px;
-    height: 25px;
-  }
-  .para1_btn a::after {
-    width: 30px;
-  }
   .para2 p {
     font-size: 1.7rem;
-  }
-  .para2_btnInner {
-    left: 46%;
-  }
-  .para2_btn a::before {
-    width: 25px;
-    height: 25px;
-  }
-  .para2_btn a::after {
-    width: 30px;
   }
 
   .about_box {
@@ -3441,42 +3409,15 @@ a {
   .service_txtBoxL p {
     font-size: 0.8rem;
   }
-
-  .view_btnInner {
-    width: 170px;
-  }
-  .view_btn a {
-    font-size: 1.4rem;
-  }
-  .view_btn a::before {
-    right: -49.5%;
-    top: 26%;
-    width: 25px;
-    height: 25px;
-  }
-  .view_btn a::after {
-    width: 30px;
-    transform: translateX(26vw);
-  }
-
-  .contact_btnInner {
-    left: 46%;
-  }
-  .contact_btn a::before {
-    right: -69.5%;
-    top: 30%;
-    width: 25px;
-    height: 25px;
-  }
-  .contact_btn a::after {
-    width: 30px;
-    transform: translateX(23vw);
-  }
-  .contact_txtBox h2 {
-    font-size: 1.5rem;
-  }
 }
 @media screen and (max-width: 393px) {
+  .service_ttl h3 {
+    font-size: 3.5rem;
+  }
+
+  .about_ttl h3 {
+    font-size: 3.5rem;
+  }
   .about_copy h2 {
     font-size: 1.3rem;
   }
@@ -3485,37 +3426,28 @@ a {
   }
 
   .view_btnInner {
-    width: 105px;
-  }
-  .view_btn a::before {
-    right: -46.5%;
-  }
-  .view_btn a::after {
-    transform: translateX(12vw);
+    margin-top: 10%;
   }
 
-  .para1_btn a::before {
-    right: -81.5%;
+  .para1 p {
+    font-size: 1.9rem;
   }
-  .para1_btn a::after {
-    transform: translateX(25vw);
+  .para2_inner {
+    margin-top: 10vh;
   }
   .para2 p {
     font-size: 1.6rem;
   }
-  .para2_btn a::after {
-    transform: translateX(24vw);
-  }
-  .para2_btn a::before {
-    right: -76.5%;
+
+  .qa_ttl h3 {
+    font-size: 3.5rem;
   }
 
-  .contact_btn a::before {
-    right: -77.5%;
-    top: 30%;
+  .contact_ttl h3 {
+    font-size: 3.5rem;
   }
-  .contact_btn a::after {
-    transform: translateX(24vw);
+  .contact_txtBox h2 {
+    font-size: 1.45rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -3523,27 +3455,13 @@ a {
     font-size: 4rem;
   }
 
-  .para1_btn a::before {
-    right: -85.5%;
-    top: 30%;
-  }
-  .para1_btn a::after {
-    transform: translateX(25vw);
+  .para1 p {
+    font-size: 1.7rem;
   }
   .para2 p {
     font-size: 1.5rem;
   }
-  .para2_btn a::before {
-    right: -85.5%;
-    top: 30%;
-  }
-  .para2_btn a::after {
-    transform: translateX(25vw);
-  }
 
-  .about_ttl h3 {
-    font-size: 4rem;
-  }
   .about_copy h2 {
     font-size: 1.2rem;
   }
@@ -3551,9 +3469,6 @@ a {
     font-size: 0.8rem;
   }
 
-  .service_ttl h3 {
-    font-size: 4rem;
-  }
   .service_triangleL {
     border-left: unset;
     top: 0;
@@ -3595,21 +3510,7 @@ a {
     position: unset;
   }
 
-  .view_btnInner a {
-    font-size: 1.3rem;
-  }
-  .view_btnInner a::before {
-    right: -43.5%;
-  }
-
-  .contact_btn a::before {
-    right: -85.5%;
-    top: 30%;
-  }
-  .contact_btn a::after {
-    transform: translateX(25vw);
-  }
-  .contact h2 {
-    font-size: 1rem;
+  .contact_txtBox {
+    font-size: 1.4rem;
   }
 }
