@@ -2586,14 +2586,14 @@ a {
   display: -ms-flexbox;
   display: inline-block;
   margin-top: 0%;
-  width: 20%;
+  width: 220px;
   left: 50%;
   transform: translateX(-50%);
   top: 60%;
 }
 .para1_btn a {
   display: block;
-  width: 60%;
+  width: 80%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
@@ -2616,7 +2616,7 @@ a {
   content: "";
   position: absolute;
   top: 25%;
-  right: 20.5%;
+  right: 0;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -2630,7 +2630,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 55px;
+  width: 45px;
   height: 0%;
   bottom: 0;
   top: 50%;
@@ -2756,7 +2756,7 @@ a {
 .view_btnInner {
   position: relative;
   display: inline-block;
-  width: 215px;
+  width: 220px;
   left: 50%;
   margin-top: 5%;
   transform: translateX(-50%);
@@ -2847,14 +2847,14 @@ a {
   display: -ms-flexbox;
   display: inline-block;
   margin-top: 0%;
-  width: 20%;
+  width: 220px;
   left: 50%;
   transform: translateX(-50%);
   top: 60%;
 }
 .para2_btn a {
   display: block;
-  width: 60%;
+  width: 80%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
@@ -2877,7 +2877,7 @@ a {
   content: "";
   position: absolute;
   top: 25%;
-  right: 20.5%;
+  right: 0;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -2891,7 +2891,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 55px;
+  width: 45px;
   height: 0%;
   bottom: 0;
   top: 50%;
@@ -3053,14 +3053,14 @@ a {
   display: -ms-flexbox;
   display: inline-block;
   margin-top: 0%;
-  width: 20%;
+  width: 220px;
   left: 50%;
   transform: translateX(-50%);
   top: 60%;
 }
 .contact_btn a {
   display: block;
-  width: 60%;
+  width: 80%;
   height: 100%;
   color: #fff;
   font-size: 1.7rem;
@@ -3083,7 +3083,7 @@ a {
   content: "";
   position: absolute;
   top: 25%;
-  right: 20.5%;
+  right: 0;
   width: 40px;
   height: 40px;
   border: 2px solid #fff;
@@ -3097,7 +3097,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 55px;
+  width: 45px;
   height: 0%;
   bottom: 0;
   top: 50%;
@@ -3121,19 +3121,6 @@ a {
     width: 32%;
   }
 
-  .para1_btn a::before {
-    right: 7.5%;
-  }
-  .para1_btn a::after {
-    transform: translateX(11vw);
-  }
-  .para2_btn a::before {
-    right: 7.5%;
-  }
-  .para2_btn a::after {
-    transform: translateX(11vw);
-  }
-
   .service_txtBoxR h2 {
     font-size: 2.5rem;
   }
@@ -3152,21 +3139,6 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  .para1 a::before {
-    right: -7.5%;
-    top: 20%;
-  }
-  .para1 a::after {
-    transform: translateX(12vw);
-  }
-  .para2 a::before {
-    right: -7.5%;
-    top: 20%;
-  }
-  .para2 a::after {
-    transform: translateX(12vw);
-  }
-
   .service_triangleR {
     width: 100%;
     border-left: 250px solid transparent;
@@ -3198,13 +3170,6 @@ a {
     margin-top: 6%;
     font-size: 1.7rem;
   }
-  .contact_btn a::before {
-    right: -7.5%;
-    top: 20%;
-  }
-  .contact_btn a::after {
-    transform: translateX(12vw);
-  }
 }
 @media screen and (max-width: 599px) {
   .about_box {
@@ -3222,37 +3187,6 @@ a {
   }
   .about_copy p {
     font-size: 1.1rem;
-  }
-
-  .para1_btnInner {
-    left: 48%;
-  }
-  .para1_btn a::before {
-    width: 35px;
-    height: 35px;
-    right: -39.5%;
-    top: 24%;
-  }
-  .para1_btn a::after {
-    transform: translateX(17vw);
-    width: 45px;
-  }
-  .para2 p {
-    font-size: 2.3rem;
-  }
-  .para2_inner {
-    margin-top: 8vh;
-  }
-  .para2_btnInner {
-    left: 48%;
-  }
-  .para2_btn a::before {
-    right: -40.5%;
-    top: 20%;
-  }
-  .para2_btn a::after {
-    width: 45px;
-    transform: translateX(17vw);
   }
 
   .service_txtBoxR {
@@ -3401,12 +3335,9 @@ a {
   .para1_btn a::before {
     width: 30px;
     height: 30px;
-    right: -43.5%;
-    top: 26%;
   }
   .para1_btn a::after {
     width: 40px;
-    transform: translateX(18vw);
   }
   .para2 p {
     font-size: 2.1rem;
@@ -3414,23 +3345,17 @@ a {
   .para2_btn a::before {
     width: 30px;
     height: 30px;
-    right: -43.5%;
-    top: 26%;
   }
   .para2_btn a::after {
     width: 40px;
-    transform: translateX(18vw);
   }
 
   .view_btn a::before {
-    top: 25%;
     width: 30px;
     height: 30px;
-    right: -42.5%;
   }
   .view_btn a::after {
     width: 40px;
-    transform: translateX(25vw);
   }
 
   .contact_txtBox h2 {
@@ -3439,11 +3364,8 @@ a {
   .contact_btn a::before {
     width: 30px;
     height: 30px;
-    right: -42.5%;
-    top: 26%;
   }
   .contact_btn a::after {
-    transform: translateX(18vw);
     width: 40px;
   }
 }
@@ -3455,14 +3377,11 @@ a {
     left: 46%;
   }
   .para1_btn a::before {
-    right: -68.5%;
-    top: 30%;
     width: 25px;
     height: 25px;
   }
   .para1_btn a::after {
     width: 30px;
-    transform: translateX(23vw);
   }
   .para2 p {
     font-size: 1.7rem;
@@ -3471,14 +3390,11 @@ a {
     left: 46%;
   }
   .para2_btn a::before {
-    right: -68.5%;
-    top: 30%;
     width: 25px;
     height: 25px;
   }
   .para2_btn a::after {
     width: 30px;
-    transform: translateX(23vw);
   }
 
   .about_box {
