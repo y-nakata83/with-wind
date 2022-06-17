@@ -3140,6 +3140,20 @@ a {
     font-size: 1.8rem;
   }
 }
+@media screen and (max-width: 820px) {
+  .service_txtBoxR {
+    top: 35%;
+  }
+  .service_txtBoxR h2 {
+    font-size: 2rem;
+  }
+  .service_txtBoxL {
+    top: 35%;
+  }
+  .service_txtBoxL h2 {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .service_triangleR {
     border-left: 200px solid transparent;

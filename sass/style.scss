@@ -1652,6 +1652,28 @@ a{
   }
 }
 
+@media screen and (max-width: 820px) {
+  .service {
+    &_txt {
+      &Box {
+        &R {
+          top: 35%;
+          h2 {
+            font-size: 2rem;
+          }
+        }
+        &L {
+          top: 35%;
+          h2 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   .service {
     &_triangle {
