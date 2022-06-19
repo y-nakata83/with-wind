@@ -74,21 +74,21 @@
           <div class="a_contact_form_txt">
             <p>は必須項目なります</p>
           </div>
-          <form action="mail.php" class="a_contact_form" id="form" method="post">
+          <form action="mail.php" class="a_contact_form" id="form" method="POST">
             <div class="wrap">
               <div class="a_contact_form_ttl"><p>お客様</p></div>
               <div>
-                <label for="fname"><p>例) 山田 太郎</p></label>
-                <input id="fname" type="text" class="cool" />
+                <label for="fname">例) 山田 太郎</label>
+                <input id="fname" type="text" name="お名前" class="cool" />
               </div>
-              <div class="a_contact_form_ttl"><p>メールアドレス</p></div>
+              <div class="a_contact_form_ttl">メールアドレス</div>
               <div>
-                <label for="email"><p>例) yamada@****</p></label>
-                <input id="email" type="text" class="cool" />
+                <label for="email">例) yamada@****</label>
+                <input id="email" type="email" name="メール" class="cool" />
               </div>
               <div class="a_contact_box">
                 <label for="radio" class="a_contact_form_ttl _ttl">
-                  <p>お問い合わせの種類</p>
+                  お問い合わせの種類
                 </label>
                 <div class="a_contact_box_selection">
                   <div class="l">
@@ -106,9 +106,6 @@
                   <p>お問い合わせ内容</p>
               </div>
               <div class="a_contact_box_area">
-                
-                <!-- <label for="message" class="a_contact_area_ttl"> -->
-                <!-- </label> -->
                 <textarea name="message" class="a_contact_txtarea" id="message" required="required"></textarea>
               </div>
             </div>
@@ -151,7 +148,7 @@
                   </p>
                 </div>
                   <div class="privacy_chk">
-                    <input type="checkbox" name="個人情報の取扱について" value="ok">
+                    <input type="checkbox" name="個人情報の取り扱いについて" value="ok">
                     <div class="privacy_chk_list">
                       <p>個人情報の取扱いについて、上記に同意します。</p>
                     </div>
@@ -165,7 +162,6 @@
             <button type="submit" class="b_contact button">送信する</button>
           </form>
         </section>
-        
       </main>
     </div>
     <footer class="footer">
