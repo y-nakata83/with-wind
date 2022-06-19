@@ -2223,8 +2223,8 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#2CC4CB), to(transparent));
   background: -o-linear-gradient(transparent, #2CC4CB, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#2CC4CB), to(transparent));
   background: linear-gradient(transparent, #2CC4CB, transparent);
 }
 
@@ -2585,6 +2585,8 @@ a {
   margin-top: 0%;
   width: 180px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 60%;
 }
@@ -2615,6 +2617,8 @@ a {
   right: 0;
   width: 40px;
   height: 40px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border: 2px solid #fff;
   border-radius: 50%;
@@ -2629,6 +2633,8 @@ a {
   display: flex;
   width: 45px;
   right: 10%;
+  -webkit-transform: translate(-7%, -50%);
+  -ms-transform: translate(-7%, -50%);
   transform: translate(-7%, -50%);
   height: 0%;
   bottom: 0;
@@ -2755,6 +2761,8 @@ a {
   width: 220px;
   left: 50%;
   margin-top: 5%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 .view_btn a {
@@ -2782,6 +2790,8 @@ a {
   position: absolute;
   top: 50%;
   right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
@@ -2798,6 +2808,8 @@ a {
   bottom: 0;
   top: 50%;
   right: 7%;
+  -webkit-transform: translate(-7%, -50%);
+  -ms-transform: translate(-7%, -50%);
   transform: translate(-7%, -50%);
   border: 1px solid #000;
   z-index: 1;
@@ -2845,6 +2857,8 @@ a {
   margin-top: 0%;
   width: 180px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 60%;
 }
@@ -2875,6 +2889,8 @@ a {
   right: 0;
   width: 40px;
   height: 40px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border: 2px solid #fff;
   border-radius: 50%;
@@ -2895,6 +2911,8 @@ a {
   z-index: 1;
   position: absolute;
   right: 10%;
+  -webkit-transform: translate(-7%, -50%);
+  -ms-transform: translate(-7%, -50%);
   transform: translate(-7%, -50%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -3016,6 +3034,8 @@ a {
   height: 45vh;
   background: url(../img/contact.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .contact_txtBox {
   position: absolute;
@@ -3050,6 +3070,8 @@ a {
   margin-top: 0%;
   width: 265px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 60%;
 }
@@ -3080,6 +3102,8 @@ a {
   right: 0;
   width: 40px;
   height: 40px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   border: 2px solid #fff;
   border-radius: 50%;
@@ -3100,6 +3124,8 @@ a {
   border: 1px solid #fff;
   z-index: 1;
   position: absolute;
+  -webkit-transform: translate(-7%, -50%);
+  -ms-transform: translate(-7%, -50%);
   transform: translate(-7%, -50%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -3192,6 +3218,9 @@ a {
 }
 @media screen and (max-width: 599px) {
   .about_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .about_item {
@@ -3247,6 +3276,9 @@ a {
     border-left: 150px solid transparent;
   }
   .service_itemF {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
   .service_item a {
@@ -3258,9 +3290,14 @@ a {
   }
   .service_item a::after {
     width: 45px;
+    -webkit-transform: translateX(24vw);
+    -ms-transform: translateX(24vw);
     transform: translateX(24vw);
   }
   .service_item a::afterS {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .service_item a_imgL, .service_item a_imgR {
@@ -3497,9 +3534,15 @@ a {
     border-left: 150px solid transparent;
   }
   .service_itemF {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
   .service_itemS {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .service_imgL, .service_imgR {
