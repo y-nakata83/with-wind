@@ -333,17 +333,14 @@ div.wrap div {
 label {
   position: absolute;
   top: 0;
-  font-size: 30px;
   margin: 10px;
   padding: 0 10px;
   -webkit-transition: top .2s ease-in-out,
     font-size .2s ease-in-out;
   transition: top .2s ease-in-out,
     font-size .2s ease-in-out;
-
-    p {
     font-size: 1.5rem;
-    } 
+
 }
 
 .activeC {
