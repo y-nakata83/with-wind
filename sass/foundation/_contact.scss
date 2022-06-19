@@ -326,7 +326,7 @@ div.wrap {
 
 div.wrap div {
   position: relative;
-  margin: 30px 0;
+  margin: 50px 0;
 
 }
 
@@ -359,6 +359,16 @@ input[type=text]:focus {
   outline: none;
 }
 
+input[type=email] {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid $cBlack;
+  font-size: 20px;
+}
+
+input[type=email]:focus {
+  outline: none;
+}
 
 
 //////////レスポンシブ///////// 

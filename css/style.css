@@ -1581,7 +1581,7 @@ div.wrap {
 
 div.wrap div {
   position: relative;
-  margin: 30px 0;
+  margin: 50px 0;
 }
 
 label {
@@ -1607,6 +1607,17 @@ input[type=text] {
 }
 
 input[type=text]:focus {
+  outline: none;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #000;
+  font-size: 20px;
+}
+
+input[type=email]:focus {
   outline: none;
 }
 
@@ -1708,7 +1719,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -3568,5 +3579,3 @@ a {
     font-size: 1.4rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
