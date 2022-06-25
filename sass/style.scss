@@ -2032,6 +2032,13 @@ a{
 }
 
 @media screen and (max-width: 414px) {
+  .top{
+    &_name{
+      h1{
+    font-size: 5rem;
+      }
+    }
+  }
   .para {
     &1 {
       p {

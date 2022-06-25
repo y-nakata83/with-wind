@@ -3417,6 +3417,10 @@ a {
   }
 }
 @media screen and (max-width: 414px) {
+  .top_name h1 {
+    font-size: 5rem;
+  }
+
   .para1 p {
     font-size: 2rem;
   }
