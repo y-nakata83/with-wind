@@ -2930,6 +2930,34 @@ a {
   transition: 0.5s;
 }
 
+.works_ttl {
+  width: 100%;
+  text-align: center;
+  margin: 10% auto;
+}
+.works_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
+.works_ttl h2 {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+.works_itemName {
+  width: 20%;
+  background: #2CC4CB;
+  clip-path: polygon(0 0, 75% 0, 90% 100%, 0% 100%);
+  margin-bottom: 5%;
+}
+.works_itemName p {
+  padding-left: 10%;
+  line-height: 3;
+}
+.works_itemImg {
+  text-align: center;
+}
+
 .qa_ttl {
   width: 100%;
   text-align: center;

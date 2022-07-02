@@ -1113,18 +1113,7 @@ a{
     position: relative;
   }
   &_ttl {
-    width: 100%;
-    text-align: center;
-    margin: 10% auto;
-    h3 {
-      font-size: 5rem;
-      color: $cHiGreen;
-      font-family: 'Lobster Two',
-    }
-    h2 {
-      font-size: 2rem;
-      margin-top: 2%;
-    }
+    @include ttl;
   }
   &_triangle {
     &L,&R{
@@ -1391,6 +1380,27 @@ a{
         -o-transition: .5s;
         transition: .5s;
       }
+    }
+  }
+}
+
+.works{
+  &_ttl{
+    @include ttl;
+  }
+  &_item{
+    &Name{
+      width: 20%;
+      background: $cHiBlue;
+      clip-path: polygon(0 0, 75% 0, 90% 100%, 0% 100%);
+      margin-bottom: 5%;
+      p{
+        padding-left: 10%;
+        line-height: 3;
+      }
+    }
+    &Img{
+      text-align: center;
     }
   }
 }
