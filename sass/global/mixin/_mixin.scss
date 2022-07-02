@@ -1,3 +1,5 @@
+@use "../setting/color"as *;
+
 @mixin position-c {
   position: absolute;
   top:50%;
@@ -16,4 +18,19 @@
   display: flex;
   justify-content: $nocenter;
   align-items: center;
+}
+
+@mixin ttl {
+  width: 100%;
+    text-align: center;
+    margin: 10% auto;
+    h3 {
+      font-size: 5rem;
+      color: $cHiGreen;
+      font-family: 'Lobster Two',
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 2%;
+    }
 }

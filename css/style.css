@@ -376,28 +376,33 @@ html {
   transform: translate(-10%, -10%);
 }
 .header_navSpItem:nth-child(2) {
-  top: 30%;
-  left: 30%;
-  transform: translate(-30%, -30%);
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
 }
 .header_navSpItem:nth-child(3) {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%);
 }
 .header_navSpItem:nth-child(4) {
+  top: 55%;
+  left: 55%;
+  transform: translate(-55%, -55%);
+}
+.header_navSpItem:nth-child(5) {
   top: 70%;
   left: 70%;
   transform: translate(-70%, -70%);
 }
-.header_navSpItem:nth-child(5) {
-  top: 90%;
-  left: 90%;
-  transform: translate(-90%, -90%);
+.header_navSpItem:nth-child(6) {
+  top: 85%;
+  left: 85%;
+  transform: translate(-85%, -85%);
   text-decoration: wavy underline;
   text-underline-offset: 0.3em;
 }
-.header_navSpItem:nth-child(5) a {
+.header_navSpItem:nth-child(6) a {
   text-decoration: overline wavy;
 }
 .header_navSpItem a {
@@ -1692,6 +1697,10 @@ input[type=email]:focus {
     line-height: 3;
   }
 }
+.works {
+  margin-bottom: 10%;
+}
+
 /*========= 画面遷移のためのCSS ===============*/
 /*画面遷移アニメーション*/
 .splashbg {
@@ -2928,6 +2937,34 @@ a {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+.works_ttl {
+  width: 100%;
+  text-align: center;
+  margin: 10% auto;
+}
+.works_ttl h3 {
+  font-size: 5rem;
+  color: #8FF9E4;
+  font-family: "Lobster Two";
+}
+.works_ttl h2 {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+.works_itemName {
+  width: 25%;
+  background: #2CC4CB;
+  clip-path: polygon(0 0, 75% 0, 90% 100%, 0% 100%);
+  margin-bottom: 5%;
+}
+.works_itemName p {
+  padding-left: 10%;
+  line-height: 3;
+}
+.works_itemImg {
+  text-align: center;
 }
 
 .qa_ttl {
