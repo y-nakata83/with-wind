@@ -2954,14 +2954,23 @@ a {
   margin-top: 2%;
 }
 .works_itemName {
-  width: 25%;
+  width: 60%;
   background: #2CC4CB;
   clip-path: polygon(0 0, 75% 0, 90% 100%, 0% 100%);
   margin-bottom: 5%;
 }
 .works_itemName p {
+  font-size: 2rem;
   padding-left: 10%;
   line-height: 3;
+}
+.works_itemName p small {
+  margin-left: 2%;
+  font-size: 0.5em;
+}
+.works_itemName p small:hover {
+  opacity: 0.6;
+  text-decoration: underline;
 }
 .works_itemImg {
   text-align: center;

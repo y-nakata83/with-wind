@@ -1390,13 +1390,22 @@ a{
   }
   &_item{
     &Name{
-      width: 25%;
+      width: 60%;
       background: $cHiBlue;
       clip-path: polygon(0 0, 75% 0, 90% 100%, 0% 100%);
       margin-bottom: 5%;
       p{
+        font-size: 2rem;
         padding-left: 10%;
         line-height: 3;
+        small{
+          margin-left: 2%;
+          font-size: .5em;
+          &:hover{
+            opacity: .6;
+            text-decoration: underline;
+          }
+        }
       }
     }
     &Img{
