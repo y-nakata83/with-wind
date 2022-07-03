@@ -1761,7 +1761,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: rgba(44, 196, 203, 0.1882352941);
+  background-color: #2CC4CB30;
   /*伸びる背景色の設定*/
 }
 
@@ -2987,15 +2987,36 @@ a {
   margin-top: 2%;
 }
 .works_itemName {
-  width: 60%;
+  width: 70%;
   background: #2CC4CB;
-  clip-path: polygon(0 0, 75% 0, 90% 100%, 0% 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
   margin-bottom: 5%;
+}
+@media screen and (max-width: 1024px) {
+  .works_itemName {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .works_itemName {
+    width: 100%;
+  }
 }
 .works_itemName p {
   font-size: 2rem;
   padding-left: 10%;
   line-height: 3;
+}
+@media screen and (max-width: 768px) {
+  .works_itemName p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works_itemName p {
+    font-size: 1.5rem;
+    padding-left: 5%;
+  }
 }
 .works_itemName p small {
   margin-left: 2%;
@@ -3007,6 +3028,23 @@ a {
 }
 .works_itemImg {
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .works_itemImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .works_itemImg img {
+    width: 80%;
+  }
+}
+.works_itemImg img:last-child {
+  margin-top: 5%;
+  width: 20%;
+  max-width: 235px;
 }
 
 .qa_ttl {
@@ -3662,3 +3700,5 @@ a {
     font-size: 1.4rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
