@@ -3083,7 +3083,7 @@ a {
 @media screen and (max-width: 768px) {
   .works_itemImg {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 }

@@ -1425,7 +1425,7 @@ a{
       text-align: center;
       @include mq(tab ){
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
       }
       img{
