@@ -14,7 +14,8 @@
       }
 
       @include mq(sp) {
-        width: 95%;
+        width: 90%;
+        margin: 0 auto;
       }
       tr {
         width: 50%;

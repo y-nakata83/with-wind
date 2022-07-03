@@ -1713,7 +1713,8 @@ input[type=email]:focus {
 }
 @media screen and (max-width: 480px) {
   .works_list {
-    width: 95%;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 .works_list tr {
