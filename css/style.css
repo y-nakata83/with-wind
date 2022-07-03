@@ -1792,6 +1792,11 @@ input[type=email]:focus {
     width: 30%;
   }
 }
+@media screen and (max-width: 480px) {
+  .works_list tr .works_listLast1 {
+    width: 100%;
+  }
+}
 .works_list tr .works_listLast2 {
   width: 83.5%;
   padding: 2%;
@@ -1801,6 +1806,12 @@ input[type=email]:focus {
 @media screen and (max-width: 1024px) {
   .works_list tr .works_listLast2 {
     width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works_list tr .works_listLast2 {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
