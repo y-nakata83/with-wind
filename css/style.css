@@ -1705,9 +1705,16 @@ input[type=email]:focus {
   margin: 0 auto;
   margin-top: 10%;
 }
-.works_list table {
-  border-collapse: collapse;
-  border-spacing: 0;
+@media screen and (max-width: 1024px) {
+  .works_list {
+    margin: 0;
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works_list {
+    width: 95%;
+  }
 }
 .works_list tr {
   width: 50%;
@@ -1716,22 +1723,52 @@ input[type=email]:focus {
   justify-content: flex-end;
   margin-top: 0.2%;
 }
+@media screen and (max-width: 1024px) {
+  .works_list tr {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works_list tr {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .works_list tbody {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .works_list tbody {
+    flex-direction: column;
+  }
+}
 .works_list td:nth-of-type(1) {
   width: 30%;
-  background-color: rgba(15, 119, 187, 0.3019607843);
+  background-color: #8FF9E4;
   line-height: 4;
   font-weight: bold;
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .works_list td:nth-of-type(1) {
+    width: 100%;
+  }
+}
 .works_list td:nth-of-type(2) {
   padding-left: 10%;
   width: 50%;
+  padding-top: 4%;
+}
+@media screen and (max-width: 480px) {
+  .works_list td:nth-of-type(2) {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+  }
 }
 
 /*========= 画面遷移のためのCSS ===============*/
