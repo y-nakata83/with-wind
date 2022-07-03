@@ -16,9 +16,8 @@
       @include mq(sp) {
         width: 95%;
       }
-
-    tr {
-      width: 50%;
+      tr {
+        width: 50%;
       display: flex;
       align-content: space-between;
       justify-content: flex-end;
@@ -33,46 +32,58 @@
           width: 100%;
           
         }
+      &:last-child{
+        width: 90%;
+        margin-left: auto;
+        justify-content: center;
+      }
     }
+    
 
     tbody {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-
       @include mq(pc) {
         flex-direction: column;
         }
-
-    }
-
-    td:nth-of-type(1) {
-      width: 30%;
-      background-color: $cHiGreen;
-      line-height: 4;
-      font-weight: bold;
-      text-align: center;
-
-      @include mq(sp) {
-          width: 100%;
-        }
-    }
-
-    td:nth-of-type(2) {
-      padding-left: 10%;
-      width: 50%;
-      padding-top: 4%;
-
-      @include mq(sp) {
-          padding-left: 0;
-          width: 100%;
-          text-align: center;
-          padding: 5%;
-        }
-      
     }
     
+    td{
+      &:nth-of-type(1) {
+        width: 30%;
+        background-color: $cHiGreen;
+        line-height: 4;
+        font-weight: bold;
+        text-align: center;
+        @include mq(sp) {
+            width: 100%;
+          }
+      }
+      &:nth-of-type(2) {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mq(sp) {
+          padding-left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 5%;
+          }
+        }
+      }
+    }
   }
-}
-
+  
+  
+  .works_list tr .works_listLast{
+  &1{
+    width: 16.5%;
+    }
+    &2{
+      width: 83.5%;
+      padding:2%;
+    }
+  }
