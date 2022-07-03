@@ -1707,7 +1707,6 @@ input[type=email]:focus {
 }
 @media screen and (max-width: 1024px) {
   .works_list {
-    margin: 0;
     margin-top: 10%;
   }
 }
@@ -1744,7 +1743,7 @@ input[type=email]:focus {
   }
 }
 .works_list tr:last-child {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1756,7 +1755,7 @@ input[type=email]:focus {
     margin-left: 0;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;
+    justify-content: start;
   }
 }
 .works_list tbody {
@@ -1794,7 +1793,7 @@ input[type=email]:focus {
   }
 }
 .works_list td:nth-of-type(2) {
-  width: 50%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1809,12 +1808,19 @@ input[type=email]:focus {
   opacity: 0.6;
   text-decoration: underline;
 }
+@media screen and (max-width: 1024px) {
+  .works_list td:nth-of-type(2) {
+    justify-content: start;
+    padding-left: 3%;
+  }
+}
 @media screen and (max-width: 480px) {
   .works_list td:nth-of-type(2) {
     padding-left: 0;
     width: 100%;
     text-align: center;
     padding: 5%;
+    justify-content: center;
   }
 }
 
