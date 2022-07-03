@@ -120,7 +120,7 @@
   
   .works_list tr .works_listLast{
   &1{
-    width: 16.5%;
+    width: 15%;
     @include mq(pc){
       width: 30%;
     }
@@ -129,12 +129,12 @@
     }
   }
     &2{
-      width: 83.5%;
+      width: 85%;
       padding:2%;
       text-align: justify;
       line-height: 1.5;
       @include mq(pc) {
-          width: 50%;
+          width: 70%;
         }
       @include mq(sp) {
           width: 90%;
