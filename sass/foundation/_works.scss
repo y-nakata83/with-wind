@@ -18,9 +18,14 @@
       }
       tr {
         width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-content: space-between;
-      justify-content: flex-end;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
       margin-top: 0.2%;
 
       @include mq(pc) {
@@ -28,30 +33,48 @@
         }
 
         @include mq(sp) {
-          flex-direction: column;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           width: 100%;
           
         }
       &:last-child{
         width: 90%;
         margin-left: auto;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         @include mq(pc){
           width: 100%;
           margin-left: 0;
-          justify-content: flex-end;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
         }
       }
     }
     
 
     tbody {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       @include mq(pc) {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         }
     }
     
@@ -68,9 +91,20 @@
       }
       &:nth-of-type(2) {
         width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+          &:hover a {
+            opacity: .6;
+            text-decoration: underline;
+          }       
         @include mq(sp) {
           padding-left: 0;
             width: 100%;
