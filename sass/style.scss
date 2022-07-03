@@ -1390,14 +1390,27 @@ a{
   }
   &_item{
     &Name{
-      width: 60%;
+      width: 70%;
       background: $cHiBlue;
-      clip-path: polygon(0 0, 75% 0, 90% 100%, 0% 100%);
+      clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
       margin-bottom: 5%;
+      @include mq(pc){
+        width: 85%;
+      }
+      @include mq(tab){
+        width: 100%;
+      }
       p{
         font-size: 2rem;
         padding-left: 10%;
         line-height: 3;
+        @include mq(tab) {
+            font-size: 1.8rem;
+          }
+        @include mq(sp) {
+            font-size: 1.5rem;
+            padding-left: 5%;
+          }
         small{
           margin-left: 2%;
           font-size: .5em;
@@ -1410,6 +1423,21 @@ a{
     }
     &Img{
       text-align: center;
+      @include mq(tab ){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      img{
+        @include mq(pc) {
+            width: 80%;
+          }
+          &:last-child{
+            margin-top: 5%;
+            width: 20%;
+            max-width: 235px;
+          }
+      }
     }
   }
 }
