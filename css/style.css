@@ -1739,6 +1739,13 @@ input[type=email]:focus {
   margin-left: auto;
   justify-content: center;
 }
+@media screen and (max-width: 1024px) {
+  .works_list tr:last-child {
+    width: 100%;
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+}
 .works_list tbody {
   display: flex;
   flex-direction: row;
@@ -1780,9 +1787,21 @@ input[type=email]:focus {
 .works_list tr .works_listLast1 {
   width: 16.5%;
 }
+@media screen and (max-width: 1024px) {
+  .works_list tr .works_listLast1 {
+    width: 30%;
+  }
+}
 .works_list tr .works_listLast2 {
   width: 83.5%;
   padding: 2%;
+  text-align: justify;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1024px) {
+  .works_list tr .works_listLast2 {
+    width: 50%;
+  }
 }
 
 /*========= 画面遷移のためのCSS ===============*/
