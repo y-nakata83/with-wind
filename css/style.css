@@ -1700,6 +1700,39 @@ input[type=email]:focus {
 .works {
   margin-bottom: 10%;
 }
+.works_list {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.works_list table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.works_list tr {
+  width: 50%;
+  display: flex;
+  align-content: space-between;
+  justify-content: flex-end;
+  margin-top: 0.2%;
+}
+.works_list tbody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.works_list td:nth-of-type(1) {
+  width: 30%;
+  background-color: rgba(15, 119, 187, 0.3019607843);
+  line-height: 4;
+  font-weight: bold;
+  text-align: center;
+}
+.works_list td:nth-of-type(2) {
+  padding-left: 10%;
+  width: 50%;
+}
 
 /*========= 画面遷移のためのCSS ===============*/
 /*画面遷移アニメーション*/
@@ -1728,7 +1761,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: #2CC4CB30;
+  background-color: rgba(44, 196, 203, 0.1882352941);
   /*伸びる背景色の設定*/
 }
 
@@ -3629,5 +3662,3 @@ a {
     font-size: 1.4rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
