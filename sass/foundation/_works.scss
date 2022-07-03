@@ -9,7 +9,6 @@
     margin-top: 10%;
 
     @include mq(pc) {
-        margin: 0;
         margin-top: 10%;
       }
 
@@ -43,7 +42,7 @@
           
         }
       &:last-child{
-        width: 90%;
+        width: 100%;
         margin-left: auto;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -53,7 +52,7 @@
           margin-left: 0;
           -webkit-box-pack: end;
               -ms-flex-pack: end;
-                  justify-content: flex-end;
+                  justify-content: start;
         }
       }
     }
@@ -92,7 +91,7 @@
           }
       }
       &:nth-of-type(2) {
-        width: 50%;
+        width: 70%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -106,12 +105,17 @@
           &:hover a {
             opacity: .6;
             text-decoration: underline;
-          }       
+          }
+          @include mq(pc){
+            justify-content: start;
+            padding-left: 3%;
+          }
         @include mq(sp) {
           padding-left: 0;
             width: 100%;
             text-align: center;
             padding: 5%;
+            justify-content: center;
           }
         }
       }
@@ -121,7 +125,7 @@
   
   .works_list tr .works_listLast{
   &1{
-    width: 16.5%;
+    width: 15%;
     @include mq(pc){
       width: 30%;
     }
@@ -130,12 +134,12 @@
     }
   }
     &2{
-      width: 83.5%;
+      width: 85%;
       padding:2%;
       text-align: justify;
       line-height: 1.5;
       @include mq(pc) {
-          width: 50%;
+          width: 70%;
         }
       @include mq(sp) {
           width: 90%;
