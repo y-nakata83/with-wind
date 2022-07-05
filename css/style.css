@@ -3155,6 +3155,7 @@ a {
   text-decoration: underline;
 }
 .works_itemImg {
+  width: 100%;
   text-align: center;
 }
 .works_itemImg:nth-of-type(2) {
