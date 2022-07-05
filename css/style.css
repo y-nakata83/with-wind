@@ -3117,6 +3117,7 @@ a {
 .works_itemName {
   width: 70%;
   background: #2CC4CB;
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
   margin-bottom: 5%;
 }
@@ -3163,8 +3164,15 @@ a {
 }
 @media screen and (max-width: 768px) {
   .works_itemImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
@@ -3444,6 +3452,12 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
+  .top h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Lobster Two", cursive;
+  }
+
   .service_triangleR {
     border-left: 200px solid transparent;
   }
@@ -3673,7 +3687,7 @@ a {
 }
 @media screen and (max-width: 414px) {
   .top_name h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .para1 p {
