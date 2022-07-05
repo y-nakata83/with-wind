@@ -1759,6 +1759,9 @@ input[type=email]:focus {
     justify-content: start;
   }
 }
+.works_list table {
+  width: 100%;
+}
 .works_list tbody {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1883,7 +1886,7 @@ body.appear .splashbg {
   -webkit-transform: translateX(-300%) skewX(-45deg);
   -ms-transform: translateX(-300%) skewX(-45deg);
   transform: translateX(-300%) skewX(-45deg);
-  background-color: rgba(44, 196, 203, 0.1882352941);
+  background-color: #2CC4CB30;
   /*伸びる背景色の設定*/
 }
 
@@ -3108,6 +3111,9 @@ a {
   font-size: 2rem;
   margin-top: 2%;
 }
+.works_item {
+  margin-top: 5%;
+}
 .works_itemName {
   width: 70%;
   background: #2CC4CB;
@@ -3151,6 +3157,9 @@ a {
 .works_itemImg {
   text-align: center;
 }
+.works_itemImg:nth-of-type(2) {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .works_itemImg {
     display: flex;
@@ -3163,10 +3172,16 @@ a {
     width: 80%;
   }
 }
-.works_itemImg img:last-child {
+.works_itemImg img:nth-last-child(1) {
   margin-top: 5%;
   width: 20%;
   max-width: 235px;
+}
+.works_itemImg2 {
+  text-align: center;
+}
+.works_itemImg2 img {
+  width: 100%;
 }
 
 .qa_ttl {
@@ -3822,3 +3837,5 @@ a {
     font-size: 1.4rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

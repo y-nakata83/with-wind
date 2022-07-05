@@ -1389,6 +1389,7 @@ a{
     @include ttl;
   }
   &_item{
+    margin-top: 5%;
     &Name{
       width: 70%;
       background: $cHiBlue;
@@ -1423,6 +1424,9 @@ a{
     }
     &Img{
       text-align: center;
+      &:nth-of-type(2){
+        width: 100%;
+      }
       @include mq(tab ){
         display: flex;
         flex-direction: column-reverse;
@@ -1432,11 +1436,17 @@ a{
         @include mq(pc) {
             width: 80%;
           }
-          &:last-child{
+          &:nth-last-child(1){
             margin-top: 5%;
             width: 20%;
             max-width: 235px;
           }
+      }
+      &2{
+        text-align: center;
+        img{
+          width: 100%;
+        }
       }
     }
   }
