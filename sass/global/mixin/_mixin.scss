@@ -1,23 +1,40 @@
 @use "../setting/color"as *;
+@use "../setting/font-family" as f;
+@use "../mixin/breakpoint" as b;
 
 @mixin position-c {
   position: absolute;
   top:50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@mixin bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @mixin contents {
   width: 20%;
   border-radius: 10px;
   margin-left: 5%;
-  box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+  -webkit-box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+          box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
 }
 
 @mixin flex-c($nocenter:center){
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: $nocenter;
-  align-items: center;
+  -webkit-box-pack: $nocenter;
+      -ms-flex-pack: $nocenter;
+          justify-content: $nocenter;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @mixin ttl {
@@ -25,12 +42,47 @@
     text-align: center;
     margin: 10% auto;
     h3 {
-      font-size: 5rem;
+      font-size: 4rem;
       color: $cHiGreen;
-      font-family: 'Lobster Two',
+      font-family: f.$font-family;
     }
     h2 {
       font-size: 2rem;
       margin-top: 2%;
+    }
+}
+
+@mixin para {
+  background-attachment: fixed;
+    @include bg;
+  
+    &_inner {
+      position: relative;
+      margin-top: 10%;
+      height: 35vh;
+    }
+  
+    p {
+      color: $cWhite;
+      font-size: 2.5rem;
+      @include flex-c;
+      height: 100%;
+      padding: 3% 0 5%;
+      @include b.mq(tab){
+        font-size: 2rem;
+      }
+    }
+}
+
+@mixin qa {
+  width: 45px;
+    height: 45px;
+    padding: 2%;
+    margin-right: 5%;
+    border-radius: 50%;
+  
+    p {
+      font-weight: bold;
+      font-size: 1.2rem;
     }
 }

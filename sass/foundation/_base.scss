@@ -1,3 +1,475 @@
+@use "../global"as *;
+
 *{
   box-sizing: border-box;
+}
+
+//top
+
+.top {
+  &_inner {
+    position: relative;
+    height: 100vh;
+  }
+
+  &_name {
+    @include position-c;
+    top: 48%;
+    width: 100%;
+
+    h1 {
+      text-align: center;
+      font-family: $font-family;
+      letter-spacing: 10px;
+      font-size: 6rem;
+      color: $cHiBlue;
+      @include mq(tab){
+        font-size: 5rem;
+      }
+      small {
+        font-size: .2em;
+      }
+    }
+  }
+}
+
+.about {
+  &_ttl {
+    @include ttl;
+  }
+  &_inner {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    @include mq(pc){
+      width: 95%;
+    }
+    @include mq(tab){
+      width: 100%;
+    }
+  }
+  &_copy {
+    margin-bottom: 10%;
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3%;
+      @include mq(tab){
+        font-size: 1.5rem;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 2;
+      @include mq(tab){
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &_contaner {
+    margin-bottom: 5%;
+  }
+
+  &_box {
+    @include flex-c(space-between);
+    align-items: flex-start;
+    @include mq(tab){
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &_item {
+    @include flex-c;
+    background: url(../img/item1.png);
+    @include bg;
+    width: 30%;
+    padding: 6% 0;
+    position: relative;
+    @include mq(pc){
+      width: 32%;
+    }
+    @include mq(tab){
+      width: 80%;
+      margin-bottom: 10%;
+    }
+    &::before {
+      content: "01";
+      position: absolute;
+      top: -20%;
+      left: 0;
+      font-size: 3vw;
+      font-weight: 800;
+      -webkit-text-decoration: wavy overline $cHiBlue;
+      text-decoration: wavy overline $cHiBlue;
+      padding-top: 3%;
+      color: $cHiBlue;
+      @include mq(tab){
+        font-size: 1rem;
+      }
+    }
+
+    &:nth-child(2) {
+      background: url(../img/about1.png);
+      @include bg;
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s;
+
+      &::before {
+        content: "02";
+      }
+    }
+
+    &:nth-child(3) {
+      background: url(../img/about2.png);
+      @include bg;
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s;
+
+      &::before {
+        content: "03";
+      }
+    }
+    &Inner {
+      background-color: $cBlack;
+      width: 100%;
+      padding: 5%;
+      color: $cWhite;
+      text-align: justify;
+      p {
+        font-size: 1rem;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+.para1 {
+  background-image: url(../img/para1-2.png);
+  @include para;
+  @include para-btn;
+}
+
+.para2 {
+  background-image: url(../img/para2.png);
+  @include para;
+  @include para-btn;
+}
+
+.service {
+  &_inner {
+    width: 100%;
+    position: relative;
+  }
+  &_ttl {
+    @include ttl;
+  }
+  &_triangle {
+    &L,&R{
+      position:absolute;
+      width: 100%;
+      height: 89%;
+      top: 10%;
+      background-color: $cHiBlue;
+      z-index: -1;
+    }
+    &L{
+      clip-path: polygon(0 0, 65% 0, 90% 100%, 0% 100%);
+    }
+    &R{
+      clip-path: polygon(35% 0, 100% 0, 100% 100%, 10% 100%);
+    }
+  }
+  &_item {
+    position: relative;
+    @include flex-c;
+    overflow: hidden;
+    margin-bottom: 10%;
+    &Img{
+      width: 50%;
+      img{
+        width: 100%;
+      }
+    }
+    &Box{
+      width: 50%;
+      position: relative;
+      &-txt{
+        @include position-c;
+        width: 80%;
+        &Hp{
+          font-size: 2rem;
+          line-height: 2;
+        }
+        p{
+          font-size: 1.2rem;
+          text-align: justify;
+          line-height: 1.2;
+        }
+        &Lp{
+          font-size: 2rem;
+          line-height: 2;
+          @include mq(pc){
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  &_ec {
+    &Inner {
+      width: 100%;
+      @include flex-c;
+      margin-top: 10%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+.works {
+  &_ttl {
+    @include ttl;
+  }
+
+  &_item {
+    margin-top: 5%;
+
+    &Name {
+      width: 70%;
+      background: $cHiBlue;
+      -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+      clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+      margin-bottom: 5%;
+
+      @include mq(pc) {
+        width: 85%;
+      }
+
+      @include mq(tab) {
+        width: 100%;
+      }
+
+      p {
+        font-size: 2rem;
+        padding-left: 10%;
+        line-height: 3;
+
+        @include mq(tab) {
+          font-size: 1.8rem;
+        }
+
+        @include mq(sp) {
+          font-size: 1.5rem;
+          padding-left: 5%;
+        }
+
+        small {
+          margin-left: 2%;
+          font-size: .5em;
+
+          &:hover {
+            opacity: .6;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &Img {
+      width: 100%;
+      text-align: center;
+
+      &:nth-of-type(2) {
+        width: 100%;
+      }
+
+      @include mq(tab) {
+        @include flex-c;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+      }
+
+      img {
+        @include mq(pc) {
+          width: 80%;
+        }
+
+        &:nth-last-child(1) {
+          margin-top: 5%;
+          width: 20%;
+          max-width: 235px;
+        }
+      }
+
+      &2 {
+        width: 100%;
+        text-align: center;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.qa {
+  &_ttl {
+    @include ttl;
+  }
+
+  &_outline {
+    position: relative;
+    width: 90%;
+    margin: 5% auto 0;
+    border: 2px solid $cHiGreen;
+  }
+
+  &_item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 98%;
+    margin: 1% 1%;
+    border: 1px solid $cBlack;
+  }
+
+  &_question {
+    position: relative;
+    width: 90%;
+    @include flex-c;
+    margin: 2% auto;
+  }
+
+  &_icon {
+    &Q {
+      background-color: $cGray;
+      @include qa;
+    }
+
+    &A {
+      background-color: $cHiGreen;
+      @include qa;
+    }
+  }
+
+  &_title {
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: Bold;
+    font-size: 1.2rem;
+  }
+
+  &_txt {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 45px;
+  }
+
+  &_answer {
+    position: relative;
+    @include flex-c;
+    align-items: flex-start;
+    width: 90%;
+    margin: 3% auto;
+  }
+}
+
+.contact {
+  &_inner {
+    position: relative;
+    width: 100%;
+  }
+
+  &_ttl {
+    width: 100%;
+    text-align: center;
+    margin: 10% auto;
+
+    h3 {
+      font-size: 4rem;
+      color: $cHiGreen;
+      font-family: 'Lobster Two',
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 2%;
+    }
+  }
+
+  &_form {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 45vh;
+    background: url(../img/contact.png);
+    @include bg;
+  }
+
+  &_txt {
+    &Box {
+      @include position-c;
+      width: 100%;
+      height: 33vh;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      h2 {
+        font-size: 2rem;
+        color: $cWhite;
+        line-height: 1.5;
+        @include mq(tab){
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        line-height: 3;
+        font-size: 1.2rem;
+        color: $cWhite;
+      }
+      &Inner{
+        width: 100%;
+        height: 100%;
+        @include flex-c;
+        flex-direction: column;
+      }
+    }
+  }
+  @include para-btn;
+  &_btn{
+    text-align: initial;
+    &Inner{
+      top: 70%;
+    }
+  }
+}
+
+.pc-block{
+  display: none;
+  @include mq(pc){
+    display: block;
+  }
+}
+
+.no-sp{
+  @include mq(sp){
+    display: none;
+  }
 }
