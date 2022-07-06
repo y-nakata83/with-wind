@@ -892,6 +892,11 @@ a {
     font-size: 5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .top_name h1 {
+    font-size: 3.5rem;
+  }
+}
 .top_name h1 small {
   font-size: 0.2em;
 }
@@ -938,6 +943,11 @@ a {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .about_copy h2 {
+    font-size: 1.2rem;
+  }
+}
 .about_copy p {
   text-align: center;
   font-size: 1.2rem;
@@ -946,6 +956,12 @@ a {
 @media screen and (max-width: 768px) {
   .about_copy p {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about_copy p {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 .about_contaner {
@@ -1081,6 +1097,11 @@ a {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .para1 p {
+    font-size: 1.5rem;
+  }
+}
 .para1_btn {
   width: 100%;
 }
@@ -1186,6 +1207,21 @@ a {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .para2 p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .para2_inner p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .para2_inner p {
+    font-size: 1.3rem;
+  }
+}
 .para2_btn {
   width: 100%;
 }
@@ -1285,6 +1321,12 @@ a {
   background-color: #2CC4CB;
   z-index: -1;
 }
+@media screen and (max-width: 768px) {
+  .service_triangleL, .service_triangleR {
+    top: 0;
+    height: 60%;
+  }
+}
 .service_triangleL {
   clip-path: polygon(0 0, 65% 0, 90% 100%, 0% 100%);
 }
@@ -1305,15 +1347,46 @@ a {
   overflow: hidden;
   margin-bottom: 10%;
 }
+@media screen and (max-width: 768px) {
+  .service_item {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_item:nth-of-type(3) {
+    flex-direction: column;
+  }
+}
 .service_itemImg {
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .service_itemImg {
+    width: 100%;
+    text-align: end;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_itemImg:nth-of-type(3) {
+    text-align: start;
+  }
 }
 .service_itemImg img {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .service_itemImg img {
+    width: 80%;
+  }
+}
 .service_itemBox {
   width: 50%;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .service_itemBox {
+    width: 80%;
+  }
 }
 .service_itemBox-txt {
   position: absolute;
@@ -1324,9 +1397,27 @@ a {
   transform: translate(-50%, -50%);
   width: 80%;
 }
+@media screen and (max-width: 768px) {
+  .service_itemBox-txt {
+    position: unset;
+    transform: unset;
+    width: 100%;
+    margin: 15% 0;
+  }
+}
 .service_itemBox-txtHp {
   font-size: 2rem;
   line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .service_itemBox-txtHp {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .service_itemBox-txtHp {
+    font-size: 1.5rem;
+  }
 }
 .service_itemBox-txt p {
   font-size: 1.2rem;
@@ -1338,6 +1429,17 @@ a {
   line-height: 2;
 }
 @media screen and (max-width: 1024px) {
+  .service_itemBox-txtLp {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service_itemBox-txtLp {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
   .service_itemBox-txtLp {
     font-size: 1.5rem;
   }
@@ -1400,13 +1502,13 @@ a {
 }
 @media screen and (max-width: 768px) {
   .works_itemName p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    padding-left: 5%;
   }
 }
 @media screen and (max-width: 480px) {
   .works_itemName p {
-    font-size: 1.5rem;
-    padding-left: 5%;
+    font-size: 1.3rem;
   }
 }
 .works_itemName p small {
@@ -1489,8 +1591,9 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 98%;
-  margin: 1% 1%;
+  margin: 1%;
   border: 1px solid #000;
+  padding: 5% 0;
 }
 .qa_question {
   position: relative;
@@ -1510,9 +1613,17 @@ a {
   background-color: rgba(192, 192, 192, 0.287);
   width: 45px;
   height: 45px;
-  padding: 2%;
   margin-right: 5%;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .qa_iconQ p {
   font-weight: bold;
@@ -1522,9 +1633,17 @@ a {
   background-color: #8FF9E4;
   width: 45px;
   height: 45px;
-  padding: 2%;
   margin-right: 5%;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .qa_iconA p {
   font-weight: bold;
@@ -1569,7 +1688,7 @@ a {
 .contact_ttl h3 {
   font-size: 4rem;
   color: #8FF9E4;
-  font-family: "Lobster Two";
+  font-family: "Lobster Two", cursive;
 }
 .contact_ttl h2 {
   font-size: 2rem;
@@ -1577,9 +1696,6 @@ a {
 }
 .contact_form {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   height: 45vh;
   background: url(../img/contact.png);
@@ -1607,6 +1723,11 @@ a {
 @media screen and (max-width: 768px) {
   .contact_txtBox h2 {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact_txtBox h2 {
+    font-size: 1.3rem;
   }
 }
 .contact_txtBox p {
@@ -3524,3 +3645,4 @@ input[type=email]:focus {
   }
 }
 
+/*# sourceMappingURL=style.css.map */

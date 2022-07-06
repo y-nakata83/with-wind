@@ -26,6 +26,9 @@
       @include mq(tab){
         font-size: 5rem;
       }
+      @include mq(sp){
+        font-size: 3.5rem;
+      }
       small {
         font-size: .2em;
       }
@@ -57,6 +60,9 @@
       @include mq(tab){
         font-size: 1.5rem;
       }
+      @include mq(sp){
+        font-size: 1.2rem;
+      }
     }
     p {
       text-align: center;
@@ -64,6 +70,10 @@
       line-height: 2;
       @include mq(tab){
         font-size: 1rem;
+      }
+      @include mq(sp){
+        width: 75%;
+        margin: 0 auto;
       }
     }
   }
@@ -155,6 +165,16 @@
 .para2 {
   background-image: url(../img/para2.png);
   @include para;
+  &_inner{
+    p{
+      @include mq(tab){
+        font-size: 1.5rem;
+      }
+      @include mq(sp){
+        font-size: 1.3rem;
+      }
+    }
+  }
   @include para-btn;
 }
 
@@ -174,6 +194,10 @@
       top: 10%;
       background-color: $cHiBlue;
       z-index: -1;
+      @include mq(tab){
+        top: 0;
+        height: 60%;
+      }
     }
     &L{
       clip-path: polygon(0 0, 65% 0, 90% 100%, 0% 100%);
@@ -187,21 +211,56 @@
     @include flex-c;
     overflow: hidden;
     margin-bottom: 10%;
+    @include mq(tab){
+      flex-direction: column-reverse;
+    }
+    &:nth-of-type(3){
+      @include mq(tab){
+        flex-direction: column;
+      }
+    }
     &Img{
       width: 50%;
+      @include mq(tab){
+        width: 100%;
+        text-align: end;
+      }
+      &:nth-of-type(3){
+        @include mq(tab){
+          text-align: start;
+        }
+      }
       img{
         width: 100%;
+        @include mq(tab){
+          width: 80%;
+        }
       }
     }
     &Box{
       width: 50%;
       position: relative;
+      @include mq(tab){
+        width: 80%;
+      }
       &-txt{
         @include position-c;
         width: 80%;
+        @include mq(tab){
+          position: unset;
+          transform: unset;
+          width: 100%;
+          margin: 15% 0;
+        }
         &Hp{
           font-size: 2rem;
           line-height: 2;
+          @include mq(tab){
+            text-align: center;
+          }
+          @include mq(sp){
+            font-size: 1.5rem;
+          }
         }
         p{
           font-size: 1.2rem;
@@ -212,6 +271,13 @@
           font-size: 2rem;
           line-height: 2;
           @include mq(pc){
+            font-size: 1.5rem;
+          }
+          @include mq(tab){
+            font-size: 2rem;
+            text-align: center;
+          }
+          @include mq(sp){
             font-size: 1.5rem;
           }
         }
@@ -230,49 +296,38 @@
   }
 }
 
-
-
 .works {
   &_ttl {
     @include ttl;
   }
-
   &_item {
     margin-top: 5%;
-
     &Name {
       width: 70%;
       background: $cHiBlue;
       -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
       clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
       margin-bottom: 5%;
-
       @include mq(pc) {
         width: 85%;
       }
-
       @include mq(tab) {
         width: 100%;
       }
-
       p {
         font-size: 2rem;
         padding-left: 10%;
         line-height: 3;
-
         @include mq(tab) {
-          font-size: 1.8rem;
-        }
-
-        @include mq(sp) {
           font-size: 1.5rem;
           padding-left: 5%;
         }
-
+        @include mq(sp){
+          font-size: 1.3rem;
+        }
         small {
           margin-left: 2%;
           font-size: .5em;
-
           &:hover {
             opacity: .6;
             text-decoration: underline;
@@ -280,15 +335,12 @@
         }
       }
     }
-
     &Img {
       width: 100%;
       text-align: center;
-
       &:nth-of-type(2) {
         width: 100%;
       }
-
       @include mq(tab) {
         @include flex-c;
         -webkit-box-orient: vertical;
@@ -296,23 +348,19 @@
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
       }
-
       img {
         @include mq(pc) {
           width: 80%;
         }
-
         &:nth-last-child(1) {
           margin-top: 5%;
           width: 20%;
           max-width: 235px;
         }
       }
-
       &2 {
         width: 100%;
         text-align: center;
-
         img {
           width: 100%;
         }
@@ -343,8 +391,9 @@
     -ms-flex-direction: column;
     flex-direction: column;
     width: 98%;
-    margin: 1% 1%;
+    margin: 1%;
     border: 1px solid $cBlack;
+    padding: 5% 0;
   }
 
   &_question {
@@ -353,13 +402,11 @@
     @include flex-c;
     margin: 2% auto;
   }
-
   &_icon {
     &Q {
       background-color: $cGray;
       @include qa;
     }
-
     &A {
       background-color: $cHiGreen;
       @include qa;
@@ -395,27 +442,11 @@
   }
 
   &_ttl {
-    width: 100%;
-    text-align: center;
-    margin: 10% auto;
-
-    h3 {
-      font-size: 4rem;
-      color: $cHiGreen;
-      font-family: 'Lobster Two',
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-top: 2%;
-    }
+    @include ttl;
   }
 
   &_form {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 100%;
     height: 45vh;
     background: url(../img/contact.png);
@@ -436,6 +467,9 @@
         line-height: 1.5;
         @include mq(tab){
           font-size: 1.5rem;
+        }
+        @include mq(sp){
+          font-size: 1.3rem;
         }
       }
 
