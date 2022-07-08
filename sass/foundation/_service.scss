@@ -39,6 +39,9 @@
           font-size: 8rem;
           width: 100%;
           line-height: 0.6;
+          @include mq(sp){
+            font-size: 3.5rem;
+          }
         }
         span {
           font-size: 0.3em;
