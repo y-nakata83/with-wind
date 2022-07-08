@@ -55,7 +55,9 @@
 @mixin para {
   background-attachment: fixed;
     @include bg;
-  
+    @include b.mq(tab){
+      background-attachment: unset;
+    }
     &_inner {
       position: relative;
       margin-top: 10%;
